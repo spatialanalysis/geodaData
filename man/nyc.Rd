@@ -24,6 +24,6 @@
 nyc
 }
 \description{
-Demographic and housing data for New York City’s 55 sub-boroughs (2000s).
+Demographic and housing data for New York City’s 55 sub-boroughs (2000s). Dataframe, no spatial components.
 }
 \keyword{datasets}
