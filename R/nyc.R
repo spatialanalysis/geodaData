@@ -1,6 +1,8 @@
 #' Rental housing and demographics in NYC (2000s).
 #'
-#' Demographic and housing data for New York City’s 55 sub-boroughs (2000s). Dataframe, no spatial components.
+#' Demographic and housing data for New York City’s 55 sub-boroughs (2000s).
+#'
+#' Dataframe, no spatial components.
 #'
 #' @format A data frame with 55 rows and 34 variables:
 #' \describe{
@@ -21,6 +23,7 @@
 #' Rental housing and demographics in NYC (2000s).
 #'
 #' Demographic and housing data for New York City’s 55 sub-boroughs (2000s).
+#'
 #' Sf object, units in ft. EPSG 2263: NAD83 / New York Long Island (ftUS).
 #'
 #' @format An sf data frame with 55 rows, 34 variables, and a geometry column:
