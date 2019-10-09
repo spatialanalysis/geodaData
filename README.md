@@ -39,3 +39,15 @@ similar to datasets included in base R.
 ``` r
 data("nyc")
 ```
+
+## Similar Packages
+
+Interested in finding more R packages with spatial data included? Check
+out:
+
+  - [spData](https://github.com/Nowosad/spData): package with large
+    variety of spatial datasets, accompanies the [Geocomputation with
+    R](https://geocompr.github.io) book.
+  - [tidycensus](https://github.com/walkerke/tidycensus) /
+    [tigris](https://github.com/walkerke/tigris): API package for US
+    Census data

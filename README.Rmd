@@ -40,3 +40,11 @@ You will then be able to use the data in the package with a data() call, similar
 ```{r data, eval=FALSE}
 data("nyc")
 ```
+
+## Similar Packages
+
+Interested in finding more R packages with spatial data included? Check out:
+
+- [spData](https://github.com/Nowosad/spData): package with large variety of
+spatial datasets, accompanies the [Geocomputation with R](https://geocompr.github.io) book.
+- [tidycensus](https://github.com/walkerke/tidycensus) / [tigris](https://github.com/walkerke/tigris): API package for US Census data
