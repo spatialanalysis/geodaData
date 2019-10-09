@@ -8,6 +8,7 @@ output: github_document
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
+  eval = FALSE,
   fig.path = "man/figures/README-",
   out.width = "100%"
 )
@@ -27,18 +28,25 @@ You can install the development version of geodaData from [GitHub](https://githu
 # install.packages("remotes")
 remotes::install_github("spatialanalysis/geodaData")
 ```
-## Example
+## Usage
 
 To use geodaData in a workshop, first load the package: 
 
-```{r load, eval=FALSE}
+```{r load}
 library(geodaData)
 ```
 
-You will then be able to use the data in the package with a data() call, similar to datasets included in base R.
+Find a list of all datasets in geodaData with:
 
-```{r data, eval=FALSE}
+```{r all}
+data(package = "geodaData")
+```
+
+You can load a specific dataset into your R environment and show the metadata for it:
+
+```{r data}
 data("nyc")
+?nyc
 ```
 
 ## Similar Packages

@@ -25,7 +25,7 @@ You can install the development version of geodaData from
 remotes::install_github("spatialanalysis/geodaData")
 ```
 
-## Example
+## Usage
 
 To use geodaData in a workshop, first load the package:
 
@@ -33,11 +33,18 @@ To use geodaData in a workshop, first load the package:
 library(geodaData)
 ```
 
-You will then be able to use the data in the package with a data() call,
-similar to datasets included in base R.
+Find a list of all datasets in geodaData with:
+
+``` r
+data(package = "geodaData")
+```
+
+You can load a specific dataset into your R environment and show the
+metadata for it:
 
 ``` r
 data("nyc")
+?nyc
 ```
 
 ## Similar Packages
