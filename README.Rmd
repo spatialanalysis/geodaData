@@ -49,6 +49,8 @@ data("nyc")
 ?nyc
 ```
 
+Instructions for adding a new dataset to this package can be found in the [Wiki](wiki/How-to-add-a-dataset-to-this-package) of this repository.
+
 ## Similar Packages
 
 Interested in finding more R packages with spatial data included? Check out:
