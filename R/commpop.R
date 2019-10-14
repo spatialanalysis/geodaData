@@ -16,4 +16,5 @@
 #'   \item{popneg}{1 if area has negative population change (60 observations)}
 #'   \item{geometry}{MULTIPOLYGON}
 #' }
+#' @source \url{https://www.chicago.gov/city/en/depts/dcd/supp_info/community_area_2000and2010censuspopulationcomparisons.html}
 "commpop"
