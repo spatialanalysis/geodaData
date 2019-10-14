@@ -13,7 +13,7 @@ concepts. They are used in the weekly R Spatial Workshop at the Center
 for Spatial Data Science at UChicago, and are based off of the [GeoDa
 workbook](https://geodacenter.github.io/documentation.html) and [data
 site](https://geodacenter.github.io/data-and-lab/) developed by Luc
-Anselin and team.
+Anselin and team. Datasets are stored in the sf spatial object format.
 
 ## Installation
 
@@ -27,9 +27,11 @@ remotes::install_github("spatialanalysis/geodaData")
 
 ## Usage
 
-To use geodaData in a workshop, first load the package:
+To use geodaData in a workshop, first load `sf`, then load the
+package:
 
 ``` r
+library(sf) # can use without sf, but datasets will print weirdly in console
 library(geodaData)
 ```
 
