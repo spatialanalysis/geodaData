@@ -50,7 +50,7 @@ data("nyc")
 ```
 
 Instructions for adding a new dataset to this package can be found in
-the [Wiki](wiki/How-to-add-a-dataset-to-this-package) of this
+the [Wiki](https://github.com/spatialanalysis/geodaData/wiki/How-to-add-a-dataset-to-this-package) of this
 repository.
 
 ## Similar Packages
