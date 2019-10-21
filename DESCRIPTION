@@ -12,7 +12,7 @@ Description: The goal of geodaData is to store sample spatial datasets. These
     They are used in the weekly R Spatial Workshop at the Center for Spatial Data 
     Science at UChicago, and are based off of the GeoDa workbook and data site 
     developed by Luc Anselin and team. Datasets are stored in the sf object format.
-License: What license it uses
+License: CC0
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
