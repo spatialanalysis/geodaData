@@ -3,7 +3,7 @@
 \docType{data}
 \name{nyc}
 \alias{nyc}
-\title{Rental housing and demographics in NYC (2000s).}
+\title{Rental Housing and Demographics in NYC (2000s), non-spatial.}
 \format{A data frame with 55 rows and 34 variables:
 \describe{
   \item{FORHIS06-09}{percentage of hispanic population, not born in US}

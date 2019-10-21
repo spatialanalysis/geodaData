@@ -1,4 +1,4 @@
-#' Rental housing and demographics in NYC (2000s).
+#' Rental Housing and Demographics in NYC (2000s), non-spatial.
 #'
 #' Demographic and housing data for New York City’s 55 sub-boroughs (2000s).
 #'
@@ -20,7 +20,7 @@
 #' @source \url{https://geodacenter.github.io/data-and-lab/nyc/}
 "nyc"
 
-#' Rental housing and demographics in NYC (2000s).
+#' Rental Housing and Demographics in NYC (2000s).
 #'
 #' Demographic and housing data for New York City’s 55 sub-boroughs (2000s).
 #'

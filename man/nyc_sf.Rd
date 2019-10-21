@@ -3,7 +3,7 @@
 \docType{data}
 \name{nyc_sf}
 \alias{nyc_sf}
-\title{Rental housing and demographics in NYC (2000s).}
+\title{Rental Housing and Demographics in NYC (2000s).}
 \format{An sf data frame with 55 rows, 34 variables, and a geometry column:
 \describe{
   \item{forhis06-09}{percentage of hispanic population, not born in US}
