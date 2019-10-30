@@ -1,6 +1,8 @@
 library(sf)
 library(usethis)
 
-ncovr <- read_sf("data-raw/NAT.shp")
+ncovr <- st_read("data-raw/NAT.shp",
+                 quiet = TRUE,
+                 stringsAsFactors = FALSE)
 
 usethis::use_data(ncovr, overwrite = TRUE)

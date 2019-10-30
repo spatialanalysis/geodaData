@@ -1,6 +1,8 @@
 library(sf)
 library(usethis)
 
-guerry <- read_sf("data-raw/guerry.shp")
+guerry <- st_read("data-raw/guerry.shp",
+                  quiet = TRUE,
+                  stringsAsFactors = FALSE)
 
 usethis::use_data(guerry, overwrite = TRUE)
