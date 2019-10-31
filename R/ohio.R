@@ -2,7 +2,7 @@
 #'
 #' Ohio lung cancer data for 1968, 1978 and 1988.
 #'
-#' Sf object, unprojected. EPSG 4326: WGS84.
+#' Sf object, units in m. EPSG 32617: WGS 84 / UTM Zone 17N.
 #'
 #' @format An sf data frame with 88 rows, 42 variables, and a geometry column:
 #' \describe{

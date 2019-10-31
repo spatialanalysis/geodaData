@@ -25,6 +25,6 @@ ohio_lung
 Ohio lung cancer data for 1968, 1978 and 1988.
 }
 \details{
-Sf object, unprojected. EPSG 4326: WGS84.
+Sf object, units in m. EPSG 32617: WGS 84 / UTM Zone 17N.
 }
 \keyword{datasets}
