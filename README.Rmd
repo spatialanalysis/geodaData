@@ -46,11 +46,26 @@ data(package = "geodaData")
 You can load a specific dataset into your R environment and show the metadata for it:
 
 ```{r data}
-data("nyc")
+head(nyc)
 ?nyc
 ```
 
 Instructions for adding a new dataset to this package can be found in the [Wiki](wiki/How-to-add-a-dataset-to-this-package) of this repository.
+
+## Datasets 
+
+Current datasets included in this package:
+
+- `chicago_comm`:            Chicago Community Areas (2010).
+- `clev_pts`:                Cleveland Home Sales (2015).
+- `commpop`:                 Chicago Population Change (2000-2010).
+- `guerry`:                  Guerry "Moral Statistics" (1830s).
+- `ncovr`:                   Homicides & Socio-Economics (1960-90).
+- `nyc`:                     Rental Housing and Demographics in NYC (2000s),
+                        non-spatial.
+- `nyc_sf`:                  Rental Housing and Demographics in NYC (2000s).
+- `ohio_lung`:               Ohio Lung Cancer Mortality (1960s-80s).
+- `vehicle_pts`:             Abandoned Vehicles (2016).
 
 ## Similar Packages
 
