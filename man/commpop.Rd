@@ -18,13 +18,6 @@
 }}
 \source{
 \url{https://www.chicago.gov/city/en/depts/dcd/supp_info/community_area_2000and2010censuspopulationcomparisons.html}
-#' @examples
-if (requireNamespace("sf", quietly = TRUE)) {
-  library(sf)
-  data(commpop)
-
-  plot(commpop["community"])
-}
 }
 \usage{
 commpop
@@ -34,5 +27,13 @@ Change in population in Chicago community areas from 2000 to 2010.
 }
 \details{
 Sf object, unprojected. EPSG 4326: WGS84.
+}
+\examples{
+if (requireNamespace("sf", quietly = TRUE)) {
+  library(sf)
+  data(commpop)
+
+  plot(commpop["community"])
+}
 }
 \keyword{datasets}

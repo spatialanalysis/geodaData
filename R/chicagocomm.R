@@ -16,7 +16,7 @@
 #' @examples
 #' if (requireNamespace("sf", quietly = TRUE)) {
 #'   library(sf)
-#'   data(alaska)
+#'   data(chicago_comm)
 #'
 #'   plot(chicago_comm["community"])
 #' }

@@ -27,7 +27,7 @@ Sf object, unprojected. EPSG 4326: WGS84.
 \examples{
 if (requireNamespace("sf", quietly = TRUE)) {
   library(sf)
-  data(alaska)
+  data(chicago_comm)
 
   plot(chicago_comm["community"])
 }

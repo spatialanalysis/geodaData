@@ -33,9 +33,9 @@ Sf object, units in ft. EPSG 2263: NAD83 / New York Long Island (ftUS).
 \examples{
 if (requireNamespace("sf", quietly = TRUE)) {
   library(sf)
-  data(nyc)
+  data(nyc_sf)
 
-  plot(nyc["bor_subb"])
+  plot(nyc_sf["bor_subb"])
 }
 }
 \keyword{datasets}

@@ -44,8 +44,8 @@
 #' @examples
 #' if (requireNamespace("sf", quietly = TRUE)) {
 #'   library(sf)
-#'   data(nyc)
+#'   data(nyc_sf)
 #'
-#'   plot(nyc["bor_subb"])
+#'   plot(nyc_sf["bor_subb"])
 #' }
 "nyc_sf"
