@@ -16,4 +16,11 @@
 #'   \item{geometry}{POLYGON}
 #' }
 #' @source \url{https://geodacenter.github.io/data-and-lab/ohiolung/}
+#' @examples
+#' if (requireNamespace("sf", quietly = TRUE)) {
+#'   library(sf)
+#'   data(ohio_lung)
+#'
+#'   plot(ohio_lung["FIPSNO"])
+#' }
 "ohio_lung"

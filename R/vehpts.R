@@ -19,4 +19,11 @@
 #'   \item{geometry}{POINT}
 #' }
 #' @source \url{https://data.cityofchicago.org/Service-Requests/311-Service-Requests-Abandoned-Vehicles/3c9v-pnva}
+#' @examples
+#' if (requireNamespace("sf", quietly = TRUE)) {
+#'   library(sf)
+#'   data(vehicle_pts)
+#'
+#'   plot(vehicle_pts["CreationDt"])
+#' }
 "vehicle_pts"

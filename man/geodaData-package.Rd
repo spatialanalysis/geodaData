@@ -6,11 +6,10 @@
 \alias{geodaData-package}
 \title{geodaData: Spatial Analysis Datasets for Teaching}
 \description{
-The goal of geodaData is to store sample spatial datasets. These 
-    datasets are intended to be used to teach basic spatial analysis concepts. 
-    They are used in the weekly R Spatial Workshop at the Center for Spatial Data 
-    Science at UChicago, and are based off of the GeoDa workbook and data site 
-    developed by Luc Anselin and team. Datasets are stored in the sf object format.
+Stores small spatial datasets used to teach basic spatial analysis 
+    concepts. Datasets are based off of the 'GeoDa' software workbook and data 
+    site developed by Luc Anselin and team at the University of Chicago. Datasets 
+    are stored in the 'sf' object format.
 }
 \seealso{
 Useful links:
@@ -22,6 +21,11 @@ Useful links:
 }
 \author{
 \strong{Maintainer}: Angela Li \email{ali6@uchicago.edu} (\href{https://orcid.org/0000-0002-8956-419X}{ORCID})
+
+Authors:
+\itemize{
+  \item Luc Anselin (Creator of original spatial datasets)
+}
 
 }
 \keyword{internal}

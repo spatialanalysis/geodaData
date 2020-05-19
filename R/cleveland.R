@@ -18,4 +18,11 @@
 #'   \item{geometry}{POINT}
 #' }
 #' @source Cuyahoga County Fiscal Office. \url{https://geodacenter.github.io/data-and-lab//clev_sls_154_core/}
+#' #' @examples
+#' if (requireNamespace("sf", quietly = TRUE)) {
+#'   library(sf)
+#'   data(clev_pts)
+#'
+#'   plot(clev_pts["unique_id"])
+#' }
 "clev_pts"

@@ -41,4 +41,11 @@
 #'   \item{geometry}{MULTIPOLYGON}
 #' }
 #' @source \url{https://geodacenter.github.io/data-and-lab/nyc/}
+#' @examples
+#' if (requireNamespace("sf", quietly = TRUE)) {
+#'   library(sf)
+#'   data(nyc)
+#'
+#'   plot(nyc["bor_subb"])
+#' }
 "nyc_sf"

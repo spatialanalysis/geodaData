@@ -18,6 +18,13 @@
 }}
 \source{
 \url{https://www.chicago.gov/city/en/depts/dcd/supp_info/community_area_2000and2010censuspopulationcomparisons.html}
+#' @examples
+if (requireNamespace("sf", quietly = TRUE)) {
+  library(sf)
+  data(commpop)
+
+  plot(commpop["community"])
+}
 }
 \usage{
 commpop

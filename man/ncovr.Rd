@@ -44,4 +44,12 @@ Homicides and selected socio-economic characteristics for continental U.S. count
 \details{
 Sf object, unprojected. EPSG 4326: WGS84.
 }
+\examples{
+if (requireNamespace("sf", quietly = TRUE)) {
+  library(sf)
+  data(ncovr)
+
+  plot(ncovr["NAME"])
+}
+}
 \keyword{datasets}

@@ -13,4 +13,11 @@
 #'   \item{geometry}{MULTIPOLYGON}
 #' }
 #' @source \url{https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-Community-Areas-current-/cauq-8yn6}
+#' @examples
+#' if (requireNamespace("sf", quietly = TRUE)) {
+#'   library(sf)
+#'   data(alaska)
+#'
+#'   plot(chicago_comm["community"])
+#' }
 "chicago_comm"

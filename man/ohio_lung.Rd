@@ -27,4 +27,12 @@ Ohio lung cancer data for 1968, 1978 and 1988.
 \details{
 Sf object, units in m. EPSG 32617: WGS 84 / UTM Zone 17N.
 }
+\examples{
+if (requireNamespace("sf", quietly = TRUE)) {
+  library(sf)
+  data(ohio_lung)
+
+  plot(ohio_lung["FIPSNO"])
+}
+}
 \keyword{datasets}

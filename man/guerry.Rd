@@ -49,4 +49,12 @@ Classic social science foundational study by Andre-Michel Guerry on crime, suici
 \details{
 Sf object, units in m. EPSG 27572: NTF (Paris) / Lambert zone II.
 }
+\examples{
+if (requireNamespace("sf", quietly = TRUE)) {
+  library(sf)
+  data(guerry)
+
+  plot(guerry["CODE_DE"])
+}
+}
 \keyword{datasets}

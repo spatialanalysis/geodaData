@@ -38,4 +38,11 @@
 #'   \item{Parent-Duchatelet, A. (1836). De la prostitution dans la ville de Paris, 3rd ed, 1857, p. 32, 36}
 #'}
 #'   \url{https://geodacenter.github.io/data-and-lab/Guerry/}
+#' @examples
+#' if (requireNamespace("sf", quietly = TRUE)) {
+#'   library(sf)
+#'   data(guerry)
+#'
+#'   plot(guerry["CODE_DE"])
+#' }
 "guerry"

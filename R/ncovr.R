@@ -33,4 +33,11 @@
 #'   \item{geometry}{MULTIPOLYGON}
 #' }
 #' @source S. Messner, L. Anselin, D. Hawkins, G. Deane, S. Tolnay, R. Baller (2000). An Atlas of the Spatial Patterning of County-Level Homicide, 1960-1990. Pittsburgh, PA, National Consortium on Violence Research (NCOVR). \url{https://geodacenter.github.io/data-and-lab/ncovr/}
+#' @examples
+#' if (requireNamespace("sf", quietly = TRUE)) {
+#'   library(sf)
+#'   data(ncovr)
+#'
+#'   plot(ncovr["NAME"])
+#' }
 "ncovr"

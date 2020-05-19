@@ -30,4 +30,12 @@ Point locations of abandoned vehicles in Chicago in September 2016.
 \details{
 Sf object, unprojected. EPSG 4326: WGS84.
 }
+\examples{
+if (requireNamespace("sf", quietly = TRUE)) {
+  library(sf)
+  data(vehicle_pts)
+
+  plot(vehicle_pts["CreationDt"])
+}
+}
 \keyword{datasets}
