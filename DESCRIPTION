@@ -2,18 +2,22 @@ Package: geodaData
 Title: Spatial Analysis Datasets for Teaching
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "Angela",
+    c(person(given = "Angela",
            family = "Li",
            role = c("aut", "cre"),
            email = "ali6@uchicago.edu",
-           comment = c(ORCID = "0000-0002-8956-419X"))
-Description: The goal of geodaData is to store sample spatial datasets. These 
-    datasets are intended to be used to teach basic spatial analysis concepts. 
-    They are used in the weekly R Spatial Workshop at the Center for Spatial Data 
-    Science at UChicago, and are based off of the GeoDa workbook and data site 
-    developed by Luc Anselin and team. Datasets are stored in the sf object format.
+           comment = c(ORCID = "0000-0002-8956-419X")),
+    person(given = "Luc",
+           family = "Anselin",
+           role = c("aut"),
+           comment = "Creator of original spatial datasets")
+           )
+Description: Stores small spatial datasets used to teach basic spatial analysis 
+    concepts. Datasets are based off of the 'GeoDa' software workbook and data 
+    site <https://geodacenter.github.io/data-and-lab/> developed by Luc Anselin 
+    and team at the University of Chicago. Datasets are stored as 'sf' objects.
 Depends:
-    R (>= 2.10)
+    R (>= 3.3.0)
 License: CC0
 URL: https://github.com/spatialanalysis/geodaData
 BugReports: https://github.com/spatialanalysis/geodaData/issues
