@@ -12,9 +12,9 @@ Authors@R:
            role = c("ctb"),
            comment = "Creator of original spatial datasets")
            )
-Description: Stores small spatial datasets used to teach basic spatial analysis 
-    concepts. Datasets are based off of the 'GeoDa' software workbook and data 
-    site <https://geodacenter.github.io/data-and-lab/> developed by Luc Anselin 
+Description: Stores small spatial datasets used to teach basic spatial analysis
+    concepts. Datasets are based off of the 'GeoDa' software workbook and data
+    site <https://geodacenter.github.io/data-and-lab/> developed by Luc Anselin
     and team at the University of Chicago. Datasets are stored as 'sf' objects.
 Depends:
     R (>= 3.3.0)
