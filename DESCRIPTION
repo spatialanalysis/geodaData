@@ -9,7 +9,7 @@ Authors@R:
            comment = c(ORCID = "0000-0002-8956-419X")),
     person(given = "Luc",
            family = "Anselin",
-           role = c("aut"),
+           role = c("ctb"),
            comment = "Creator of original spatial datasets")
            )
 Description: Stores small spatial datasets used to teach basic spatial analysis 
