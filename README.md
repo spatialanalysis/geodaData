@@ -27,7 +27,8 @@ remotes::install_github("spatialanalysis/geodaData")
 
 ## Usage
 
-To use geodaData in a workshop, first load `sf`, then load the package:
+To use geodaData in a workshop, first load `sf`, then load the
+package:
 
 ``` r
 library(sf) # can use without sf, but datasets will print weirdly in console
@@ -49,8 +50,9 @@ head(nyc)
 ```
 
 Instructions for adding a new dataset to this package can be found in
-the [Wiki](wiki/How-to-add-a-dataset-to-this-package) of this
-repository.
+the
+[Wiki](https://github.com/spatialanalysis/geodaData/wiki/How-to-add-a-dataset-to-this-package)
+of this repository.
 
 ## Datasets
 
