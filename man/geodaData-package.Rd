@@ -6,10 +6,10 @@
 \alias{geodaData-package}
 \title{geodaData: Spatial Analysis Datasets for Teaching}
 \description{
-Stores small spatial datasets used to teach basic spatial analysis 
-    concepts. Datasets are based off of the 'GeoDa' software workbook and data 
-    site developed by Luc Anselin and team at the University of Chicago. Datasets 
-    are stored in the 'sf' object format.
+Stores small spatial datasets used to teach basic spatial analysis
+    concepts. Datasets are based off of the 'GeoDa' software workbook and data
+    site <https://geodacenter.github.io/data-and-lab/> developed by Luc Anselin
+    and team at the University of Chicago. Datasets are stored as 'sf' objects.
 }
 \seealso{
 Useful links:
@@ -22,9 +22,9 @@ Useful links:
 \author{
 \strong{Maintainer}: Angela Li \email{ali6@uchicago.edu} (\href{https://orcid.org/0000-0002-8956-419X}{ORCID})
 
-Authors:
+Other contributors:
 \itemize{
-  \item Luc Anselin (Creator of original spatial datasets)
+  \item Luc Anselin (Creator of original spatial datasets) [contributor]
 }
 
 }
