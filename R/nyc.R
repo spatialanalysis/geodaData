@@ -70,6 +70,6 @@
 #'   library(sf)
 #'   data(nyc_sf)
 #'
-#'   plot(nyc_sf["CODE"])
+#'   plot(nyc_sf["bor_subb"])
 #' }
 "nyc_sf"
