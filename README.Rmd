@@ -22,6 +22,12 @@ The goal of geodaData is to store sample spatial datasets. These datasets are in
 
 ## Installation
 
+You can install geodaData from CRAN with:
+
+``` r
+install.packages("geodaData")
+```
+
 You can install the development version of geodaData from [GitHub](https://github.com/) with:
 
 ``` r
