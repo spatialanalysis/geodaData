@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Changelog • geodaData</title>
+<title>Malaria in Colombia (1998) — malaria_col_munic • geodaData</title>
 
 
 <!-- jquery -->
@@ -39,7 +39,8 @@
 
 
 
-<meta property="og:title" content="Changelog" />
+<meta property="og:title" content="Malaria in Colombia (1998) — malaria_col_munic" />
+<meta property="og:description" content="Malaria incidence and population in Colombian municipalities from 1973, 95, 93 censuses and projections until 2005." />
 
 
 
@@ -58,7 +59,7 @@
   </head>
 
   <body data-spy="scroll" data-target="#toc">
-    <div class="container template-news">
+    <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -110,30 +111,63 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-      <h1 data-toc-skip>Changelog <small></small></h1>
-      <small>Source: <a href='https://github.com/spatialanalysis/geodaData/blob/master/NEWS.md'><code>NEWS.md</code></a></small>
+    <h1>Malaria in Colombia (1998)</h1>
+    <small class="dont-index">Source: <a href='https://github.com/spatialanalysis/geodaData/blob/master/R/malaria_col_munic.R'><code>R/malaria_col_munic.R</code></a></small>
+    <div class="hidden name"><code>malaria_col_munic.Rd</code></div>
     </div>
 
-    <div id="geodadata-0-1-0-2020-05-20" class="section level1">
-<h1 class="page-header" data-toc-text="0.1.0">
-<a href="#geodadata-0-1-0-2020-05-20" class="anchor"></a>geodaData 0.1.0 (2020-05-20)<small> 2020-05-27 </small>
-</h1>
-<div id="new-features" class="section level3">
-<h3 class="hasAnchor">
-<a href="#new-features" class="anchor"></a>NEW FEATURES</h3>
-<ul>
-<li>released to CRAN</li>
-</ul>
-</div>
-</div>
-  </div>
+    <div class="ref-description">
+    <p>Malaria incidence and population in Colombian municipalities from 1973, 95, 93 censuses and projections until 2005.</p>
+    </div>
 
+    <pre class="usage"><span class='no'>malaria_col_munic</span></pre>
+
+
+    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
+
+    <p>An sf data frame with 1068 rows, 51 variables, and a geometry column:</p><dl'>
+	 <dt>ID</dt><dd><p>Sequencial ID</p></dd>
+	 <dt>ADM0</dt><dd><p>Country name</p></dd>
+ <dt>ADM1</dt><dd><p>Departments=States (Administrative level 1)</p></dd>
+ <dt>ADM2</dt><dd><p>Municipalities=Counties (Administrative level 2)</p></dd>
+ <dt>IDDANE</dt><dd><p>DANE (Colombian National Bureau of Statistics) code for municipalities in numeric format</p></dd>
+ <dt>CODDEPT</dt><dd><p>DANE (Colombian National Bureau of Statistics) code for municipalities</p></dd>
+ <dt>TP1973</dt><dd><p>Total population from census in 1973</p></dd>
+ <dt>UP1973</dt><dd><p>Urban population from census in 1973</p></dd>
+ <dt>RP1973</dt><dd><p>Rural population from census in 1973</p></dd>
+ <dt>TP1985</dt><dd><p>Total population from census in 1985</p></dd>
+ <dt>UP1985</dt><dd><p>Urban population from census in 1985</p></dd>
+ <dt>RP1985</dt><dd><p>Rural population from census in 1985</p></dd>
+ <dt>TP1993</dt><dd><p>Total population from census in 1993</p></dd>
+ <dt>UP1993</dt><dd><p>Urban population from census in 1993</p></dd>
+ <dt>RP1993</dt><dd><p>Rural population from census in 1993</p></dd>
+ <dt>MALARI98</dt><dd><p>Malaria incidence in 1998.</p></dd>
+ <dt>Tpyyyy</dt><dd><p>Total population projected in year yyyy</p></dd>
+ <dt>Upyyyy</dt><dd><p>Urban population projected in year yyyy</p></dd>
+ <dt>Rpyyyy</dt><dd><p>Rural population projected in year yyyy</p></dd>
+
+</dl>
+
+    <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
+
+    <p>SIVIGILA. Ministerio de Salud, Colombia. There are 3 files for each year from 1995-2005. Projections from Departamento Administrativo Nacional de Estadistica DANE, Colombia <a href='https://www.minsalud.gov.co'>https://www.minsalud.gov.co</a> <a href='https://www.dane.gov.co/index.php/estadisticas-por-tema/demografia-y-poblacion/proyecciones-de-poblacion'>https://www.dane.gov.co/index.php/estadisticas-por-tema/demografia-y-poblacion/proyecciones-de-poblacion</a></p>
+    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
+
+    <p>Sf object, unprojected. EPSG 4326: WGS84.</p>
+
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='kw'>if</span> (<span class='fu'><a href='https://rdrr.io/r/base/ns-load.html'>requireNamespace</a></span>(<span class='st'>"sf"</span>, <span class='kw'>quietly</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)) {
+  <span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>sf</span>)
+  <span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>malaria_col_munic</span>)
+
+  <span class='fu'><a href='https://rdrr.io/pkg/sf/man/plot.html'>plot</a></span>(<span class='no'>malaria_col_munic</span>[<span class='st'>"MALARI98"</span>])
+}</div><div class='img'><img src='malaria_col_munic-1.png' alt='' width='700' height='433' /></div></pre>
+  </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
       <h2 data-toc-skip>Contents</h2>
     </nav>
   </div>
-
 </div>
 
 

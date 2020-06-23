@@ -1,14 +1,17 @@
 #' Malaria in Colombia (1998)
 #'
-#' Malaria incidence and population in Colombian departments from 1973, 95, 93 censuses and projections until 2005.
+#' Malaria incidence and population in Colombian municipalities from 1973, 95, 93 censuses and projections until 2005.
 #'
 #' Sf object, unprojected. EPSG 4326: WGS84.
 #'
-#' @format An sf data frame with 33 rows, 16 variables, and a geometry column:
+#' @format An sf data frame with 1068 rows, 51 variables, and a geometry column:
 #' \describe{
+#' 	 \item{ID}{Sequencial ID}
+#' 	 \item{ADM0}{Country name}
 #'	 \item{ADM1}{Departments=States (Administrative level 1)}
-#'	 \item{ADM0}{Country name}
-#'	 \item{CODDEPT}{DANE (Colombian National Bureau of Statistics) code for departments}
+#'	 \item{ADM2}{Municipalities=Counties (Administrative level 2)}
+#'	 \item{IDDANE}{DANE (Colombian National Bureau of Statistics) code for municipalities in numeric format}
+#'	 \item{CODDEPT}{DANE (Colombian National Bureau of Statistics) code for municipalities}
 #'	 \item{TP1973}{Total population from census in 1973}
 #'	 \item{UP1973}{Urban population from census in 1973}
 #'	 \item{RP1973}{Rural population from census in 1973}
@@ -27,8 +30,8 @@
 #' @examples
 #' if (requireNamespace("sf", quietly = TRUE)) {
 #'   library(sf)
-#'   data(malaria_col_dept)
+#'   data(malaria_col_munic)
 #'
-#'   plot(malaria_col_dept["MALARI98"])
+#'   plot(malaria_col_munic["MALARI98"])
 #' }
-"malaria_col_dept"
+"malaria_col_munic"
