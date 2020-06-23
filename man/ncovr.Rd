@@ -3,8 +3,9 @@
 \docType{data}
 \name{ncovr}
 \alias{ncovr}
-\title{Homicides & Socio-Economics (1960-90).}
-\format{An sf data frame with 3085 rows, 69 variables, and a geometry column:
+\title{Homicides & Socio-Economics (1960-90)}
+\format{
+An sf data frame with 3085 rows, 69 variables, and a geometry column:
 \describe{
   \item{name}{county name}
   \item{state_name}{state name}
@@ -31,7 +32,8 @@
   \item{gi}{Gini index of family income inequality 1960, 1970, 1980, 1990}
   \item{fh}{percent female headed households 1960, 1970, 1980, 1990}
   \item{geometry}{MULTIPOLYGON}
-}}
+}
+}
 \source{
 S. Messner, L. Anselin, D. Hawkins, G. Deane, S. Tolnay, R. Baller (2000). An Atlas of the Spatial Patterning of County-Level Homicide, 1960-1990. Pittsburgh, PA, National Consortium on Violence Research (NCOVR). \url{https://geodacenter.github.io/data-and-lab/ncovr/}
 }
