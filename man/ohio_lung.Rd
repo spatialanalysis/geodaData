@@ -3,7 +3,7 @@
 \docType{data}
 \name{ohio_lung}
 \alias{ohio_lung}
-\title{Ohio Lung Cancer Mortality (1960s-80s).}
+\title{Ohio Lung Cancer Mortality (1960s-80s)}
 \format{
 An sf data frame with 88 rows, 42 variables, and a geometry column:
 \describe{

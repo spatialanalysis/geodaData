@@ -3,7 +3,7 @@
 \docType{data}
 \name{commpop}
 \alias{commpop}
-\title{Chicago Population Change (2000-2010).}
+\title{Chicago Population Change (2000-2010)}
 \format{
 An sf data frame with 77 rows, 8 variables, and a geometry column:
 \describe{

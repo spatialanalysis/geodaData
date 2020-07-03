@@ -3,7 +3,7 @@
 \docType{data}
 \name{vehicle_pts}
 \alias{vehicle_pts}
-\title{Abandoned Vehicles (2016).}
+\title{Abandoned Vehicles (2016)}
 \format{
 An sf data frame with 2635 rows, 10 variables, and a geometry column:
 \describe{

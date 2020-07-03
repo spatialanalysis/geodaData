@@ -3,7 +3,7 @@
 \docType{data}
 \name{clev_pts}
 \alias{clev_pts}
-\title{Cleveland Home Sales (2015).}
+\title{Cleveland Home Sales (2015)}
 \format{
 An sf data frame with 205 rows, 9 variables, and a geometry column:
 \describe{

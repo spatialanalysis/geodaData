@@ -3,7 +3,7 @@
 \docType{data}
 \name{guerry}
 \alias{guerry}
-\title{Guerry "Moral Statistics" (1830s).}
+\title{Guerry "Moral Statistics" (1830s)}
 \format{
 An sf data frame with 85 rows, 23 variables, and a geometry column:
 \describe{
