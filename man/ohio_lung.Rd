@@ -4,7 +4,8 @@
 \name{ohio_lung}
 \alias{ohio_lung}
 \title{Ohio Lung Cancer Mortality (1960s-80s).}
-\format{An sf data frame with 88 rows, 42 variables, and a geometry column:
+\format{
+An sf data frame with 88 rows, 42 variables, and a geometry column:
 \describe{
   \item{county_id}{Sequential county ID (alphabetic     order)}
   \item{name}{County name}
@@ -14,7 +15,8 @@
   \item{l_gyy}{Total male and female lung cancer cases for each year}
   \item{pop_gyy}{Total population at risk by gender}
   \item{geometry}{POLYGON}
-}}
+}
+}
 \source{
 \url{https://geodacenter.github.io/data-and-lab/ohiolung/}
 }

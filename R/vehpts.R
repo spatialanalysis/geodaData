@@ -1,4 +1,4 @@
-#' Abandoned Vehicles (2016).
+#' Abandoned Vehicles (2016)
 #'
 #' Point locations of abandoned vehicles in Chicago in September 2016.
 #'

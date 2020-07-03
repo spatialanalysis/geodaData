@@ -1,0 +1,39 @@
+#' AirBnB Chicago 2015
+#'
+#' This database is about Airbnb spots, socioeconomic indicators, and crime by community area in Chicago.
+#'
+#' Sf object, unprojected. EPSG 4326: WGS84.
+#'
+#' @format An sf data frame with 77 rows, 21 variables, and a geometry column:
+#' \describe{
+#'	\item{community}{name of community area}
+#'	\item{shape_area}{polygon area}
+#'	\item{shape_len}{polygon length}
+#'	\item{AREAID}{ID number associated with the community area}
+#'	\item{response_r}{response rate of airbnb host}
+#'	\item{accept_r}{acceptance rate of airbnb host}
+#'	\item{rev_rating}{host’s rating}
+#'	\item{price_pp}{price per person}
+#'	\item{room_type}{1 is entire home/apartment, 2 is private room, and 3 shared room}
+#'	\item{num_spots}{number of airbnb spots}
+#'	\item{poverty}{percent households below poverty}
+#'	\item{crowded}{percent housing crowded}
+#'	\item{dependency}{percent under 18 or over 64 years old}
+#'	\item{without_hs}{percent aged 25+ without high school diploma}
+#'	\item{unemployed}{percent unemployed above 16 years old}
+#'	\item{income_pc}{per capita income}
+#'	\item{hardship_in}{hardship index}
+#'	\item{num_crimes}{total number of crimes}
+#'	\item{num_theft}{total number of thefts}
+#'	\item{population}{community area population in 2010}
+#'	}
+#' @source Multiple sources. The variables response_r, host's rating, price_pp, room_type and num_spots are obtained from \url{http://insideairbnb.com/get-the-data.html}. The remaining variables are obtainded from \url{https://data.cityofchicago.org/Health-Human-Services/Census-Data-Selected-socioeconomic-indicators-in-C/kn9c-c2s2} and \url{https://www.chicago.gov/content/dam/city/depts/zlup/Zoning_Main_Page/Publications/Census_2010_Community_Area_Profiles/Census_2010_and_2000_CA_Populations.pdf}
+#'
+#' @examples
+#' if (requireNamespace("sf", quietly = TRUE)) {
+#'   library(sf)
+#'   data(airbnb)
+#'
+#'   plot(airbnb["price_pp"])
+#' }
+"airbnb"

@@ -1,4 +1,4 @@
-#' Cleveland Home Sales (2015).
+#' Cleveland Home Sales (2015)
 #'
 #' Location and sales price of home sales in a core area of Cleveland, OH for the fourth quarter of 2015.
 #'

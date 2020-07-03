@@ -4,7 +4,8 @@
 \name{vehicle_pts}
 \alias{vehicle_pts}
 \title{Abandoned Vehicles (2016).}
-\format{An sf data frame with 2635 rows, 10 variables, and a geometry column:
+\format{
+An sf data frame with 2635 rows, 10 variables, and a geometry column:
 \describe{
   \item{CreationDt}{Date created}
   \item{Address}{Address of abandoned vehicle}
@@ -17,7 +18,8 @@
   \item{Latitude}{Latitude of vehicle}
   \item{Longitude}{Longitude of vehicle}
   \item{geometry}{POINT}
-}}
+}
+}
 \source{
 \url{https://data.cityofchicago.org/Service-Requests/311-Service-Requests-Abandoned-Vehicles/3c9v-pnva}
 }

@@ -4,7 +4,8 @@
 \name{nyc}
 \alias{nyc}
 \title{Rental Housing and Demographics in NYC (2000s), non-spatial.}
-\format{A data frame with 55 rows and 34 variables:
+\format{
+A data frame with 55 rows and 34 variables:
 \describe{
   \item{CODE}{sub-borough code, 1XX Bronx, 2XX Brooklyn, 3XX Manhattan, 4XX Queens, 5XX Staten Island}
   \item{FORHIS06}{percentage of hispanic population, not born in US, 2006}
@@ -40,7 +41,8 @@
   \item{YRHOM05}{average number of years living in current residence, 2005}
   \item{YRHOM08}{average number of years living in current residence, 2008}
   \item{bor_subb}{sub-borough code, repeated}
-}}
+}
+}
 \source{
 \url{https://geodacenter.github.io/data-and-lab/nyc/}
 }
