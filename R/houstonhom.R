@@ -1,0 +1,40 @@
+#' Houston Homicides 1980s-90s
+#'
+#' Homicides and selected socio-economic characteristics for counties surrounding Houston, TX. Data aggregated for three time periods: 1979-84 (steady decline in homicides), 1984-88 (stable period), and 1988-93 (steady increase in homicides).
+#'
+#' Sf object, unprojected. EPSG 4326: WGS84.
+#'
+#' @format An sf data frame with 52 rows, 24 variables, and a geometry column:
+#' \describe{
+#'	\item{	NAME	}{	county name	}
+#'	\item{	STATE_NAME	}{	state name	}
+#'	\item{	STATE_FIPS	}{	state FIPS code (character)	}
+#'	\item{	CNTY_FIPS	}{	county FIPS code (character)	}
+#'	\item{	FIPS	}{	combined state and county FIPS code (character)	}
+#'	\item{	FIPSNO	}{	fips code as numeric variable	}
+#'	\item{	HR8187	}{	homicide rate per 100,000 (1981-87)	}
+#'	\item{	HR8791	}{	homicide rate per 100,000 (1987-91)	}
+#'	\item{	HR9195	}{	homicide rate per 100,000 (1991-95)	}
+#'	\item{	HC8187	}{	homicide count (1981-87)	}
+#'	\item{	HC8791	}{	homicide count (1987-91)	}
+#'	\item{	HC9195	}{	homicide count (1991-95)	}
+#'	\item{	PO8187	}{	population total (1981-87)	}
+#'	\item{	PO8791	}{	population total (1987-91)	}
+#'	\item{	PO9195	}{	population total (1991-95)	}
+#'	\item{	PE77	}{	police expenditures per capita, 1977	}
+#'	\item{	PE82	}{	police expenditures per capita, 1982	}
+#'	\item{	PE87	}{	police expenditures per capita, 1987	}
+#'	\item{	RDAC80	}{	resource deprivation/affluence composite variable, 1980	}
+#'	\item{	RDAC85	}{	resource deprivation/affluence composite variable, 1985	}
+#'	\item{	RDAC90	}{	resource deprivation/affluence composite variable, 1990	}
+#'	}
+#' @source S. Messner, L. Anselin, D. Hawkins, G. Deane, S. Tolnay, R. Baller (2000). An Atlas of the Spatial Patterning of County-Level Homicide, 1960-1990. Pittsburgh, PA, \url{www.ncovr.heinz.cmu.edu}
+#'
+#' @examples
+#' if (requireNamespace("sf", quietly = TRUE)) {
+#'   library(sf)
+#'   data(houstonhom)
+#'
+#'   plot(houstonhom["HC9195"])
+#' }
+"houstonhom"
