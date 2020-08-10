@@ -1,4 +1,4 @@
-#' Chicago Population Change (2000-2010).
+#' Chicago Population Change (2000-2010)
 #'
 #' Change in population in Chicago community areas from 2000 to 2010.
 #'

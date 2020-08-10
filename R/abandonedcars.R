@@ -1,0 +1,32 @@
+#' Abandoned Cars in Chicago
+#'
+#' Information about abandoned vehicles in Chicago, Illinois. Includes all open abandoned vehicle service complaints made to 311 since January 2011, and all requests completed since January 1 2011.
+#'
+#' Dataframe with longitude and latitude variables.
+#'
+#' @format A data frame with 137867 rows and 21 variables:
+#' \describe{
+#'	\item{	Creation Date	}{	Date that the complaint was made	}
+#'	\item{	Status	}{	Status of the request. Open or complete.	}
+#'	\item{	Completion Date	}{	Date the request was completed. Left blank if not completed.	}
+#'	\item{	Service Request Number	}{	Unique identifier for each service request.	}
+#'	\item{	Type of Service Request	}{	Abandoned Vehicle Complaint for all entries.	}
+#'	\item{	License Plate	}{	License plate number and sometimes a description (state, color). Some entries did not include a plate number.	}
+#'	\item{	Vehicle Make/Model	}{	The make of the vehicle. Many entries only included the make, not the model.	}
+#'	\item{	Vehicle Color	}{	Color of the vehicle	}
+#'	\item{	Current Activity	}{	Either place seven day sticker or FVI - Outcome	}
+#'	\item{	Most Recent Action	}{	The most recent action taken on this vehicle	}
+#'	\item{	How Many Days Has The Vehicle Been Reported as Parked?	}{	Number of days the vehicle has been reported as parked	}
+#'	\item{	Street Address	}{	Street Address where the vehicle was found	}
+#'	\item{	ZIP Code	}{	Five digit zip code corresponding to the address	}
+#'	\item{	X Coordinate	}{	X coordinate of the address	}
+#'	\item{	Y Coordinate	}{	Y coordinate of the address	}
+#'	\item{	Ward	}{	Aldermanic ward (1-50) corresponding to the address	}
+#'	\item{	Police District	}{	Police district (1-25) corresponding to the address	}
+#'	\item{	Community Area	}{	Community area (1-77) corresponding to the address	}
+#'	\item{	Latitude	}{	Latitude corresponding to address	}
+#'	\item{	Longitude	}{	Longitude corresponding to address	}
+#'	\item{	Location	}{	Coordinates of the location in format of (Latitude, Longitude)	}
+#' }
+#' @source Retrieved from \url{https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-Community-Areas-current-/cauq-8yn6}
+"abandonedcars"

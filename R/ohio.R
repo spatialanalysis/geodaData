@@ -1,4 +1,4 @@
-#' Ohio Lung Cancer Mortality (1960s-80s).
+#' Ohio Lung Cancer Mortality (1960s-80s)
 #'
 #' Ohio lung cancer data for 1968, 1978 and 1988.
 #'

@@ -4,7 +4,8 @@
 \name{nyc_sf}
 \alias{nyc_sf}
 \title{Rental Housing and Demographics in NYC (2000s).}
-\format{An sf data frame with 55 rows, 34 variables, and a geometry column:
+\format{
+An sf data frame with 55 rows, 34 variables, and a geometry column:
 \describe{
   \item{forhis06-09}{percentage of hispanic population, not born in US}
   \item{forwh06-09}{percentage of white population, not born in US}
@@ -17,7 +18,8 @@
   \item{pubast90,00}{percentage of households receiving public assistance}
   \item{yrhom02,05,08}{average number of years living in current residence}
   \item{geometry}{MULTIPOLYGON}
-}}
+}
+}
 \source{
 \url{https://geodacenter.github.io/data-and-lab/nyc/}
 }

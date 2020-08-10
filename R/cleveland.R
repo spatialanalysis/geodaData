@@ -1,4 +1,4 @@
-#' Cleveland Home Sales (2015).
+#' Cleveland Home Sales (2015)
 #'
 #' Location and sales price of home sales in a core area of Cleveland, OH for the fourth quarter of 2015.
 #'
@@ -21,8 +21,8 @@
 #' @examples
 #' if (requireNamespace("sf", quietly = TRUE)) {
 #'   library(sf)
-#'   data(clev_pts)
+#'   data(cleveland)
 #'
-#'   plot(clev_pts["unique_id"])
+#'   plot(cleveland["unique_id"])
 #' }
-"clev_pts"
+"cleveland"

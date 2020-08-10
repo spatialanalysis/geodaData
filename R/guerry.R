@@ -1,4 +1,4 @@
-#' Guerry "Moral Statistics" (1830s).
+#' Guerry "Moral Statistics" (1830s)
 #'
 #' Classic social science foundational study by Andre-Michel Guerry on crime, suicide, literacy and other “moral statistics” in 1830s France. Data from the R package Guerry (Michael Friendly and Stephane Dray).
 #'

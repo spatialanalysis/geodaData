@@ -1,0 +1,37 @@
+#' Denver 2010 Demographics & Housing
+#'
+#' Demographics and housing characteristics of Denver neighborhoods (2010).
+#'
+#' Sf object, unprojected. EPSG 4326: WGS84.
+#'
+#' @format An sf data frame with 75 rows, 56 variables, and a geometry column:
+#' \describe{
+#'	\item{	NBRHD_NAME	}{	Neighborhood name	}
+#'	\item{	POPULATION	}{	Population in 2010	}
+#'	\item{	HISPANIC_2, WHITE_2010, BLACK_2010, NATIVEAM_2, ASIAN_2010, HAWPACIS_2, OTHER_2010, TWO_OR_MOR	}{	Population by race. Hispanic, white, black, Native American, Asian, Hawaiian/Pacific Islander, other, two or more.	}
+#'	\item{	PCT_HISPAN, PCT_WHITE, PCT_BLACK, PCT_AMERIN, PCT_ASIAN, PCT_HAW_PA, PCT_OTHER_, PCT_TWO_OR	}{	race, as percent of total population. Hispanic, white, black, Native American, Asian, Hawaiian/Pacific Islander, other, two or more.	}
+#'	\item{	MALE, FEMALE	}{	Population by gender	}
+#'	\item{	AGE10_14, AGE15_17, AGE18_19, AGE60_61, AGE62_64, AGE_0_TO_9, AGE20_29, AGE30_39, AGE40_49, AGE50_59, AGE_80_PLU, AGE_LESS_1, AGE_65_PLU	}{	Population by age	}
+#'	\item{	PCT_LESS_1, PCT_65_PLU	}{	Percent of population under 1 and over 65 years of age.	}
+#'	\item{	NUM_HOUSEH	}{	Number of households	}
+#'	\item{	ONE_PERSON, TWO_PLUS	}{	Households by number of people	}
+#'	\item{	FAMILY_HHL	}{	Number of family households	}
+#'	\item{	HUSB_WIFE, OTHER_FAMI, MALE_SINGLE, FEMAL_SING, NON_FAMILY	}{	Family households by household head type.	}
+#'	\item{	GROUP_QUAR	}{	Population in group quarters	}
+#'	\item{	GQ_INSTITU, GQ_NONINST	}{	Residents of group quarters: institutional (correctional, nursing, etc.) and non-institutional (military, college, etc.)	}
+#'	\item{	HOUSING_UN	}{	Number of housing units	}
+#'	\item{	OCCUPIED_H	}{	Number of occupied housing units	}
+#'	\item{	VACANT_HU	}{	Number of vacant housing units	}
+#'	\item{	HU_OWNED	}{	Number of owner-occupied housing units	}
+#'	\item{	HU_RENTED	}{	Number of renter-occupied housing units	}
+#' }
+#' @source \url{https://www.denvergov.org/opendata/dataset/city-and-county-of-denver-census-neighborhood-demographics-2010}
+#'
+#' @examples
+#' if (requireNamespace("sf", quietly = TRUE)) {
+#'   library(sf)
+#'   data(denver)
+#'
+#'   plot(denver["HOUSING_UN"])
+#'  }
+"denver"

@@ -1,4 +1,4 @@
-#' Chicago Community Areas (2010).
+#' Chicago Community Areas (2010)
 #'
 #' Population in Chicago community areas in 2010.
 #'

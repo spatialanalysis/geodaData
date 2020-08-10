@@ -1,4 +1,4 @@
-#' Homicides & Socio-Economics (1960-90).
+#' Homicides & Socio-Economics (1960-90)
 #'
 #' Homicides and selected socio-economic characteristics for continental U.S. counties. Data for four decennial census years: 1960, 1970, 1980 and 1990.
 #'

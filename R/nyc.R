@@ -1,4 +1,4 @@
-#' Rental Housing and Demographics in NYC (2000s), non-spatial.
+#' Rental Housing and Demographics in NYC (2000s) (non-spatial)
 #'
 #' Demographic and housing data for New York City’s 55 sub-boroughs (2000s).
 #'

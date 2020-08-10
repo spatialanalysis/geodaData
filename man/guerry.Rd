@@ -3,8 +3,9 @@
 \docType{data}
 \name{guerry}
 \alias{guerry}
-\title{Guerry "Moral Statistics" (1830s).}
-\format{An sf data frame with 85 rows, 23 variables, and a geometry column:
+\title{Guerry "Moral Statistics" (1830s)}
+\format{
+An sf data frame with 85 rows, 23 variables, and a geometry column:
 \describe{
   \item{variable}{Description}
   \item{dept, code_de}{Department ID: Standard numbers for the departments}
@@ -31,7 +32,8 @@
   \item{area}{Area (1000 km^2).}
   \item{pop1831}{Population in 1831, in 1000s.}
   \item{geometry}{MULTIPOLYGON}
-}}
+}
+}
 \source{
 \itemize{
   \item{Angeville, A. (1836). Essai sur la Statistique de la Population française Paris: F. Doufour.}
