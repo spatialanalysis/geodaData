@@ -21,8 +21,8 @@
 #' @examples
 #' if (requireNamespace("sf", quietly = TRUE)) {
 #'   library(sf)
-#'   data(clev_pts)
+#'   data(cleveland)
 #'
-#'   plot(clev_pts["unique_id"])
+#'   plot(cleveland["unique_id"])
 #' }
-"clev_pts"
+"cleveland"

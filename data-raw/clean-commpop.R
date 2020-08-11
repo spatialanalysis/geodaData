@@ -6,3 +6,5 @@ commpop <- st_read("data-raw/commpop.shp",
                    stringsAsFactors = FALSE)
 
 usethis::use_data(commpop, overwrite = TRUE)
+
+

@@ -1,0 +1,5 @@
+/Users/karinaacosta/Box/geodaData/data-raw/us-sdoh-2014.shp filter=lfs diff=lfs merge=lfs -text
+/Users/karinaacosta/Box/geodaData/data/us_sdoh.rda filter=lfs diff=lfs merge=lfs -text
+/Users/karinaacosta/Box/geodaData/data-raw/NYC[[:space:]]Area2010_2data.shp filter=lfs diff=lfs merge=lfs -text
+/Users/karinaacosta/Box/geodaData/data-raw/NYC[[:space:]]Area2010_2data.dbf filter=lfs diff=lfs merge=lfs -text
+/Users/karinaacosta/Box/geodaData/data/nycearnings.rda filter=lfs diff=lfs merge=lfs -text

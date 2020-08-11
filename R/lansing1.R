@@ -37,7 +37,7 @@
 #'	\item{	HSG_VAL	}{	Owner-occupied housing units: Median value	}
 #'	\item{	POLYID	}{	Unique ID	}
 #'	}
-#' @source 2000 Census, Summary File 3. Available at \url(http://factfinder.census.gov)
+#' @source 2000 Census, Summary File 3. Available at \url{http://factfinder.census.gov}
 #'
 #' @examples
 #' if (requireNamespace("sf", quietly = TRUE)) {

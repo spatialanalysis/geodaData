@@ -40,7 +40,7 @@ An sf data frame with 117 rows, 31 variables, and a geometry column:
 }
 }
 \source{
-2000 Census, Summary File 3. Available at \url(http://factfinder.census.gov)
+2000 Census, Summary File 3. Available at \url{http://factfinder.census.gov}
 }
 \usage{
 lansing1

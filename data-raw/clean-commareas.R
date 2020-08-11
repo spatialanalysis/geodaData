@@ -6,3 +6,4 @@ chicago_comm <- st_read("data-raw/chicagocomm.shp",
                         stringsAsFactors = FALSE)
 
 usethis::use_data(chicago_comm, overwrite = TRUE)
+
