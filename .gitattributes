@@ -6,3 +6,6 @@
 /Users/karinaacosta/Box/geodaData/data/nycearnings.rda filter=lfs diff=lfs merge=lfs -text
 =======
 >>>>>>> fb3762f9a535a067d9cb288dfa5bd57ae671c7b4
+data-raw/NYC[[:space:]]Area2010_2data.dbf filter=lfs diff=lfs merge=lfs -text
+data-raw/NYC filter=lfs diff=lfs merge=lfs -text
+Area2010_2data.dbf filter=lfs diff=lfs merge=lfs -text
