@@ -9,3 +9,4 @@
 data-raw/NYC[[:space:]]Area2010_2data.dbf filter=lfs diff=lfs merge=lfs -text
 data-raw/NYC filter=lfs diff=lfs merge=lfs -text
 Area2010_2data.dbf filter=lfs diff=lfs merge=lfs -text
+data-raw/NYC_Area2010_2data.dbf filter=lfs diff=lfs merge=lfs -text
