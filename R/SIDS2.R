@@ -1,10 +1,10 @@
-#' Sudden Infant Death Syndrome (SIDS)
+#' Sudden Infant Death Syndrome (SIDS2)
 #'
 #' Sudden Infant Death Syndrome sample data for North Carolina counties, two time periods (1974-78 and 1979-84). Same as SIDS data set, except that the computed rates are included.
 #'
 #' Sf object, unprojected. EPSG 4326: WGS84.
 #'
-#' @format An sf data frame with 100 rows, 14 variables, and a geometry column:
+#' @format An sf data frame with 100 rows, 18 variables, and a geometry column:
 #' \describe{
 #'	\item{	AREA	}{	county area (computed by ArcView)	}
 #'	\item{	PERIMETER	}{	county perimeter (computed by ArcView)	}
@@ -20,13 +20,17 @@
 #'	\item{	BIR79	}{	live births, 1979-84	}
 #'	\item{	SID79	}{	SIDS deaths, 1979-84	}
 #'	\item{	NWBIR79	}{	non-white births, 1979-84	}
+#'	\item{	SIDR74	}{	SIDS death rate per 1,000 (1974-78)	}
+#'	\item{	SIDR79	}{	SIDS death rate per 1,000 (1979-84)	}
+#'	\item{	NWR74	}{	non-white birth rate (non-white per 1000 births), 1974-78	}
+#'	\item{	NWR79	}{	non-white birth rate (non-white per 1000 births), 1979-84	}
 #'	}
 #' @source Cressie, Noel (1993). Statistics for Spatial Data. New York, Wiley, pp. 386-389. Rates computed.
 #'
 #' @examples
 #' if (requireNamespace("sf", quietly = TRUE)) {
 #'   library(sf)
-#'   data(SIDS)
-#'   plot(SIDS["BIR74"])
+#'   data(SIDS2)
+#'   plot(SIDS2["BIR74"])
 #' }
-"SIDS"
+"SIDS2"

@@ -4,7 +4,7 @@
 #'
 #' List of 4 Sf objects, EPSG 2227: NAD83 / California zone 3 (ftUS).
 #'
-#' @format \strong{cartheft:} sf data frame with 607 observations, 18 variables, and a geometry column. \strong{drugs:} sf data frame with 3,897 observations, 13 variables, and a geometry column. \strong{robberies:} sf data frame with 2,761 observations, 13 variables, and a geometry column. \strong{vandalism:} sf data frame with 3,430 observations, 13 variables, and a geometry column
+#' @format List of four sf data frames. Use list2env(SFcrime) to unlist in working environment. \strong{Cartheft:} sf data frame with 607 observations, 18 variables, and a geometry column. \strong{Drugs:} sf data frame with 3,897 observations, 13 variables, and a geometry column. \strong{Robberies:} sf data frame with 2,761 observations, 13 variables, and a geometry column. \strong{Vandalism:} sf data frame with 3,430 observations, 13 variables, and a geometry column
 #' \describe{
 #'	\item{	IncidntNum, IncidntN_1	}{	Unique number for each incident report	}
 #'	\item{	X_pr, Y_pr	}{	projected coordinates	}

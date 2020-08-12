@@ -112,7 +112,7 @@
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>San Francisco Crime Incidents (2012)</h1>
-    <small class="dont-index">Source: <a href='https://github.com/spatialanalysis/geodaData/blob/master/R/sanfrancisco.R'><code>R/sanfrancisco.R</code></a></small>
+    <small class="dont-index">Source: <a href='https://github.com/spatialanalysis/geodaData/blob/master/R/SFcrime.R'><code>R/SFcrime.R</code></a></small>
     <div class="hidden name"><code>SFcrime.Rd</code></div>
     </div>
 
@@ -125,7 +125,7 @@
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p><strong>cartheft:</strong> sf data frame with 607 observations, 18 variables, and a geometry column. <strong>drugs:</strong> sf data frame with 3,897 observations, 13 variables, and a geometry column. <strong>robberies:</strong> sf data frame with 2,761 observations, 13 variables, and a geometry column. <strong>vandalism:</strong> sf data frame with 3,430 observations, 13 variables, and a geometry column</p><dl'>
+    <p>List of four sf data frames. Use list2env(SFcrime) to unlist in working environment. <strong>Cartheft:</strong> sf data frame with 607 observations, 18 variables, and a geometry column. <strong>Drugs:</strong> sf data frame with 3,897 observations, 13 variables, and a geometry column. <strong>Robberies:</strong> sf data frame with 2,761 observations, 13 variables, and a geometry column. <strong>Vandalism:</strong> sf data frame with 3,430 observations, 13 variables, and a geometry column</p><dl'>
 <dt>	IncidntNum, IncidntN_1	</dt><dd><p>Unique number for each incident report</p></dd>
 <dt>	X_pr, Y_pr	</dt><dd><p>projected coordinates</p></dd>
 <dt>	Category	</dt><dd><p>Vehicle theft</p></dd>

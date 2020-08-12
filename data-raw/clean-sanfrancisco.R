@@ -8,6 +8,9 @@ SFcrime <- lapply(list, function(x) st_read(x, quiet = TRUE,
 rm(list)
 
 names(SFcrime)<- c("cartheft", "drugs", "robbery", "vandalism")
+
+list2env(SFcrime)
+
 usethis::use_data(SFcrime , overwrite = TRUE)
 
 

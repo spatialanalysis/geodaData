@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Sudden Infant Death Syndrome (SIDS) — SIDS • geodaData</title>
+<title>Sudden Infant Death Syndrome (SIDS2) — SIDS2 • geodaData</title>
 
 
 <!-- jquery -->
@@ -39,7 +39,7 @@
 
 
 
-<meta property="og:title" content="Sudden Infant Death Syndrome (SIDS) — SIDS" />
+<meta property="og:title" content="Sudden Infant Death Syndrome (SIDS2) — SIDS2" />
 <meta property="og:description" content="Sudden Infant Death Syndrome sample data for North Carolina counties, two time periods (1974-78 and 1979-84). Same as SIDS data set, except that the computed rates are included." />
 
 
@@ -111,21 +111,21 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Sudden Infant Death Syndrome (SIDS)</h1>
-    <small class="dont-index">Source: <a href='https://github.com/spatialanalysis/geodaData/blob/master/R/SIDS.R'><code>R/SIDS.R</code></a></small>
-    <div class="hidden name"><code>SIDS.Rd</code></div>
+    <h1>Sudden Infant Death Syndrome (SIDS2)</h1>
+    <small class="dont-index">Source: <a href='https://github.com/spatialanalysis/geodaData/blob/master/R/SIDS2.R'><code>R/SIDS2.R</code></a></small>
+    <div class="hidden name"><code>SIDS2.Rd</code></div>
     </div>
 
     <div class="ref-description">
     <p>Sudden Infant Death Syndrome sample data for North Carolina counties, two time periods (1974-78 and 1979-84). Same as SIDS data set, except that the computed rates are included.</p>
     </div>
 
-    <pre class="usage"><span class='no'>SIDS</span></pre>
+    <pre class="usage"><span class='no'>SIDS2</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>An sf data frame with 100 rows, 14 variables, and a geometry column:</p><dl'>
+    <p>An sf data frame with 100 rows, 18 variables, and a geometry column:</p><dl'>
 <dt>	AREA	</dt><dd><p>county area (computed by ArcView)</p></dd>
 <dt>	PERIMETER	</dt><dd><p>county perimeter (computed by ArcView)</p></dd>
 <dt>	CNTY_	</dt><dd><p>county internal ID</p></dd>
@@ -140,6 +140,10 @@
 <dt>	BIR79	</dt><dd><p>live births, 1979-84</p></dd>
 <dt>	SID79	</dt><dd><p>SIDS deaths, 1979-84</p></dd>
 <dt>	NWBIR79	</dt><dd><p>non-white births, 1979-84</p></dd>
+<dt>	SIDR74	</dt><dd><p>SIDS death rate per 1,000 (1974-78)</p></dd>
+<dt>	SIDR79	</dt><dd><p>SIDS death rate per 1,000 (1979-84)</p></dd>
+<dt>	NWR74	</dt><dd><p>non-white birth rate (non-white per 1000 births), 1974-78</p></dd>
+<dt>	NWR79	</dt><dd><p>non-white birth rate (non-white per 1000 births), 1979-84</p></dd>
 
 </dl>
 
@@ -153,9 +157,9 @@
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='kw'>if</span> (<span class='fu'><a href='https://rdrr.io/r/base/ns-load.html'>requireNamespace</a></span>(<span class='st'>"sf"</span>, <span class='kw'>quietly</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)) {
   <span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>sf</span>)
-  <span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>SIDS</span>)
-  <span class='fu'><a href='https://rdrr.io/pkg/sf/man/plot.html'>plot</a></span>(<span class='no'>SIDS</span>[<span class='st'>"BIR74"</span>])
-}</div><div class='img'><img src='SIDS-1.png' alt='' width='700' height='433' /></div></pre>
+  <span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>SIDS2</span>)
+  <span class='fu'><a href='https://rdrr.io/pkg/sf/man/plot.html'>plot</a></span>(<span class='no'>SIDS2</span>[<span class='st'>"BIR74"</span>])
+}</div><div class='img'><img src='SIDS2-1.png' alt='' width='700' height='433' /></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
