@@ -10,7 +10,12 @@ Authors@R:
     person(given = "Luc",
            family = "Anselin",
            role = c("ctb"),
-           comment = "Creator of original spatial datasets")
+           comment = "Creator of original spatial datasets"),
+    person(given = "Karina",
+           family = "Acosta",
+           role = c("aut", "ctb"),
+           email = "acostak@uchicago.edu",
+           comment = c(ORCID = "0000-0001-5103-1147X"))
            )
 Description: Stores small spatial datasets used to teach basic spatial analysis
     concepts. Datasets are based off of the 'GeoDa' software workbook and data

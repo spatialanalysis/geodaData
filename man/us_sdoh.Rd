@@ -33,11 +33,6 @@ An sf data frame with 71901 rows, 25 variables, and a geometry column:
 \item{	3_URB	}{	Urban Core Opportunity Index, raw (see \url{https://sdohatlas.github.io/})	}
 \item{	4_MICA	}{	MICA Index, raw (see \url{https://sdohatlas.github.io/})	}
 \item{	SDOH_CL	}{	1= rural affordable, 2=suburban affluent, 3=suburban affordable, 4=extreme poverty, 5=multilingual working, 6=urban core opportunity, 7=sparse areas (see \url{https://sdohatlas.github.io/})	}
-\item{	1_SES	}{	Socioeconomic Advantage Index, raw (see https://sdohatlas.github.io/)	}
-\item{	2_MOB	}{	Limited Mobility Index, raw (see https://sdohatlas.github.io/)	}
-\item{	3_URB	}{	Urban Core Opportunity Index, raw (see https://sdohatlas.github.io/)	}
-\item{	4_MICA	}{	MICA Index, raw (see https://sdohatlas.github.io/)	}
-\item{	SDOH_CL	}{	1= rural affordable, 2=suburban affluent, 3=suburban affordable, 4=extreme poverty, 5=multilingual working, 6=urban core opportunity, 7=sparse areas (see \url{https://sdohatlas.github.io/})	}
 }
 }
 \source{
