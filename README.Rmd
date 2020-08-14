@@ -78,7 +78,6 @@ Current datasets included in this package:
 -	`cleveland`:	Cleveland Home Sales (2015).
 -	`columbus`:	Columbus neighborhood crime (1980).
 -	`commpop`:	Chicago Population Change (2000-2010).
--	`community_pop`:	Chicago Community Area Population for 2010 (non-spatial, csv).
 -	`denver`:	Demographics and housing in Denver neighborhoods (2010).
 -	`elections1216`:	2012 and 2016 Presidential Elections in the United States.
 -	`grid100`:	Grids with simulated variables.

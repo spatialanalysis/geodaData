@@ -5,7 +5,7 @@
 \alias{SIDS}
 \title{Sudden Infant Death Syndrome (SIDS)}
 \format{
-An sf data frame with 100 rows, 14 variables, and a geometry column:
+An sf data frame with 100 rows, 18 variables, and a geometry column:
 \describe{
 \item{	AREA	}{	county area (computed by ArcView)	}
 \item{	PERIMETER	}{	county perimeter (computed by ArcView)	}
@@ -21,6 +21,10 @@ An sf data frame with 100 rows, 14 variables, and a geometry column:
 \item{	BIR79	}{	live births, 1979-84	}
 \item{	SID79	}{	SIDS deaths, 1979-84	}
 \item{	NWBIR79	}{	non-white births, 1979-84	}
+\item{	SIDR74	}{	SIDS death rate per 1,000 (1974-78)	}
+\item{	SIDR79	}{	SIDS death rate per 1,000 (1979-84)	}
+\item{	NWR74	}{	non-white birth rate (non-white per 1000 births), 1974-78	}
+\item{	NWR79	}{	non-white birth rate (non-white per 1000 births), 1979-84	}
 }
 }
 \source{

@@ -5,7 +5,7 @@
 \alias{kchomesale}
 \title{2014-15 Home Sales in King County, WA}
 \format{
-An sf data frame with 21613 rows, 22 variables, and a geometry column:
+List of two sf dataframes. Use \code{list2env(kchomesale, .GlobalEnv)} to unlist in working environment. \strong{kchomesales_points} includes homesales points with with 21613 rows, 21 variables, and a geometry column and \strong{kc_zones} includes polygons of zones for King County (85 rows, 7 variables and a geometry column).
 \describe{
 \item{	date	}{	date sold	}
 \item{	price	}{	sale price	}
@@ -25,11 +25,16 @@ An sf data frame with 21613 rows, 22 variables, and a geometry column:
 \item{	zipcode	}{	5 digit zip code	}
 \item{	lat, long	}{	latitude and longitude	}
 \item{	squft__ng15	}{	average size of closest 15 houses, in square feet	}
-\item{	sqft_lot15	}{	average size of the closest 15 houses’ lots, in square feet	}
+\item{	OBJECTID	}{	Polygon ID	}
+\item{	ZIP	}{	ZIP code as int }
+\item{	ZIPCODE	}{	ZIP code as chr }
+\item{	COUNTY	}{	County code }
+\item{	Shape_leng	}{	Polygon length in meters  }
+\item{	Shape_Area	}{	Polygon area in meters }
 }
 }
 \source{
-\url{https://www.kaggle.com/harlfoxem/housesalesprediction/discussion}
+King County Home sales obtained from \url{https://www.kaggle.com/harlfoxem/housesalesprediction/discussion} and King county polygons from \url{https://gis-kingcounty.opendata.arcgis.com/datasets/zipcodes-for-king-county-and-surrounding-area-shorelines-zipcode-shore-area}
 }
 \usage{
 kchomesale
@@ -38,14 +43,14 @@ kchomesale
 Home sales prices and charactiersitcs for Seattle and King County, WA (May 2014 - 2015).
 }
 \details{
-Sf object, undefined Coordinate Reference System.
+List of two Sf objects, unprojected. EPSG 4326: WGS84.
 }
 \examples{
 if (requireNamespace("sf", quietly = TRUE)) {
   library(sf)
   data(kchomesale)
 
-  plot(kchomesale["price"])
+  plot(kchomesale[[1]]["price"])
 }
 }
 \keyword{datasets}
