@@ -5,7 +5,7 @@
 \alias{atlanta_homicide}
 \title{Atlanta Homicides 1980s-90s}
 \format{
-An sf data frame with 90 rows, 24 variables, and a geometry column:
+An sf data frame with 90 rows, 23 variables, and a geometry column:
 \describe{
 \item{	NAME	}{	county name	}
 \item{	STATE_NAME	}{	state name	}

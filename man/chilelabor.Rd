@@ -5,11 +5,7 @@
 \alias{chilelabor}
 \title{Chile Functional Labour Market Areas}
 \format{
-An sf data frame with 64 rows, 3 variables, and a geometry column:
-\describe{
-\item{dummy}{zero values}
-\item{flma_id}{Functional Labour Market Area ID code}
-}
+
 }
 \source{
 MultipleRowe F, & Bell M (2013) Creating an integrated database for the analysis of spatial mobility in Chile (Working Paper 02/2013). Queensland Centre for Population Research, School of Geography, Planning and Environmental Management, The University of Queensland, Brisbane, Australia.
@@ -28,7 +24,7 @@ if (requireNamespace("sf", quietly = TRUE)) {
   library(sf)
   data(chilelabor)
 
-  plot(chilelabor["flma_id"])
+  plot(chilelabor["pop_1982"])
 }
 }
 \keyword{datasets}

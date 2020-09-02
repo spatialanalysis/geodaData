@@ -5,12 +5,11 @@
 \alias{buenosaires}
 \title{Buenos Aires 1999 Elections}
 \format{
-An sf data frame with 209 rows, 22 variables, and a geometry column:
+An sf data frame with 209 rows, 20 variables, and a geometry column:
 \describe{
 \item{	INDRA	}{	Indra Code ID	}
 \item{	PROV	}{	Indec Province Code ID	}
 \item{	CIRCUNS	}{	Municipality ID	}
-\item{	CIRC	}{	undefined	}
 \item{	PROVINCIA	}{	Province Name	}
 \item{	CIRCUNSCRI	}{	Municipality Name	}
 \item{	CIRCUITO	}{	Precinct ID	}

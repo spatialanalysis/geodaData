@@ -3,12 +3,18 @@
 \docType{data}
 \name{chisociohealth}
 \alias{chisociohealth}
-\title{Denver 2010 Demographics & Housing}
+\title{Chicago Health and Socio-Economics}
 \format{
-An sf data frame with 75 rows, 56 variables, and a geometry column:
+An sf data frame with 77 rows, 86 variables, and a geometry column:
 \describe{
+\item{ComAreaID}{Community Area ID}
+\item{community}{Community Area Name}
+\item{TRACTnt}{Tract}
+\item{shape_area}{polygon area}
+\item{shape_len}{polygon perimeter}
 \item{Pop2012}{Population in 2012}
 \item{Pop2014}{Population in 2014}
+\item{PopChng}{Population change}
 \item{PopM}{Male Population in 2014}
 \item{PopF}{Female population in 2014}
 \item{Under5}{Population age 0-5 in 2014}
@@ -77,7 +83,7 @@ Economic Hardship Index method based on the Intercity Hardship Index, by Richard
 chisociohealth
 }
 \description{
-Demographics and housing characteristics of Denver neighborhoods (2010).
+Public health and socio-economic indicators for the 77 community areas of Chicago, IL, 2014.
 }
 \details{
 Sf object, unprojected. EPSG 4326: WGS84.

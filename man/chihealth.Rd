@@ -5,7 +5,7 @@
 \alias{chihealth}
 \title{Chicago Health Indicators (2005-11)}
 \format{
-An sf data frame with 77 rows, 32 variables, and a geometry column:
+An sf data frame with 77 rows, 31 variables, and a geometry column:
 \describe{
 \item{	BirthRate	}{	Births per 1,000 residents	}
 \item{	Gener_Rate	}{	General fertility rate per 1,000 females 15-44	}

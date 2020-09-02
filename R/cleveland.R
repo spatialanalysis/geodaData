@@ -15,7 +15,7 @@
 #' \item{quarter}{quarter of sale (4th for all)}
 #' \item{year1}{year of sale (2015 for all)}
 #' \item{yrquarter}{year and quarter of sale (4th quarter of 2015 for all)}
-#'   \item{geometry}{POINT}
+#' \item{geometry}{POINT}
 #' }
 #' @source Cuyahoga County Fiscal Office. \url{https://geodacenter.github.io/data-and-lab//clev_sls_154_core/}
 #' @examples
