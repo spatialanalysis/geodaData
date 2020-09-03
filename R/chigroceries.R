@@ -4,7 +4,7 @@
 #'
 #' Sf object, Transverse Mercator projection: GRS 80.
 #'
-#' @format An sf data frame with 149 rows, 7 variables, and a geometry column:
+#' @format An sf data frame with 148 rows, 7 variables, and a geometry column:
 #' \describe{
 #'	\item{	OBJECTID	}{	Location ID	}
 #'	\item{	Xcoord	}{	X-coordinate	}
@@ -21,6 +21,6 @@
 #'   library(sf)
 #'   data(chigroceries)
 #'
-#'   plot(chigroceries["NEAR_DIST"])
+#'   plot(chigroceries["Ycoord"])
 #' }
 "chigroceries"
