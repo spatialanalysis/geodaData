@@ -6,6 +6,10 @@
 #'
 #' @format An sf data frame with 77 rows, 31 variables, and a geometry column:
 #' \describe{
+#'	\item{	area_num	}{	Community area ID	}
+#'	\item{	shape_area	}{	Polygon area	}
+#'	\item{	shape_len	}{	Shape length	}
+#'	\item{	comm_area	}{	Community area name	}
 #'	\item{	BirthRate	}{	Births per 1,000 residents	}
 #'	\item{	Gener_Rate	}{	General fertility rate per 1,000 females 15-44	}
 #'	\item{	LowBi_ight	}{	Percent of live births with low birth weight	}

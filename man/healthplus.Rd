@@ -5,11 +5,17 @@
 \alias{healthplus}
 \title{2000 Health, Income and Diversity}
 \format{
-An sf data frame with 3984 rows, 76 variables, and a geometry column:
+An sf data frame with 3984 rows, 64 variables, and a geometry column:
 \describe{
+\item{	cartodb_id	}{	Carto ID	}
+\item{	countyfp	}{	County FIPS ID	}
+\item{	statefp	}{	State FIPS code	}
+\item{	statename	}{	State name	}
+\item{	countyname	}{	County name and State	}
+\item{	countyfips	}{	County FIPS code	}
 \item{	ratio	}{	The county’s median income divided by the state’s median income	}
 \item{	cty_pop200	}{	County’s population in 2000	}
-\item{	le_agg_q1_	}{	Female life expectancy, 1st Income Quartile, not adjusted for race.	}
+\item{	le_agg_q1	}{	Female life expectancy, 1st Income Quartile, not adjusted for race.	}
 \item{	le_raceadj	}{	Female life expectancy, 1st Income Quartile, adjusted for race.	}
 \item{	le_agg_q2	}{	Female life expectancy, 2nd Income Quartile, not adjusted for race	}
 \item{	le_racea_1	}{	Female life expectancy, 2nd Income Quartile, adjusted for race	}
@@ -25,7 +31,7 @@ An sf data frame with 3984 rows, 76 variables, and a geometry column:
 \item{	le_racea_6	}{	Male life expectancy, 3rd Income Quartile, adjusted for race	}
 \item{	le_agg_q41	}{	Male life expectancy, 4th Income Quartile, not adjusted for race	}
 \item{	le_racea_7	}{	Male life expectancy, 4th Income Quartile, adjusted for race	}
-\item{	sd_le_agg_	}{	Standard error for female life expectancy, 1st income Quartile, not adjusted for race.	}
+\item{	sd_le_agg	}{	Standard error for female life expectancy, 1st income Quartile, not adjusted for race.	}
 \item{	sd_le_race	}{	Standard error for female life expectancy, 1st income Quartile, adjusted for race.	}
 \item{	sd_le_agg1	}{	Standard error for female life expectancy, 2nd income Quartile, not adjusted for race.	}
 \item{	sd_le_ra_1	}{	Standard error for female life expectancy, 2nd income Quartile, adjusted for race.	}
@@ -49,12 +55,12 @@ An sf data frame with 3984 rows, 76 variables, and a geometry column:
 \item{	count_q2_M	}{	Male count, 2nd income quartile.	}
 \item{	count_q3_M	}{	Male count, 3rd income quartile.	}
 \item{	count_q4_M	}{	Male count, 4th income quartile.	}
-\item{	Diversity-	}{	Diversity Index	}
-\item{	Asian alon	}{	Asian alone, percent	}
-\item{	Native Haw	}{	Native Hawaiian, percent	}
-\item{	Two or Mor	}{	Two or more races, percent	}
-\item{	Hispanic o	}{	Hispanic, percent	}
-\item{	White alon	}{	White alone, percent	}
+\item{	Diversity	}{	Diversity Index	}
+\item{	Asianalon	}{	Asian alone, percent	}
+\item{	NativeHaw	}{	Native Hawaiian, percent	}
+\item{	TwoorMor	}{	Two or more races, percent	}
+\item{	Hispanico	}{	Hispanic, percent	}
+\item{	Whitealon	}{	White alone, percent	}
 }
 }
 \source{
@@ -74,7 +80,7 @@ if (requireNamespace("sf", quietly = TRUE)) {
   library(sf)
   data(healthplus)
 
-  plot(healthplus["le_agg_q1_"])
+  plot(healthplus["le_agg_q1"])
 }
 }
 \keyword{datasets}

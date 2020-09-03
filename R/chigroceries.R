@@ -4,10 +4,14 @@
 #'
 #' Sf object, Transverse Mercator projection: GRS 80.
 #'
-#' @format An sf data frame with 149 rows, 15 variables, and a geometry column:
+#' @format An sf data frame with 149 rows, 7 variables, and a geometry column:
 #' \describe{
-#'	\item{	Field4	}{	Street address	}
-#'	\item{	Field5	}{	Name of the store	}
+#'	\item{	OBJECTID	}{	Location ID	}
+#'	\item{	Xcoord	}{	X-coordinate	}
+#'	\item{	Ycoord	}{	Y-coordinate	}
+#'	\item{	Status	}{	Status of the store (e.g. open, open at new location, etc.)	}
+#'	\item{	Address	}{	Supermarket address	}
+#'	\item{	Chain	}{	Supermarket chain	}
 #'	\item{	Category	}{	New stores are marked “New,” rest are left blank.	}
 #'	}
 #' @source Scraped from Google Maps in 2015.

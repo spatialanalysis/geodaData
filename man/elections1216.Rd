@@ -5,8 +5,15 @@
 \alias{elections1216}
 \title{2012 and 2016 Presidential Elections}
 \format{
-An sf data frame with 3108 rows, 85 variables, and a geometry column:
+An sf data frame with 3108 rows, 74 variables, and a geometry column:
 \describe{
+\item{	STATEFP	}{	State FIPS code	}
+\item{	COUNTYFP	}{	County FIPS code	}
+\item{	GEOID	}{	Geographic area ID	}
+\item{	ALAND	}{	Land area	}
+\item{	AWATER	}{	Water area	}
+\item{	area_name	}{	County name	}
+\item{	state_abbr	}{	State abbreviation	}
 \item{	PST045214	}{	Population, 2014 estimate	}
 \item{	PST040210	}{	Population, 2010 (April 1) estimates base	}
 \item{	PST120214	}{	Population, percent change - April 1, 2010 to July 1, 2014	}
