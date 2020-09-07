@@ -4,14 +4,16 @@
 #'
 #' Sf object, unprojected. EPSG 4326: WGS84.
 #'
-#' @format An sf data frame with 52 rows, 24 variables, and a geometry column:
+#' @format An sf data frame with 52 rows, 23 variables, and a geometry column:
 #' \describe{
 #'	\item{	NAME	}{	county name	}
 #'	\item{	STATE_NAME	}{	state name	}
 #'	\item{	STATE_FIPS	}{	state FIPS code (character)	}
 #'	\item{	CNTY_FIPS	}{	county FIPS code (character)	}
 #'	\item{	FIPS	}{	combined state and county FIPS code (character)	}
-#'	\item{	FIPSNO	}{	fips code as numeric variable	}
+#'	\item{	STFIPS	}{	state FIPS code (number)	}
+#'	\item{	COFIPS	}{	county FIPS code (number)	}
+#'	\item{	FIPSNO	}{	combined state and county FIPS code (number)	}
 #'	\item{	HR8187	}{	homicide rate per 100,000 (1981-87)	}
 #'	\item{	HR8791	}{	homicide rate per 100,000 (1987-91)	}
 #'	\item{	HR9195	}{	homicide rate per 100,000 (1991-95)	}
@@ -35,6 +37,6 @@
 #'   library(sf)
 #'   data(houstonhom)
 #'
-#'   plot(houstonhom["HC9195"])
+#'   plot(houstonhom["HR9195"])
 #' }
 "houstonhom"

@@ -5,7 +5,7 @@
 \alias{milwaukee2}
 \title{Milwaukee Industry Mix (1998 and 2001)}
 \format{
-An sf data frame with 83 rows, 60 variables, and a geometry column:
+An sf data frame with 83 rows, 55 variables, and a geometry column:
 \describe{
 \item{	ZIP	}{	ZIP code	}
 \item{	PO_NAME	}{	Name of ZIP code area	}
@@ -22,8 +22,8 @@ An sf data frame with 83 rows, 60 variables, and a geometry column:
 \item{	MAN98US12	}{	1998 total manufacturing establishments, 1-9 employees (US)	}
 \item{	MAN98US39	}{	1998 total manufacturing establishments 10+ employees (US)	}
 \item{	MAN01US	}{	2001 total manufacturing establishments (US)	}
-\item{	MAN01US_12	}{	2001 total manufacturing establishments, 1-9 employees (US)	}
-\item{	MAN01US_39	}{	2001 total manufacturing establishments, 10+ employees (US)	}
+\item{	MANUS01_12	}{	2001 total manufacturing establishments, 1-9 employees (US)	}
+\item{	MANUS01_39	}{	2001 total manufacturing establishments, 10+ employees (US)	}
 \item{	OFF98	}{	1998 total office establishments (MSA)	}
 \item{	OFF98_12	}{	1998 total office establishments, 1-9 employees (MSA)	}
 \item{	OFF98_39	}{	1998 total office establishments, 10+ employees (MSA)	}
@@ -46,9 +46,9 @@ An sf data frame with 83 rows, 60 variables, and a geometry column:
 \item{	INFO98US12	}{	1998 total information establishments, 1-9 employees (US)	}
 \item{	INFO98US39	}{	1998 total information establishments, 10+ employees (US)	}
 \item{	INFO01US	}{	2001 total information establishments (US)	}
-\item{	INFO01US_1	}{	2001 total information establishments, 1-9 employees (US)	}
-\item{	INFO01US_3	}{	2001 total information establishments, 10+ employees (US)	}
-\item{	INDEX	}{	Index	}
+\item{	INFOUS01_1	}{	2001 total information establishments, 1-9 employees (US)	}
+\item{	INFOUS01_3	}{	2001 total information establishments, 10+ employees (US)	}
+\item{	INDEX	}{	Unique index	}
 \item{	NUMSEC	}{	Number of sectors represented in ZIP code	}
 \item{	EST98	}{	Total establishments in ZIP code, 1998	}
 \item{	EST01	}{	Total establishments in ZIP code, 2001	}

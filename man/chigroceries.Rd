@@ -5,7 +5,7 @@
 \alias{chigroceries}
 \title{2015 Chicago supermarkets}
 \format{
-An sf data frame with 149 rows, 7 variables, and a geometry column:
+An sf data frame with 148 rows, 7 variables, and a geometry column:
 \describe{
 \item{	OBJECTID	}{	Location ID	}
 \item{	Xcoord	}{	X-coordinate	}
@@ -33,7 +33,7 @@ if (requireNamespace("sf", quietly = TRUE)) {
   library(sf)
   data(chigroceries)
 
-  plot(chigroceries["NEAR_DIST"])
+  plot(chigroceries["Ycoord"])
 }
 }
 \keyword{datasets}

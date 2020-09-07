@@ -5,10 +5,10 @@
 \alias{liquorstore}
 \title{2015 Chicago Liquor Stores}
 \format{
-An sf data frame with 571 rows, 3 variables, and a geometry column:
+An sf data frame with 571 rows, 2 variables, and a geometry column:
 \describe{
 \item{	id	}{	Unique numeric ID	}
-\item{	Place ID	}{	Unique string ID	}
+\item{	placeid	}{	Unique string ID	}
 }
 }
 \source{

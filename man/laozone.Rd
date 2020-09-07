@@ -3,18 +3,18 @@
 \docType{data}
 \name{laozone}
 \alias{laozone}
-\title{Ozone Data (1997-99)}
+\title{Los Angeles Ozone 1996}
 \format{
-An sf data frame with 32 rows, 9 variables, and a geometry column:
+An sf data frame with 32 rows, 8 variables, and a geometry column:
 \describe{
-\item{	STATION	}{	Station ID}
-\item{	MONITOR	}{	The monitor to which the data applies}
-\item{	LATITUDE	}{	Latitude of monitoring site (UTM Zone 11)	}
-\item{	LONGITUDE	}{	Longitude of monitoring site (UTM Zone 11)	}
-\item{	X_COORD	}{	X Coordinates	}
-\item{	Y_COORD	}{	Y Coordinates (3 years (1997-99) x 12 months x 2 (max & average))	}
-\item{	Mxxy	}{	Daily maximum for year xx and month y	}
-\item{	Axxy}{	Average or highest 8 hour period for year xx and month y	}
+\item{	STATION	}{	monitoring station identifier	}
+\item{	MAXDAY	}{	maximum daily ozone for the month	}
+\item{	AV8TOP	}{	monthly average of highest 8 hour daily averages	}
+\item{	MONITOR	}{	monitoring station identifier	}
+\item{	LAT	}{	latitude	}
+\item{	LON	}{	longitude	}
+\item{	X_COORD	}{	X-coordinate, projected, UTM	}
+\item{	Y_COORD	}{	Y-coordinate, projected, UTM	}
 }
 }
 \source{
@@ -24,7 +24,7 @@ US Environmental Protection Agency.
 laozone
 }
 \description{
-Monthly ozone measurements for 30 monitoring stations (1997-1999).
+July 1996 ozone measurements for Los Angeles basin monitoring stations.
 }
 \details{
 Sf object, undefined Coordinate Reference System

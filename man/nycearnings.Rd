@@ -5,11 +5,23 @@
 \alias{nycearnings}
 \title{Block-level Earnings in NYC (2002-14)}
 \format{
-An sf data frame with 108487 rows, 70 variables, and a geometry column:
+An sf data frame with 108,487 rows, 66 variables, and a geometry column:
 \describe{
-\item{	YR	}{	02 to 14 (2002 to 2014)	}
-\item{	GEOID10	}{	unique ID (FIPS code)	}
-\item{	C000_YR	}{	Total number of jobs	}
+\item{	STATEFP10	}{	State FIPS code	}
+\item{	COUNTYFP10	}{	County FIPS code	}
+\item{	TRACTCE10	}{	Tract FIPS code	}
+\item{	BLOCKCE10	}{	Block FIPS code	}
+\item{	GEOID10	}{	Unique Geographic identifier (FIPS code)	}
+\item{	UR10	}{	Urban (U) - rural (R) classification	}
+\item{	UACE10	}{	Urban area census code 	}
+\item{	UATYP10	}{	Urban type area. U: Urbanized areas of 50,000 people or more.	C: Urban Clusters (UCs) of at least 2,500 and less than 50,000 people.}
+\item{	ALAND10	}{	Land area	}
+\item{	AWATER10	}{	Water area	}
+\item{	INTPTLAT10	}{	Latitude }
+\item{	INTPTLON10	}{	Longitude	}
+\item{	Shape_area	}{	Polygon area	}
+\item{	Shape_len	}{	Polygon length	}
+\item{	C000_YR	}{	Total number of jobs in year YR	}
 \item{	CE01_YR	}{	Number of jobs with earnings $1250/month or less in year YR	}
 \item{	CE02_YR	}{	Number of jobs with earnings $1251/month to $3333/month in year YR	}
 \item{	CE03_YR	}{	Number of jobs with earnings greater than $3333/month in year YR	}

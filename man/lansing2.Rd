@@ -5,13 +5,20 @@
 \alias{lansing2}
 \title{Lansing Industry Mix 2000}
 \format{
-An sf data frame with 46 rows, 60 variables, and a geometry column:
+An sf data frame with 46 rows, 55 variables, and a geometry column:
 \describe{
 \item{	ZIP	}{	ZIP code	}
 \item{	PO_NAME	}{	Name of ZIP code area	}
-\item{	STATE	}{	STATE	}
-\item{	MSA	}{	MSA	}
-\item{	CBSA_CODE	}{	CBSA code	}
+\item{	STATE	}{	State abbreaviation	}
+\item{  POP2001 }{ Population 2001 }
+\item{	MSA	}{	Name of Metropolitan Statistical Area (MSA)	}
+\item{  EST98 }{  Total establishments in ZIP code, 1998}
+\item{  EMP98 }{ Total mid-march employees, 1998 }
+ \item{  PAY98 }{ Total annual payroll ($1,000), 1998 }
+ \item{  EST01 }{ Total establishments in ZIP code, 2001}
+ \item{  EMP01 }{ Total mid-march employees, 2001 }
+ \item{  PAY01 }{ Total annual payroll ($1,000), 2001 }
+\item{	CBSA_CODE	}{U.S. Core Based Statistical (CBSA) Area code }
 \item{	MAN98	}{	1998 total manufacturing establishments (MSA)	}
 \item{	MAN98_12	}{	1998 total manufacturing establishments, 1-9 employees (MSA)	}
 \item{	MAN98_39	}{	1998 total manufacturing establishments 10+ employees (MSA)	}
@@ -22,8 +29,8 @@ An sf data frame with 46 rows, 60 variables, and a geometry column:
 \item{	MAN98US12	}{	1998 total manufacturing establishments, 1-9 employees (US)	}
 \item{	MAN98US39	}{	1998 total manufacturing establishments 10+ employees (US)	}
 \item{	MAN01US	}{	2001 total manufacturing establishments (US)	}
-\item{	MAN01US_12	}{	2001 total manufacturing establishments, 1-9 employees (US)	}
-\item{	MAN01US_39	}{	2001 total manufacturing establishments, 10+ employees (US)	}
+\item{	MANUS01_12	}{	2001 total manufacturing establishments, 1-9 employees (US)	}
+\item{	MANUS01_39	}{	2001 total manufacturing establishments, 10+ employees (US)	}
 \item{	OFF98	}{	1998 total office establishments (MSA)	}
 \item{	OFF98_12	}{	1998 total office establishments, 1-9 employees (MSA)	}
 \item{	OFF98_39	}{	1998 total office establishments, 10+ employees (MSA)	}
@@ -46,12 +53,10 @@ An sf data frame with 46 rows, 60 variables, and a geometry column:
 \item{	INFO98US12	}{	1998 total information establishments, 1-9 employees (US)	}
 \item{	INFO98US39	}{	1998 total information establishments, 10+ employees (US)	}
 \item{	INFO01US	}{	2001 total information establishments (US)	}
-\item{	INFO01US_1	}{	2001 total information establishments, 1-9 employees (US)	}
-\item{	INFO01US_3	}{	2001 total information establishments, 10+ employees (US)	}
-\item{	INDEX	}{	Index	}
+\item{	INFOUS01_1	}{	2001 total information establishments, 1-9 employees (US)	}
+\item{	INFOUS01_3	}{	2001 total information establishments, 10+ employees (US)	}
+\item{	INDEX	}{	Unique index	}
 \item{	NUMSEC	}{	Number of sectors represented in ZIP code	}
-\item{	EST98	}{	Total establishments in ZIP code, 1998	}
-\item{	EST01	}{	Total establishments in ZIP code, 2001	}
 \item{	PCTNGE	}{	National growth effect, percent (N)	}
 \item{	PCTIME	}{	Industry mix effect, percent (M)	}
 \item{	PCTCSE	}{	Competitive shift effect, percent (S)	}

@@ -5,7 +5,7 @@
 \alias{juvenile}
 \title{Juvenile Offenders in Cardiff, UK}
 \format{
-An sf data frame with 168 rows, 4 variables, and a geometry column:
+An sf data frame with 168 rows, 3 variables, and a geometry column:
 \describe{
 \item{	ID	}{	location identifier	}
 \item{	X	}{	X-coordinate	}

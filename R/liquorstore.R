@@ -4,10 +4,10 @@
 #'
 #' Sf object, Transverse Mercator projection, GRS 1980.
 #'
-#' @format An sf data frame with 571 rows, 3 variables, and a geometry column:
+#' @format An sf data frame with 571 rows, 2 variables, and a geometry column:
 #' \describe{
 #'	\item{	id	}{	Unique numeric ID	}
-#'	\item{	Place ID	}{	Unique string ID	}
+#'	\item{	placeid	}{	Unique string ID	}
 #'	}
 #' @source Scraped from Google Maps in 2015.
 #'
