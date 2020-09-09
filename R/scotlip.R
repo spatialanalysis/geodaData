@@ -4,17 +4,20 @@
 #'
 #' Sf object, unprojected. EPSG 4326: WGS84.
 #'
-#' @format An sf data frame with 24 rows, 60 variables, and a geometry column:
+#' @format An sf data frame with 56 rows, 11 variables, and a geometry column:
 #' \describe{
 #'	\item{	CODENO	}{	Code converted to numeric (drop w prefix)	}
+#'	\item{	AREA	}{	Polygon area	}
+#'	\item{	PERIMETER	}{	Polygon perimeter	}
 #'	\item{	RECORD_ID	}{	Unique ID	}
 #'	\item{	DISTRICT	}{	District number 1-56	}
-#'	\item{	NAME }{	Name of districts from Cressie	}
+#'	\item{	NAME }{	Name of districts from Cressie (1993)	}
 #'	\item{	CODE	}{	District code from WinBugs	}
-#'	\item{	CANCER	}{	Lip cancer cases from Cressie	}
-#'	\item{	POP	}{	Population years at risk from Cressie	}
-#'	\item{	CEXP	}{	Expected cases from Lawson et al.	}
-#'	\item{	AFF	}{	Outdoor industry from Lawson et al.	}
+#'	\item{	CANCER	}{	Lip cancer cases from Cressie (1993)	}
+#'	\item{	POP	}{	Population years at risk from Cressie (1993)	}
+#'	\item{	CEXP	}{	Expected cases from Lawson et al. (1999)	}
+#'	\item{	AFF	}{	Outdoor industry from Lawson et al. (1999)	}
+#'	\item{	geometry	}{	POLYGON	}
 #'	}
 #' @source \strong{(1)} Original from Clayton, D., and Kaldor, J. (1987). Empirical Bayes estimates of age standardised relative risks for use in disease mapping. Biometrics, 43,671-681, reproduced from Cressie, N. A. C. (1993). Statistics for Spatial Data. New York: John Wiley & Sons, p. 537 Table 7.2. \strong{(2)} Expected cases and percent of population in outdoor industry AFF (agriculture, fishing, forestry) from Lawson et al. (1999). Disease Mapping and Risk Assessment for Public Health. New York: Wiley, pp. 68-69, Table 5.1. \strong{(3)} Base map from Scotland.map included with WinBugs, exported to S-Plus format and edited (conversion to GeoDa input format, elimination of duplicate coordinates and editing of sliver polygons); islands with multiple polygons represented by a single polygon.
 #'

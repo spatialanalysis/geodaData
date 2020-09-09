@@ -125,9 +125,13 @@
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>An sf data frame with 149 rows, 15 variables, and a geometry column:</p><dl'>
-<dt>	Field4	</dt><dd><p>Street address</p></dd>
-<dt>	Field5	</dt><dd><p>Name of the store</p></dd>
+    <p>An sf data frame with 148 rows, 7 variables, and a geometry column:</p><dl'>
+<dt>	OBJECTID	</dt><dd><p>Location ID</p></dd>
+<dt>	Xcoord	</dt><dd><p>X-coordinate</p></dd>
+<dt>	Ycoord	</dt><dd><p>Y-coordinate</p></dd>
+<dt>	Status	</dt><dd><p>Status of the store (e.g. open, open at new location, etc.)</p></dd>
+<dt>	Address	</dt><dd><p>Supermarket address</p></dd>
+<dt>	Chain	</dt><dd><p>Supermarket chain</p></dd>
 <dt>	Category	</dt><dd><p>New stores are marked “New,” rest are left blank.</p></dd>
 
 </dl>
@@ -144,7 +148,7 @@
   <span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>sf</span>)
   <span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>chigroceries</span>)
 
-  <span class='fu'><a href='https://rdrr.io/pkg/sf/man/plot.html'>plot</a></span>(<span class='no'>chigroceries</span>[<span class='st'>"NEAR_DIST"</span>])
+  <span class='fu'><a href='https://rdrr.io/pkg/sf/man/plot.html'>plot</a></span>(<span class='no'>chigroceries</span>[<span class='st'>"Ycoord"</span>])
 }</div><div class='img'><img src='chigroceries-1.png' alt='' width='700' height='433' /></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
@@ -157,7 +161,7 @@
 
       <footer>
       <div class="copyright">
-  <p>Developed by Angela Li.</p>
+  <p>Developed by Angela Li, Karina Acosta.</p>
 </div>
 
 <div class="pkgdown">

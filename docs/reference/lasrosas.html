@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>San Francisco Crime Incidents (2012) — SFcrime • geodaData</title>
+<title>Yield and Fertilizer in Las Rosas farm (Argentina) (1999 and 2001) — lasrosas • geodaData</title>
 
 
 <!-- jquery -->
@@ -39,12 +39,10 @@
 
 
 
-<meta property="og:title" content="San Francisco Crime Incidents (2012) — SFcrime" />
-<meta property="og:description" content="Incidents of robberies, drugs/narcotics possession or sale, vehicle theft, and vandalism for July 1 to December 31, 2012. Use list2env(SFcrime, .GlobalEnv) to unlist in working environment. The data consist of a list of four objects:
-cartheft A spatial points object of class sf Dataframe with 3,384 observations, 13 variables, and a geometry column.
-drugs A spatial points object of class sf Dataframe with 3,897 observations, 13 variables, and a geometry column.
-robbery A spatial points object of class sf Dataframe with 2,761 observations, 13 variables, and a geometry column.
-vandalism A spatial points object of class sf Dataframe with 3,430 observations, 13 variables, and a geometry column.
+<meta property="og:title" content="Yield and Fertilizer in Las Rosas farm (Argentina) (1999 and 2001) — lasrosas" />
+<meta property="og:description" content="Yield data and Nitrogen fertilizer treatment with field characteristics for Las Rosas farm, Rio Cuarto, Cordoba, Argentina, 1999 and 2001. Use list2env(lasrosas, .GlobalEnv) to unlist in working environment. The data consist of a list of two objects:
+lasrosas99 A spatial points object of class sf Dataframe with information from 1999.
+lasrosas01 A spatial points object of class sf Dataframe with information from 2001.
 
 " />
 
@@ -117,56 +115,59 @@ vandalism A spatial points object of class sf Dataframe with 3,430 observations,
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>San Francisco Crime Incidents (2012)</h1>
-    <small class="dont-index">Source: <a href='https://github.com/spatialanalysis/geodaData/blob/master/R/SFcrime.R'><code>R/SFcrime.R</code></a></small>
-    <div class="hidden name"><code>SFcrime.Rd</code></div>
+    <h1>Yield and Fertilizer in Las Rosas farm (Argentina) (1999 and 2001)</h1>
+    <small class="dont-index">Source: <a href='https://github.com/spatialanalysis/geodaData/blob/master/R/lasrosas.R'><code>R/lasrosas.R</code></a></small>
+    <div class="hidden name"><code>lasrosas.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Incidents of robberies, drugs/narcotics possession or sale, vehicle theft, and vandalism for July 1 to December 31, 2012. Use <code><a href='https://rdrr.io/r/base/list2env.html'>list2env(SFcrime, .GlobalEnv)</a></code> to unlist in working environment. The data consist of a list of four objects:</p><ul>
-<li><p>cartheft A spatial points object of class sf Dataframe with 3,384 observations, 13 variables, and a geometry column.</p></li>
-<li><p>drugs A spatial points object of class sf Dataframe with 3,897 observations, 13 variables, and a geometry column.</p></li>
-<li><p>robbery A spatial points object of class sf Dataframe with 2,761 observations, 13 variables, and a geometry column.</p></li>
-<li><p>vandalism A spatial points object of class sf Dataframe with 3,430 observations, 13 variables, and a geometry column.</p></li>
+    <p>Yield data and Nitrogen fertilizer treatment with field characteristics for Las Rosas farm, Rio Cuarto, Cordoba, Argentina, 1999 and 2001. Use <code><a href='https://rdrr.io/r/base/list2env.html'>list2env(lasrosas, .GlobalEnv)</a></code> to unlist in working environment. The data consist of a list of two objects:</p><ul>
+<li><p>lasrosas99 A spatial points object of class sf Dataframe with information from 1999.</p></li>
+<li><p>lasrosas01 A spatial points object of class sf Dataframe with information from 2001.</p></li>
 </ul>
 
     </div>
 
-    <pre class="usage"><span class='no'>SFcrime</span></pre>
+    <pre class="usage"><span class='no'>lasrosas</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>Each object contains the following variables:</p><dl'>
-<dt>	IncidntNum	</dt><dd><p>Unique identifier for each incident report</p></dd>
-<dt>	X_pr	</dt><dd><p>Projected X-coordinates</p></dd>
-<dt>	Y_pr	</dt><dd><p>Projected Y-coordinates</p></dd>
-<dt>	Category	</dt><dd><p>Crime classification, e.g. vehicle theft, etc</p></dd>
-<dt>	Descript	</dt><dd><p>Description of the crime</p></dd>
-<dt>	DayOfWeek	</dt><dd><p>Day of the week that crime was reported</p></dd>
-<dt>	Date	</dt><dd><p>Date of the report</p></dd>
-<dt>	Time	</dt><dd><p>Time of report</p></dd>
-<dt>	PdDistrict	</dt><dd><p>Police district</p></dd>
-<dt>	Resolution	</dt><dd><p>Outcome of the report, e.g. None, Arrest, Unfounded, etc</p></dd>
-<dt>	Location	</dt><dd><p>Street address where the crime occurred</p></dd>
-<dt>	X	</dt><dd><p>X-Coordinates of crime location</p></dd>
-<dt>	Y	</dt><dd><p>Y-Coordinates of crime location</p></dd>
+    <p>lasrosas99 includes points with 1,738 rows, 34 variables, and a geometry column. lasrosas01 includes points with 1,705 rows, 26 variables, and a geometry column:</p><dl'>
+<dt>	ID	</dt><dd><p>Identifier</p></dd>
+<dt>	TOP2	</dt><dd><p>Topography dummy, Slope E</p></dd>
+<dt>	TOP3	</dt><dd><p>Topography dummy, Hilltop</p></dd>
+<dt>	TOP4	</dt><dd><p>Topography dummy, Slope W</p></dd>
+<dt>	NXTOPz	</dt><dd><p>Interaction Nitrogen and topography zone (z: from 2 to 4)</p></dd>
+<dt>	LONGITUDE	</dt><dd><p>Longitude</p></dd>
+<dt>	LATITUDE	</dt><dd><p>Latitude</p></dd>
+<dt>	OBS	</dt><dd><p>Observation number</p></dd>
+<dt>	YIELD	</dt><dd><p>Corn yield (quintals per hectare)</p></dd>
+<dt>	N	</dt><dd><p>Nitrogen fertilizer application (kg per hectare)</p></dd>
+<dt>	N2	</dt><dd><p>Nitrogen squared</p></dd>
+<dt>	TOPO	</dt><dd><p>Zone: Low E (1), Slope E (2), Hilltop (3), Slope W (4)</p></dd>
+<dt>	BV	</dt><dd><p>Brightness value (proxy for low organic matter content)</p></dd>
+<dt>	BV2	</dt><dd><p>Brightness squared</p></dd>
+<dt>	NXBV	</dt><dd><p>Interaction Nitrogen - brightness</p></dd>
+<dt>	BVXT2z	</dt><dd><p>Interaction brightness and topographic zone (z: from 2 to 4)</p></dd>
+<dt>	BV2XTz 	</dt><dd><p>Interaction squared brightness and topographic zone (z: from 2 to 4)</p></dd>
+<dt>	SAT (99)	</dt><dd><p>Red to NIR ratio (proxy for low organic matter content)</p></dd>
+<dt>	SAT2 (99)	</dt><dd><p>SAT squared</p></dd>
+<dt>	NXSAT (99)	</dt><dd><p>Interaction Nitrogen - Red to NIR ratio</p></dd>
+<dt>	SATXTz (99)	</dt><dd><p>Interaction Sat - topographic zone (z: from 2 to 4)</p></dd>
+<dt>	SAT2XTz (99)	</dt><dd><p>Interaction Sat squared - topographic zone (z: from 2 to 4)</p></dd>
 
 </dl>
 
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
-    <p>2010 Census (population) and “Crime Incidents from 1 Jan 2003”, City of San Francisco Open Data Portal (crimes) (<a href='https://data.sfgov.org/Public-Safety/Map-Crime-Incidents-from-1-Jan-2003/gxxq-x39z'>https://data.sfgov.org/Public-Safety/Map-Crime-Incidents-from-1-Jan-2003/gxxq-x39z</a>).</p>
+    <p>Rodolfo Bongiovanni, Instituto Nacional de Tecnologia Agropecuaria (INTA), Manfredi, Cordoba, Argentina, (rodolfo_bongiovanni@yahoo.com)</p>
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>List of four Sf objects, projected to EPSG 2227: NAD83 / California zone 3 (ftUS).</p>
+    <p>List of two Sf objects, unprojected. The CRS of lasrosas99 is EPSG 4326: WGS84. The data lasrosas99 has an undefined Coordinate Reference System.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='kw'>if</span> (<span class='fu'><a href='https://rdrr.io/r/base/ns-load.html'>requireNamespace</a></span>(<span class='st'>"sf"</span>, <span class='kw'>quietly</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)) {
-  <span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>sf</span>)
-  <span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>SFcrime</span>)
-  <span class='fu'><a href='https://rdrr.io/pkg/sf/man/plot.html'>plot</a></span>(<span class='no'>SFcrime</span><span class='kw'>[[</span><span class='st'>"cartheft"</span>]][<span class='fl'>9</span>])
-}</div><div class='img'><img src='SFcrime-1.png' alt='' width='700' height='433' /></div></pre>
+    <pre class="examples"></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">

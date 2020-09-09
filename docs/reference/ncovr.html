@@ -125,32 +125,31 @@
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>An sf data frame with 3085 rows, 69 variables, and a geometry column:</p><dl'>
-  <dt>name</dt><dd><p>county name</p></dd>
-  <dt>state_name</dt><dd><p>state name</p></dd>
-  <dt>state_fips</dt><dd><p>state fips code (character)</p></dd>
-  <dt>cnty_fips</dt><dd><p>county fips code (character)</p></dd>
-  <dt>fips</dt><dd><p>combined state and county fips code (character)</p></dd>
-  <dt>stfips</dt><dd><p>state fips code (numeric)</p></dd>
-  <dt>cofips</dt><dd><p>county fips code (numeric)</p></dd>
-  <dt>fipsno</dt><dd><p>fips code as numeric variable</p></dd>
-  <dt>south</dt><dd><p>dummy variable for Southern counties  (South = 1)</p></dd>
-  <dt>hr</dt><dd><p>homicide rate per 100,000 (1960, 1970, 1980, 1990)</p></dd>
-  <dt>hc</dt><dd><p>homicide count, three year average centered on 1960, 1970, 1980, 1990</p></dd>
-  <dt>po</dt><dd><p>county population, 1960, 1970, 1980, 1990</p></dd>
-  <dt>rd</dt><dd><p>resource deprivation 1960, 1970, 1980, 1990 (principal component, see  Codebook for details)</p></dd>
-  <dt>ps</dt><dd><p>population structure 1960, 1970, 1980, 1990 (principal component, see Codebook for details)</p></dd>
-  <dt>ue</dt><dd><p>unemployment rate 1960, 1970, 1980, 1990</p></dd>
-  <dt>dv</dt><dd><p>divorce rate 1960, 1970, 1980, 1990  (percent males over 14 divorced)</p></dd>
-  <dt>ma</dt><dd><p>median age 1960, 1970, 1980, 1990</p></dd>
-  <dt>pol</dt><dd><p>log of population 1960, 1970, 1980, 1990</p></dd>
-  <dt>dnl</dt><dd><p>log of population density 1960, 1970, 1980, 1990</p></dd>
-  <dt>mfil</dt><dd><p>log of median family income 1960, 1970, 1980, 1990</p></dd>
-  <dt>fp</dt><dd><p>percent families below poverty 1960, 1970, 1980, 1990 (see Codebook for details)</p></dd>
-  <dt>blk</dt><dd><p>percent black 1960, 1970, 1980, 1990</p></dd>
-  <dt>gi</dt><dd><p>Gini index of family income inequality 1960, 1970, 1980, 1990</p></dd>
-  <dt>fh</dt><dd><p>percent female headed households 1960, 1970, 1980, 1990</p></dd>
-  <dt>geometry</dt><dd><p>MULTIPOLYGON</p></dd>
+    <p>An sf data frame with 3,085 rows, 69 variables, and a geometry column:</p><dl'>
+  <dt>	NAME	</dt><dd><p>County name</p></dd>
+  <dt>	STATE_NAME	</dt><dd><p>State name</p></dd>
+  <dt>	STATE_FIPS	</dt><dd><p>State fips code (character)</p></dd>
+  <dt>	CNTY_FIPS	</dt><dd><p>County fips code (character)</p></dd>
+  <dt>	FIPS	</dt><dd><p>Combined state and county fips code (character)</p></dd>
+  <dt>	STFIPS	</dt><dd><p>State fips code (numeric)</p></dd>
+  <dt>	COFIPS	</dt><dd><p>County fips code (numeric)</p></dd>
+  <dt>	FIPSNO	</dt><dd><p>Fips code as numeric variable</p></dd>
+  <dt>	SOUTH	</dt><dd><p>Dummy variable for Southern counties  (South = 1)</p></dd>
+  <dt>	HRyy	</dt><dd><p>Homicide rate per 100,000 for the years yy: 1960, 1970, 1980 and 1990.</p></dd>
+  <dt>	HCyy	</dt><dd><p>Homicide count, three year average centered on yy: 1960, 1970, 1980, 1990</p></dd>
+  <dt>	POyy	</dt><dd><p>County population for the years yy: 1960, 1970, 1980, 1990</p></dd>
+  <dt>	RDyy	</dt><dd><p>Resource deprivation for the years yy: 1960, 1970, 1980, 1990 (principal component)</p></dd>
+  <dt>	PSyy	</dt><dd><p>Population structure for the years yy: 1960, 1970, 1980, 1990 (principal component)</p></dd>
+  <dt>	UEyy	</dt><dd><p>Unemployment rate for the years yy: 1960, 1970, 1980, 1990</p></dd>
+  <dt>	DVyy	</dt><dd><p>Divorce rate for the years yy: 1960, 1970, 1980, 1990  (percentage of males over 14 divorced)</p></dd>
+  <dt>	MAyy	</dt><dd><p>Median age for the years yy: 1960, 1970, 1980, 1990</p></dd>
+  <dt>	POLyy	</dt><dd><p>Log of population for the years yy: 1960, 1970, 1980, 1990</p></dd>
+  <dt>	DNLyy	</dt><dd><p>Log of population density for the years yy: 1960, 1970, 1980, 1990</p></dd>
+  <dt>	MFILyy	</dt><dd><p>Log of median family income for the years yy: 1960, 1970, 1980, 1990</p></dd>
+  <dt>	FPyy	</dt><dd><p>Percentage of families below poverty for the years yy: 1960, 1970, 1980, 1990</p></dd>
+  <dt>	BLKyy	</dt><dd><p>Percentage of black for the years yy: 1960, 1970, 1980, 1990</p></dd>
+  <dt>	GIyy	</dt><dd><p>Gini index of family income inequality for the years yy: 1960, 1970, 1980, 1990</p></dd>
+  <dt>	FHyy	</dt><dd><p>Percentage of female headed households for the years yy: 1960, 1970, 1980, 1990</p></dd>
 
 </dl>
 
@@ -166,7 +165,7 @@
   <span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>sf</span>)
   <span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>ncovr</span>)
 
-  <span class='fu'><a href='https://rdrr.io/pkg/sf/man/plot.html'>plot</a></span>(<span class='no'>ncovr</span>[<span class='st'>"NAME"</span>])
+  <span class='fu'><a href='https://rdrr.io/pkg/sf/man/plot.html'>plot</a></span>(<span class='no'>ncovr</span>[<span class='st'>"PO60"</span>])
 }</div><div class='img'><img src='ncovr-1.png' alt='' width='700' height='433' /></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
@@ -179,7 +178,7 @@
 
       <footer>
       <div class="copyright">
-  <p>Developed by Angela Li.</p>
+  <p>Developed by Angela Li, Karina Acosta.</p>
 </div>
 
 <div class="pkgdown">

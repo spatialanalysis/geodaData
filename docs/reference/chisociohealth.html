@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Denver 2010 Demographics &amp; Housing — chisociohealth • geodaData</title>
+<title>Chicago Health and Socio-Economics — chisociohealth • geodaData</title>
 
 
 <!-- jquery -->
@@ -39,8 +39,8 @@
 
 
 
-<meta property="og:title" content="Denver 2010 Demographics &amp; Housing — chisociohealth" />
-<meta property="og:description" content="Demographics and housing characteristics of Denver neighborhoods (2010)." />
+<meta property="og:title" content="Chicago Health and Socio-Economics — chisociohealth" />
+<meta property="og:description" content="Public health and socio-economic indicators for the 77 community areas of Chicago, IL, 2014." />
 
 
 
@@ -111,13 +111,13 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Denver 2010 Demographics &amp; Housing</h1>
+    <h1>Chicago Health and Socio-Economics</h1>
     <small class="dont-index">Source: <a href='https://github.com/spatialanalysis/geodaData/blob/master/R/chisociohealth.R'><code>R/chisociohealth.R</code></a></small>
     <div class="hidden name"><code>chisociohealth.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Demographics and housing characteristics of Denver neighborhoods (2010).</p>
+    <p>Public health and socio-economic indicators for the 77 community areas of Chicago, IL, 2014.</p>
     </div>
 
     <pre class="usage"><span class='no'>chisociohealth</span></pre>
@@ -125,9 +125,15 @@
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>An sf data frame with 75 rows, 56 variables, and a geometry column:</p><dl'>
+    <p>An sf data frame with 77 rows, 86 variables, and a geometry column:</p><dl'>
+<dt>ComAreaID</dt><dd><p>Community Area ID</p></dd>
+<dt>community</dt><dd><p>Community Area Name</p></dd>
+<dt>TRACTnt</dt><dd><p>Tract</p></dd>
+<dt>shape_area</dt><dd><p>polygon area</p></dd>
+<dt>shape_len</dt><dd><p>polygon perimeter</p></dd>
 <dt>Pop2012</dt><dd><p>Population in 2012</p></dd>
 <dt>Pop2014</dt><dd><p>Population in 2014</p></dd>
+<dt>PopChng</dt><dd><p>Population change</p></dd>
 <dt>PopM</dt><dd><p>Male Population in 2014</p></dd>
 <dt>PopF</dt><dd><p>Female population in 2014</p></dd>
 <dt>Under5</dt><dd><p>Population age 0-5 in 2014</p></dd>
@@ -141,7 +147,20 @@
 <dt>NHP14</dt><dd><p>Native Hawaiian population in 2014</p></dd>
 <dt>Oth14</dt><dd><p>Population of other races in 2014</p></dd>
 <dt>Hisp14</dt><dd><p>Hispanic population in 2014</p></dd>
-<dt>PopMP, PopFP, Under5P, Under18P, Over18P, Over21P, Over65P, Wht14P, Blk14P, AI14P, AS14P, NHP14P, Oth14P, Hisp14P</dt><dd><p>Proportion of each corresponding group in the overall population 2014</p></dd>
+<dt>PopMP</dt><dd><p>Proportion of male in the overall population in 2014</p></dd>
+ <dt>PopFP</dt><dd><p>Proportion of female in the overall population in 2014</p></dd>
+ <dt>Under5P</dt><dd><p>Proportion of under 5 in the overall population in 2014</p></dd>
+ <dt>Under18P</dt><dd><p>Proportion of under 18 in the overall population in 2014</p></dd>
+ <dt>Over18P</dt><dd><p>Proportion of over 18 in the overall population in 2014</p></dd>
+ <dt>Over21P</dt><dd><p>Proportion of over 21 in the overall population in 2014</p></dd>
+ <dt>Over65P</dt><dd><p>Proportion of over 65 in the overall population in 2014</p></dd>
+ <dt>Wht14P</dt><dd><p>Proportion of white population in 2014</p></dd>
+ <dt>Blk14P</dt><dd><p>Proportion of black population in 2014</p></dd>
+ <dt>AI14P</dt><dd><p>Proportion of American Indian population in 2014</p></dd>
+ <dt>AS14P</dt><dd><p>Proportion of asian population in 2014</p></dd>
+ <dt>NHP14P</dt><dd><p>Proportion of native hawaiian population  in 2014</p></dd>
+ <dt>Oth14P</dt><dd><p>Proportion of other races population  in 2014</p></dd>
+ <dt>Hisp14P</dt><dd><p>Proportion of hispanic population  in 2014</p></dd>
 <dt>Property_C</dt><dd><p>Number of property crimes</p></dd>
 <dt>PropCrRt</dt><dd><p>Property crime rate in 2014</p></dd>
 <dt>Violent_C</dt><dd><p>Number of violent crimes</p></dd>
@@ -157,11 +176,15 @@
 <dt>LaborFrc</dt><dd><p>Number of people in the labor force in 2014</p></dd>
 <dt>Unemp14</dt><dd><p>Number of people unemployed in 2014</p></dd>
 <dt>Pov50</dt><dd><p>Number of people with income below 50pct of the poverty line</p></dd>
+<dt>Pov50P</dt><dd><p>Proportion of people with income below 50pct of the poverty line</p></dd>
 <dt>Pov125</dt><dd><p>Number of people with income below 125pct of the poverty line</p></dd>
+<dt>Pov125P</dt><dd><p>Proportion of people with income below 125pct of the poverty line</p></dd>
 <dt>Pov150</dt><dd><p>Number of people with income below 150pct of the poverty line</p></dd>
+<dt>Pov150P</dt><dd><p>Proportion of people with income below 150pct of the poverty line</p></dd>
 <dt>Pov185</dt><dd><p>Number of people with income below 185pct of the poverty line</p></dd>
+<dt>Pov185P</dt><dd><p>Proportion of people with income below 185pct of the poverty line</p></dd>
 <dt>Pov200</dt><dd><p>Number of people with income below 200pct of the poverty line</p></dd>
-<dt>Pov50P-Pov200P</dt><dd><p>Proportion of each group in overall population (different poverty rates, 2014)</p></dd>
+<dt>Pov200P</dt><dd><p>Number of people with income below 200pct of the poverty line</p></dd>
 <dt>SESave</dt><dd><p>Average SES</p></dd>
 <dt>COIave</dt><dd><p>Average Childhood Opportunity Index</p></dd>
 <dt>HISave</dt><dd><p>Average Economic Hardship Index</p></dd>
@@ -215,7 +238,7 @@
 
       <footer>
       <div class="copyright">
-  <p>Developed by Angela Li.</p>
+  <p>Developed by Angela Li, Karina Acosta.</p>
 </div>
 
 <div class="pkgdown">

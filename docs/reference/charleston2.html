@@ -125,12 +125,20 @@
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>An sf data frame with 42 rows, 60 variables, and a geometry column:</p><dl'>
+    <p>An sf data frame with 42 rows, 59 variables, and a geometry column:</p><dl'>
 <dt>	ZIP	</dt><dd><p>ZIP code</p></dd>
 <dt>	PO_NAME	</dt><dd><p>Name of ZIP code area</p></dd>
 <dt>	STATE	</dt><dd><p>STATE</p></dd>
-<dt>	MSA	</dt><dd><p>MSA</p></dd>
-<dt>	CBSA_CODE	</dt><dd><p>CBSA code</p></dd>
+<dt>	POP2001	</dt><dd><p>Population 2001</p></dd>
+<dt>	MSA	</dt><dd><p>Metropolitan Statistical Area</p></dd>
+<dt>	EMP98	</dt><dd><p>Total mid-march employees, 1998</p></dd>
+<dt>	EST98	</dt><dd><p>Total establishments in ZIP code, 1998</p></dd>
+<dt>  EFLAG98</dt><dd><p>A if PAY98 missing</p></dd>
+ <dt>  PAY98</dt><dd><p>Total annual payroll ($1,000), 1998</p></dd>
+ <dt>	EST01	</dt><dd><p>Total establishments in ZIP code, 2001</p></dd>
+ <dt>  EMP01</dt><dd><p>Total mid-march employees, 2001</p></dd>
+ <dt>  EFLAG01</dt><dd><p>A if PAY01 missing</p></dd>
+<dt>	CBSA_CODE	</dt><dd><p>Core-based statistical area code</p></dd>
 <dt>	MAN98	</dt><dd><p>1998 total manufacturing establishments (MSA)</p></dd>
 <dt>	MAN98_12	</dt><dd><p>1998 total manufacturing establishments, 1-9 employees (MSA)</p></dd>
 <dt>	MAN98_39	</dt><dd><p>1998 total manufacturing establishments 10+ employees (MSA)</p></dd>
@@ -169,8 +177,6 @@
 <dt>	INFO01US_3	</dt><dd><p>2001 total information establishments, 10+ employees (US)</p></dd>
 <dt>	INDEX	</dt><dd><p>Index</p></dd>
 <dt>	NUMSEC	</dt><dd><p>Number of sectors represented in ZIP code</p></dd>
-<dt>	EST98	</dt><dd><p>Total establishments in ZIP code, 1998</p></dd>
-<dt>	EST01	</dt><dd><p>Total establishments in ZIP code, 2001</p></dd>
 <dt>	PCTNGE	</dt><dd><p>National growth effect, percent (N)</p></dd>
 <dt>	PCTIME	</dt><dd><p>Industry mix effect, percent (M)</p></dd>
 <dt>	PCTCSE	</dt><dd><p>Competitive shift effect, percent (S)</p></dd>
@@ -204,7 +210,7 @@
 
       <footer>
       <div class="copyright">
-  <p>Developed by Angela Li.</p>
+  <p>Developed by Angela Li, Karina Acosta.</p>
 </div>
 
 <div class="pkgdown">

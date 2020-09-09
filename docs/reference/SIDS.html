@@ -125,27 +125,30 @@
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>An sf data frame with 100 rows, 14 variables, and a geometry column:</p><dl'>
-<dt>	AREA	</dt><dd><p>county area (computed by ArcView)</p></dd>
-<dt>	PERIMETER	</dt><dd><p>county perimeter (computed by ArcView)</p></dd>
-<dt>	CNTY_	</dt><dd><p>county internal ID</p></dd>
-<dt>	CNTY_ID	</dt><dd><p>county internal ID</p></dd>
-<dt>	NAME	</dt><dd><p>county name</p></dd>
-<dt>	FIPS	</dt><dd><p>county fips code, as character (state code and county code)</p></dd>
-<dt>	FIPSNO	</dt><dd><p>county fips code, numeric, used in GeoDa User’s Guide and tutorials</p></dd>
-<dt>	CRESS_ID	</dt><dd><p>county ID used by Cressie</p></dd>
-<dt>	BIR74	</dt><dd><p>live births, 1974-78</p></dd>
+    <p>An sf data frame with 100 rows, 17 variables, and a geometry column:</p><dl'>
+<dt>	AREA	</dt><dd><p>County area (computed by ArcView)</p></dd>
+<dt>	PERIMETER	</dt><dd><p>County perimeter (computed by ArcView)</p></dd>
+<dt>	CNTY_ID	</dt><dd><p>County internal ID</p></dd>
+<dt>	NAME	</dt><dd><p>County name</p></dd>
+<dt>	FIPS	</dt><dd><p>County fips code, as character (state code and county code)</p></dd>
+<dt>	FIPSNO	</dt><dd><p>County fips code, numeric, used in GeoDa User’s Guide and tutorials</p></dd>
+<dt>	CRESS_ID	</dt><dd><p>County ID used by Cressie	(1993)</p></dd>
+<dt>	BIR74	</dt><dd><p>Live births, 1974-78</p></dd>
 <dt>	SID74	</dt><dd><p>SIDS deaths, 1974-78</p></dd>
-<dt>	NWBIR74	</dt><dd><p>non-white births, 1974-78</p></dd>
-<dt>	BIR79	</dt><dd><p>live births, 1979-84</p></dd>
+<dt>	NWBIR74	</dt><dd><p>Non-white births, 1974-78</p></dd>
+<dt>	BIR79	</dt><dd><p>Live births, 1979-84</p></dd>
 <dt>	SID79	</dt><dd><p>SIDS deaths, 1979-84</p></dd>
-<dt>	NWBIR79	</dt><dd><p>non-white births, 1979-84</p></dd>
+<dt>	NWBIR79	</dt><dd><p>Non-white births, 1979-84</p></dd>
+<dt>	SIDR74	</dt><dd><p>SIDS death rate per 1,000 (1974-78)</p></dd>
+<dt>	SIDR79	</dt><dd><p>SIDS death rate per 1,000 (1979-84)</p></dd>
+<dt>	NWR74	</dt><dd><p>Non-white birth rate (non-white per 1000 births), 1974-78</p></dd>
+<dt>	NWR79	</dt><dd><p>Non-white birth rate (non-white per 1000 births), 1979-84</p></dd>
 
 </dl>
 
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
-    <p>Cressie, Noel (1993). Statistics for Spatial Data. New York, Wiley, pp. 386-389. Rates computed.</p>
+    <p>Cressie, N. (1993). Statistics for Spatial Data. New York, Wiley, pp. 386-389. Rates computed.</p>
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
     <p>Sf object, unprojected. EPSG 4326: WGS84.</p>
@@ -167,7 +170,7 @@
 
       <footer>
       <div class="copyright">
-  <p>Developed by Angela Li.</p>
+  <p>Developed by Angela Li, Karina Acosta.</p>
 </div>
 
 <div class="pkgdown">

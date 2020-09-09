@@ -128,9 +128,16 @@
     <p>An sf data frame with 24 rows, 60 variables, and a geometry column:</p><dl'>
 <dt>	ZIP	</dt><dd><p>ZIP code</p></dd>
 <dt>	PO_NAME	</dt><dd><p>Name of ZIP code area</p></dd>
-<dt>	STATE	</dt><dd><p>STATE</p></dd>
-<dt>	MSA	</dt><dd><p>MSA</p></dd>
-<dt>	CBSA_CODE	</dt><dd><p>CBSA code</p></dd>
+<dt>	STATE	</dt><dd><p>State abbreviation</p></dd>
+<dt>	MSA	</dt><dd><p>Name of Metropolitan Statistical Area (MSA)</p></dd>
+<dt>  POP2001 </dt><dd><p>Population 2001</p></dd>
+<dt>  EST98 </dt><dd><p>Total establishments in ZIP code, 1998</p></dd>
+ <dt>  EMP98 </dt><dd><p>Total mid-march employees, 1998</p></dd>
+ <dt>  PAY98 </dt><dd><p>Total annual payroll ($1,000), 1998</p></dd>
+ <dt>  EST01 </dt><dd><p>Total establishments in ZIP code, 2001</p></dd>
+ <dt>  EMP01 </dt><dd><p>Total mid-march employees, 2001</p></dd>
+ <dt>  PAY01 </dt><dd><p>Total annual payroll ($1,000), 2001</p></dd>
+ <dt>	CBSA_CODE	</dt><dd><p>U.S. Core Based Statistical (CBSA) Area code</p></dd>
 <dt>	MAN98	</dt><dd><p>1998 total manufacturing establishments (MSA)</p></dd>
 <dt>	MAN98_12	</dt><dd><p>1998 total manufacturing establishments, 1-9 employees (MSA)</p></dd>
 <dt>	MAN98_39	</dt><dd><p>1998 total manufacturing establishments 10+ employees (MSA)</p></dd>
@@ -141,8 +148,8 @@
 <dt>	MAN98US12	</dt><dd><p>1998 total manufacturing establishments, 1-9 employees (US)</p></dd>
 <dt>	MAN98US39	</dt><dd><p>1998 total manufacturing establishments 10+ employees (US)</p></dd>
 <dt>	MAN01US	</dt><dd><p>2001 total manufacturing establishments (US)</p></dd>
-<dt>	MAN01US_12	</dt><dd><p>2001 total manufacturing establishments, 1-9 employees (US)</p></dd>
-<dt>	MAN01US_39	</dt><dd><p>2001 total manufacturing establishments, 10+ employees (US)</p></dd>
+<dt>	MANUS01_12	</dt><dd><p>2001 total manufacturing establishments, 1-9 employees (US)</p></dd>
+<dt>	MANUS01_39	</dt><dd><p>2001 total manufacturing establishments, 10+ employees (US)</p></dd>
 <dt>	OFF98	</dt><dd><p>1998 total office establishments (MSA)</p></dd>
 <dt>	OFF98_12	</dt><dd><p>1998 total office establishments, 1-9 employees (MSA)</p></dd>
 <dt>	OFF98_39	</dt><dd><p>1998 total office establishments, 10+ employees (MSA)</p></dd>
@@ -165,17 +172,15 @@
 <dt>	INFO98US12	</dt><dd><p>1998 total information establishments, 1-9 employees (US)</p></dd>
 <dt>	INFO98US39	</dt><dd><p>1998 total information establishments, 10+ employees (US)</p></dd>
 <dt>	INFO01US	</dt><dd><p>2001 total information establishments (US)</p></dd>
-<dt>	INFO01US_1	</dt><dd><p>2001 total information establishments, 1-9 employees (US)</p></dd>
-<dt>	INFO01US_3	</dt><dd><p>2001 total information establishments, 10+ employees (US)</p></dd>
-<dt>	INDEX	</dt><dd><p>Index</p></dd>
+<dt>	INFOUS01_1	</dt><dd><p>2001 total information establishments, 1-9 employees (US)</p></dd>
+<dt>	INFOUS01_3	</dt><dd><p>2001 total information establishments, 10+ employees (US)</p></dd>
+<dt>	INDEX	</dt><dd><p>Unique index</p></dd>
 <dt>	NUMSEC	</dt><dd><p>Number of sectors represented in ZIP code</p></dd>
-<dt>	EST98	</dt><dd><p>Total establishments in ZIP code, 1998</p></dd>
-<dt>	EST01	</dt><dd><p>Total establishments in ZIP code, 2001</p></dd>
 <dt>	PCTNGE	</dt><dd><p>National growth effect, percent (N)</p></dd>
 <dt>	PCTIME	</dt><dd><p>Industry mix effect, percent (M)</p></dd>
 <dt>	PCTCSE	</dt><dd><p>Competitive shift effect, percent (S)</p></dd>
 <dt>	PCTGRO	</dt><dd><p>Percent growth establishments, 1998-2001 (R)</p></dd>
-<dt>	ID	</dt><dd><p>Unique ZIP code ID for ID variables in weights matrix creation window</p></dd>
+<dt>	ID	</dt><dd><p>Unique ZIP code ID for variables in weights matrix creation window</p></dd>
 
 </dl>
 
@@ -203,7 +208,7 @@
 
       <footer>
       <div class="copyright">
-  <p>Developed by Angela Li.</p>
+  <p>Developed by Angela Li, Karina Acosta.</p>
 </div>
 
 <div class="pkgdown">

@@ -125,36 +125,60 @@
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>An sf data frame with 457 rows, 90 variables, and a geometry column:</p><dl'>
-<dt>	BLOCK	</dt><dd><p>Census block</p></dd>
-<dt>	TRACT	</dt><dd><p>Census tract</p></dd>
+    <p>An sf data frame with 457 rows, 72 variables, and a geometry column:</p><dl'>
+ <dt>	ID	</dt><dd><p>Polygon ID</p></dd>
+ <dt>	AREA	</dt><dd><p>Polygon area</p></dd>
+<dt>	BLOCK	</dt><dd><p>Census block ID</p></dd>
+<dt>	BG	</dt><dd><p>Census block group ID</p></dd>
+<dt>	TRACT	</dt><dd><p>Census tract ID</p></dd>
 <dt>	COUNTY	</dt><dd><p>5 digit code for the county (Hamilton County, Ohio). Not to be confused with zip code</p></dd>
+<dt>	MSA	</dt><dd><p>Metropolitan statistical area ID</p></dd>
 <dt>	POPULATION	</dt><dd><p>Population on the block</p></dd>
 <dt>	MALE, FEMALE	</dt><dd><p>Population on the block broken down by gender</p></dd>
-<dt>	AGE_5, AGE_5_TO_9, AGE_10_14, AGE_15_19, AGE_20_24, AGE_25_34, AGE_35_44, AGE_45_54, AGE_55_59, AGE_60_64, AGE_65_74, AGE_75_84, AGE_85	</dt><dd><p>Population on the block broken down by age</p></dd>
+<dt>	AGE_X_Y	</dt><dd><p>Population on the block broken down by age (From A to B)</p></dd>
 <dt>	MEDIAN_AGE	</dt><dd><p>Median age on the block</p></dd>
-<dt>	AGE_18, MALE_18, FEMALE_18, AGE_21, AGE_62, AGE_65, MALE_65, FEMALE_65	</dt><dd><p>Population aged 18 and over, 21 and over etc. Gender breakdowns included for 18-and-over and 65-and-over.</p></dd>
+<dt>	AGE_X	</dt><dd><p>Population aged X and over</p></dd>
+<dt>	MALE_X</dt><dd><p>Male population aged X and over</p></dd>
+<dt>	FEMALE_X</dt><dd><p>Female population aged X and over</p></dd>
 <dt>	F1_RACE	</dt><dd><p>Number of people who marked a race on the survey</p></dd>
-<dt>	WHITE, BLACK, AMINDIAN, ASIAN, HAWAIIAN, OTHER_RACE	</dt><dd><p>Population breakdown by race</p></dd>
+<dt>	WHITE	</dt><dd><p>White population</p></dd>
+<dt>	BLACK </dt><dd><p>Black population</p></dd>
+<dt>	AMINDIAN </dt><dd><p>American Indian population</p></dd>
+<dt>	ASIAN	</dt><dd><p>Asian population</p></dd>
+<dt>	HAWAIIAN	</dt><dd><p>Hawaiian population</p></dd>
+<dt>	OTHER_RACE	</dt><dd><p>Population self-identified as other race (non white, black, asian or hawaiian)</p></dd>
 <dt>	F2_RACES	</dt><dd><p>Number of people who did not mark any race on the survey</p></dd>
-<dt>	AP_WHITE, AP_BLACK, AP_AMINDIA, AP_ASIAN, AP_HAWAIIA, AP_OTHER	</dt><dd><p>Population breakdown by race</p></dd>
+<dt>	AP_WHITE	</dt><dd><p>Adjusted white population</p></dd>
+<dt>	AP_BLACK	</dt><dd><p>Adjusted black population</p></dd>
+<dt>	AP_AMINDIA	</dt><dd><p>Adjusted American Indian population</p></dd>
+<dt>	AP_ASIAN </dt><dd><p>Adjusted Asian population</p></dd>
+<dt>	AP_HAWAIIA	</dt><dd><p>Adjusted Hawaiian population</p></dd>
+<dt>	AP_OTHER	</dt><dd><p>Adjusted other-race population</p></dd>
 <dt>	AP_HISPANI, NOT_HISPAN	</dt><dd><p>Population breakdown by Hispanic and Non-Hispanic</p></dd>
 <dt>	NH_WHITE	</dt><dd><p>Non-Hispanic white population</p></dd>
 <dt>	IN_HOUSEHO	</dt><dd><p>Population living in households</p></dd>
 <dt>	GROUP_QUAR	</dt><dd><p>Population living in group quarters instead of traditional households</p></dd>
-<dt>	GQ_INSTU, GQ_NONINST	</dt><dd><p>Population broken down by institutional and non-institutional</p></dd>
+<dt>	GQ_INSTU, GQ_NONINST	</dt><dd><p>Institutional population</p></dd>
+<dt>	GQ_INSTU, GQ_NONINST	</dt><dd><p>Non-institutional population</p></dd>
 <dt>	HOUSEHOLDS	</dt><dd><p>Number of households</p></dd>
 <dt>	HH_FAMILY	</dt><dd><p>Number of family households</p></dd>
 <dt>	HH_NONFAMI	</dt><dd><p>Number of non family households</p></dd>
 <dt>	AVG_HHSIZE	</dt><dd><p>Average household size</p></dd>
 <dt>	AVG_FAMSIZ	</dt><dd><p>Average family size</p></dd>
 <dt>	HSNG_UNITS	</dt><dd><p>Number of housing units</p></dd>
-<dt>	HU_OCCUPIE, HU_VACANT	</dt><dd><p>Number of housing units broken down by occupied and vacant</p></dd>
-<dt>	OCCHU_OWNE, OCCHU_RENT	</dt><dd><p>Occupied housing units broken down by owner or renter occupied</p></dd>
-<dt>	OWNER_SIZE, RENTER_SIZ	</dt><dd><p>Average household size of owner and renter occupied housing units</p></dd>
+<dt>	HU_OCCUPIE  </dt><dd><p>Number of housing units occupied</p></dd>
+<dt>	HU_VACANT	</dt><dd><p>Number of housing units vacant</p></dd>
+<dt>	OCCHU_OWNE	</dt><dd><p>Occupied housing units (owner occupied)</p></dd>
+<dt>	OCCHU_RENT	</dt><dd><p>Occupied housing units (renter occupied)</p></dd>
+<dt>	OWNER_SIZE	</dt><dd><p>Average household size of owner occupied housing units</p></dd>
+<dt>	RENTER_SIZ	</dt><dd><p>Average household size of renter occupied housing units</p></dd>
 <dt>	DENSITY	</dt><dd><p>Population density</p></dd>
-<dt>	BURGLARY, ASSAULT, THEFT	</dt><dd><p>Counts of burglary, assault, and theft</p></dd>
-<dt>	BURG_D, ASSALT_D, THEFT_D, BURG_D1, BURG_D2	</dt><dd><p>Crime dummy variables: ‘1’ if there is at least 1 incident, ‘0’ otherwise.</p></dd>
+<dt>	BURGLARY	</dt><dd><p>Counts of burglary</p></dd>
+<dt>	ASSAULT	</dt><dd><p>Counts of assault</p></dd>
+<dt>	THEFT	</dt><dd><p>Counts of theft</p></dd>
+<dt>	BURG_D	</dt><dd><p>Burglary dummy: ‘1’ if there is at least 1 incident, ‘0’ otherwise</p></dd>
+<dt>	ASSALT_D	</dt><dd><p>Assault dummy: ‘1’ if there is at least 1 incident, ‘0’ otherwise</p></dd>
+<dt>	THEFT_D	</dt><dd><p>Theft dummy: ‘1’ if there is at least 1 incident, ‘0’ otherwise</p></dd>
 
 </dl>
 
@@ -183,7 +207,7 @@
 
       <footer>
       <div class="copyright">
-  <p>Developed by Angela Li.</p>
+  <p>Developed by Angela Li, Karina Acosta.</p>
 </div>
 
 <div class="pkgdown">

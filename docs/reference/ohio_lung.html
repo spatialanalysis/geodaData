@@ -126,13 +126,16 @@
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
     <p>An sf data frame with 88 rows, 42 variables, and a geometry column:</p><dl'>
-  <dt>county_id</dt><dd><p>Sequential county ID (alphabetic     order)</p></dd>
-  <dt>name</dt><dd><p>County name</p></dd>
-  <dt>fipsno</dt><dd><p>Fips code as numeric</p></dd>
-  <dt>lg_ryy</dt><dd><p>Lung cancer cases for gender G (M or F) and race R (W or B) in year yy (1968, 1978, 1988)</p></dd>
-  <dt>popg_ryy</dt><dd><p>Population at risk for gender G (M or F) and race R (W or B) in year yy (1968, 1978, 1988)</p></dd>
-  <dt>l_gyy</dt><dd><p>Total male and female lung cancer cases for each year</p></dd>
-  <dt>pop_gyy</dt><dd><p>Total population at risk by gender</p></dd>
+  <dt>FIPSNO</dt><dd><p>County FIPS code</p></dd>
+  <dt>AREA</dt><dd><p>Area of polygon</p></dd>
+  <dt>PERIMETER</dt><dd><p>Perimeter of polygon</p></dd>
+  <dt>RECORD_ID</dt><dd><p>Unique ID</p></dd>
+  <dt>COUNTYID</dt><dd><p>County ID</p></dd>
+  <dt>NAME</dt><dd><p>County name</p></dd>
+  <dt>LGRyy</dt><dd><p>Lung cancer cases for gender G (male: M or female: F) and race R (white:W or black:B) in year yy (1968, 1978, 1988)</p></dd>
+  <dt>POPGRyy</dt><dd><p>Population at risk for gender G (male: M or female: F) and race R (W or B) in year yy (1968, 1978, 1988)</p></dd>
+  <dt>LGyy</dt><dd><p>Total lung cancer cases for gender G (male: M or female: F) and each year (1968, 1978, 1988)</p></dd>
+  <dt>POPGyy</dt><dd><p>Total population at risk by gender G (male: M or female: F) and year yy (1968, 1978, 1988)</p></dd>
   <dt>geometry</dt><dd><p>POLYGON</p></dd>
 
 </dl>
@@ -149,7 +152,7 @@
   <span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>sf</span>)
   <span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>ohio_lung</span>)
 
-  <span class='fu'><a href='https://rdrr.io/pkg/sf/man/plot.html'>plot</a></span>(<span class='no'>ohio_lung</span>[<span class='st'>"FIPSNO"</span>])
+  <span class='fu'><a href='https://rdrr.io/pkg/sf/man/plot.html'>plot</a></span>(<span class='no'>ohio_lung</span>[<span class='st'>"POPM88"</span>])
 }</div><div class='img'><img src='ohio_lung-1.png' alt='' width='700' height='433' /></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
@@ -162,7 +165,7 @@
 
       <footer>
       <div class="copyright">
-  <p>Developed by Angela Li.</p>
+  <p>Developed by Angela Li, Karina Acosta.</p>
 </div>
 
 <div class="pkgdown">

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>San Francisco Crime Incidents (2012) — SFcrime • geodaData</title>
+<title>Malaria in Colombia (1998) — malariaCol • geodaData</title>
 
 
 <!-- jquery -->
@@ -39,12 +39,10 @@
 
 
 
-<meta property="og:title" content="San Francisco Crime Incidents (2012) — SFcrime" />
-<meta property="og:description" content="Incidents of robberies, drugs/narcotics possession or sale, vehicle theft, and vandalism for July 1 to December 31, 2012. Use list2env(SFcrime, .GlobalEnv) to unlist in working environment. The data consist of a list of four objects:
-cartheft A spatial points object of class sf Dataframe with 3,384 observations, 13 variables, and a geometry column.
-drugs A spatial points object of class sf Dataframe with 3,897 observations, 13 variables, and a geometry column.
-robbery A spatial points object of class sf Dataframe with 2,761 observations, 13 variables, and a geometry column.
-vandalism A spatial points object of class sf Dataframe with 3,430 observations, 13 variables, and a geometry column.
+<meta property="og:title" content="Malaria in Colombia (1998) — malariaCol" />
+<meta property="og:description" content="Malaria incidence in 1998, population in Colombia from 1973, 1995, 1993 censuses, and projected population from 1995 to 2005. Use list2env(malariaCol, .GlobalEnv) to unlist in working environment. The data consist of a list of two objects:
+malariaDept A shapefile object of class sf Dataframe with Colombian departments.
+malariaMunic A shapefile object of class sf Dataframe with Colombian municipalities.
 
 " />
 
@@ -117,56 +115,48 @@ vandalism A spatial points object of class sf Dataframe with 3,430 observations,
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>San Francisco Crime Incidents (2012)</h1>
-    <small class="dont-index">Source: <a href='https://github.com/spatialanalysis/geodaData/blob/master/R/SFcrime.R'><code>R/SFcrime.R</code></a></small>
-    <div class="hidden name"><code>SFcrime.Rd</code></div>
+    <h1>Malaria in Colombia (1998)</h1>
+    <small class="dont-index">Source: <a href='https://github.com/spatialanalysis/geodaData/blob/master/R/malariaCol.R'><code>R/malariaCol.R</code></a></small>
+    <div class="hidden name"><code>malariaCol.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Incidents of robberies, drugs/narcotics possession or sale, vehicle theft, and vandalism for July 1 to December 31, 2012. Use <code><a href='https://rdrr.io/r/base/list2env.html'>list2env(SFcrime, .GlobalEnv)</a></code> to unlist in working environment. The data consist of a list of four objects:</p><ul>
-<li><p>cartheft A spatial points object of class sf Dataframe with 3,384 observations, 13 variables, and a geometry column.</p></li>
-<li><p>drugs A spatial points object of class sf Dataframe with 3,897 observations, 13 variables, and a geometry column.</p></li>
-<li><p>robbery A spatial points object of class sf Dataframe with 2,761 observations, 13 variables, and a geometry column.</p></li>
-<li><p>vandalism A spatial points object of class sf Dataframe with 3,430 observations, 13 variables, and a geometry column.</p></li>
+    <p>Malaria incidence in 1998, population in Colombia from 1973, 1995, 1993 censuses, and projected population from 1995 to 2005. Use <code><a href='https://rdrr.io/r/base/list2env.html'>list2env(malariaCol, .GlobalEnv)</a></code> to unlist in working environment. The data consist of a list of two objects:</p><ul>
+<li><p>malariaDept A shapefile object of class sf Dataframe with Colombian departments.</p></li>
+<li><p>malariaMunic A shapefile object of class sf Dataframe with Colombian municipalities.</p></li>
 </ul>
 
     </div>
 
-    <pre class="usage"><span class='no'>SFcrime</span></pre>
+    <pre class="usage"><span class='no'>malariaCol</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>Each object contains the following variables:</p><dl'>
-<dt>	IncidntNum	</dt><dd><p>Unique identifier for each incident report</p></dd>
-<dt>	X_pr	</dt><dd><p>Projected X-coordinates</p></dd>
-<dt>	Y_pr	</dt><dd><p>Projected Y-coordinates</p></dd>
-<dt>	Category	</dt><dd><p>Crime classification, e.g. vehicle theft, etc</p></dd>
-<dt>	Descript	</dt><dd><p>Description of the crime</p></dd>
-<dt>	DayOfWeek	</dt><dd><p>Day of the week that crime was reported</p></dd>
-<dt>	Date	</dt><dd><p>Date of the report</p></dd>
-<dt>	Time	</dt><dd><p>Time of report</p></dd>
-<dt>	PdDistrict	</dt><dd><p>Police district</p></dd>
-<dt>	Resolution	</dt><dd><p>Outcome of the report, e.g. None, Arrest, Unfounded, etc</p></dd>
-<dt>	Location	</dt><dd><p>Street address where the crime occurred</p></dd>
-<dt>	X	</dt><dd><p>X-Coordinates of crime location</p></dd>
-<dt>	Y	</dt><dd><p>Y-Coordinates of crime location</p></dd>
+    <p>malariaMunic includes 1,068 rows, 50 variables, and a geometry column. malariaDept includes 33 rows, 46 variables, and a geometry column:</p><dl'>
+	 <dt>ID</dt><dd><p>Sequencial ID</p></dd>
+	 <dt>ADM0</dt><dd><p>Country name</p></dd>
+ <dt>ADM1</dt><dd><p>Departmentos=States (Administrative level 1)</p></dd>
+ <dt>ADM2</dt><dd><p>Municipioss=Counties (Administrative level 2)</p></dd>
+ <dt>IDDANE</dt><dd><p>DANE (Colombian National Bureau of Statistics) code for counties in numeric format</p></dd>
+ <dt>DANECODE</dt><dd><p>DANE (Colombian National Bureau of Statistics) code for counties in character format</p></dd>
+ <dt>CODDEPT</dt><dd><p>DANE (Colombian National Bureau of Statistics) code for states</p></dd>
+ <dt>TPyyyy</dt><dd><p>Total population from census in year 'yyyy' (1973, 1985, and 1993 have census population, the remaning years have projected population)</p></dd>
+ <dt>UPyyyy</dt><dd><p>Urban population from census in year 'yyyy' (1973, 1985, and 1993 have census population, the remaning years have projected population)</p></dd>
+ <dt>RPyyyy</dt><dd><p>Rural population from census in year 'yyyy' (1973, 1985, and 1993 have census population, the remaning years have projected population)</p></dd>
+ <dt>MALARI98</dt><dd><p>Malaria incidence in 1998</p></dd>
 
 </dl>
 
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
-    <p>2010 Census (population) and “Crime Incidents from 1 Jan 2003”, City of San Francisco Open Data Portal (crimes) (<a href='https://data.sfgov.org/Public-Safety/Map-Crime-Incidents-from-1-Jan-2003/gxxq-x39z'>https://data.sfgov.org/Public-Safety/Map-Crime-Incidents-from-1-Jan-2003/gxxq-x39z</a>).</p>
+    <p>SIVIGILA. Ministerio de Salud, Colombia. There are 3 files for each year from 1995-2005. Projections from Departamento Administrativo Nacional de Estadistica DANE, Colombia <a href='https://www.minsalud.gov.co'>https://www.minsalud.gov.co</a> and <a href='https://www.dane.gov.co/index.php/estadisticas-por-tema/demografia-y-poblacion/proyecciones-de-poblacion'>https://www.dane.gov.co/index.php/estadisticas-por-tema/demografia-y-poblacion/proyecciones-de-poblacion</a></p>
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>List of four Sf objects, projected to EPSG 2227: NAD83 / California zone 3 (ftUS).</p>
+    <p>List of two Sf objects, unprojected. EPSG 4326: WGS84.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='kw'>if</span> (<span class='fu'><a href='https://rdrr.io/r/base/ns-load.html'>requireNamespace</a></span>(<span class='st'>"sf"</span>, <span class='kw'>quietly</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)) {
-  <span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>sf</span>)
-  <span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>SFcrime</span>)
-  <span class='fu'><a href='https://rdrr.io/pkg/sf/man/plot.html'>plot</a></span>(<span class='no'>SFcrime</span><span class='kw'>[[</span><span class='st'>"cartheft"</span>]][<span class='fl'>9</span>])
-}</div><div class='img'><img src='SFcrime-1.png' alt='' width='700' height='433' /></div></pre>
+    <pre class="examples"></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">

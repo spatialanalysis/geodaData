@@ -125,62 +125,62 @@
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>An sf data frame with 2216 rows, 57 variables, and a geometry column:</p><dl'>
-<dt>	POLY_ID	</dt><dd><p>unique ID</p></dd>
-<dt>	YOUTH_DROP	</dt><dd><p>pct of population age 16-19 that has dropped out of high school</p></dd>
-<dt>	PER_MNRTY	</dt><dd><p>pct of the population that is non-white</p></dd>
-<dt>	HS_DROP	</dt><dd><p>pct of population over age 25 that dropped out of high school</p></dd>
-<dt>	COL_DEGREE	</dt><dd><p>pct of population over age 25 that obtained at least a bachelor’s degree</p></dd>
-<dt>	PER_ASIAN	</dt><dd><p>pct of the population that is Asian</p></dd>
-<dt>	PER_BLACK	</dt><dd><p>pct of the population that is black</p></dd>
-<dt>	PER_WHITE	</dt><dd><p>pct of the population that is white</p></dd>
-<dt>	CTLabel	</dt><dd><p>census tract label</p></dd>
-<dt>	BoroCode	</dt><dd><p>borough code, 1-5 (see census data)</p></dd>
-<dt>	BoroName	</dt><dd><p>borough name</p></dd>
-<dt>	BoroCT2000	</dt><dd><p>census tract coding, see census data</p></dd>
-<dt>	NTACode	</dt><dd><p>neighborhood tabulation area code</p></dd>
-<dt>	NTANAme	</dt><dd><p>neighborhood tabulation area name</p></dd>
-<dt>	PUMA	</dt><dd><p>public use microarea code</p></dd>
-<dt>	Shape_Leng	</dt><dd><p>Length of polygon border</p></dd>
-<dt>	Shape_Area	</dt><dd><p>Area of polygon</p></dd>
-<dt>	NP_CT	</dt><dd><p>number of nonprofits</p></dd>
-<dt>	mean_inc	</dt><dd><p>mean income</p></dd>
-<dt>	pop1619	</dt><dd><p>population age 16-19, count</p></dd>
-<dt>	dropout	</dt><dd><p>high school dropouts, age 16-19, count</p></dd>
-<dt>	enrollhs	</dt><dd><p>population enrolled in high school, age 16-19, count</p></dd>
-<dt>	PER_PRV_SC	</dt><dd><p>pct of all students enrolled in private school</p></dd>
-<dt>	PER_PUB_SC	</dt><dd><p>pct of all students enrolled in public school</p></dd>
-<dt>	over3	</dt><dd><p>population over 3, count</p></dd>
-<dt>	notenroll	</dt><dd><p>population over 3, not enrolled in school, count</p></dd>
-<dt>	over3enroll	</dt><dd><p>population over 3, enrolled in school, count</p></dd>
-<dt>	pubsch	</dt><dd><p>enrolled in public school, count</p></dd>
-<dt>	pub_pk	</dt><dd><p>enrolled in public pre-k, count</p></dd>
-<dt>	pub_k8	</dt><dd><p>enrolled in public k-8, count</p></dd>
-<dt>	pub_hs	</dt><dd><p>enrolled in public high school, count</p></dd>
-<dt>	pub_col	</dt><dd><p>enrolled in public college, count</p></dd>
-<dt>	privsch	</dt><dd><p>enrolled in private school, count</p></dd>
-<dt>	priv_pk	</dt><dd><p>enrolled in private pre-k, count</p></dd>
-<dt>	priv_k8	</dt><dd><p>enrolled in private k-8, count</p></dd>
-<dt>	priv_hs	</dt><dd><p>enrolled in private high school, count</p></dd>
-<dt>	priv_col	</dt><dd><p>enrolled in private college, count</p></dd>
-<dt>	over25	</dt><dd><p>population over 25, count</p></dd>
-<dt>	subhs	</dt><dd><p>population over 25, less than high school degree, count</p></dd>
-<dt>	hs	</dt><dd><p>population over 25, high school degree, count</p></dd>
-<dt>	somecol	</dt><dd><p>population over 25, some college, count</p></dd>
-<dt>	college	</dt><dd><p>population over 25, bachelor’s degree, count</p></dd>
-<dt>	master	</dt><dd><p>population over 25, master’s degree, count</p></dd>
-<dt>	prof	</dt><dd><p>population over 25, professional degree, count</p></dd>
-<dt>	phd	</dt><dd><p>population over 25, phd, count</p></dd>
-<dt>	white	</dt><dd><p>total population, white, count</p></dd>
-<dt>	black	</dt><dd><p>total population, black, count</p></dd>
-<dt>	asian	</dt><dd><p>total population, asian, count</p></dd>
-<dt>	sub18	</dt><dd><p>total population under 18, count</p></dd>
-<dt>	GENDER_PAR	</dt><dd><p>gender parity, 1=parity, higher = more males, lower = more females</p></dd>
-<dt>	male	</dt><dd><p>male population, count</p></dd>
-<dt>	female	</dt><dd><p>female population, count</p></dd>
-<dt>	SCHOOL_CT	</dt><dd><p>number of schools, count</p></dd>
-<dt>	popdens	</dt><dd><p>population density, people per square mile</p></dd>
-<dt>	population	</dt><dd><p>population, count</p></dd>
+    <p>An sf data frame with 2,216 rows, 56 variables, and a geometry column:</p><dl'>
+<dt>	poly_id	</dt><dd><p>Unique ID</p></dd>
+<dt>	youth_drop	</dt><dd><p>Percentage of population age 16-19 that has dropped out of high school</p></dd>
+<dt>	per_mnrty	</dt><dd><p>Percentage of the population that is non-white</p></dd>
+<dt>	hs_drop	</dt><dd><p>Percentage of population age over25 that dropped out of high school</p></dd>
+<dt>	col_degree	</dt><dd><p>Percentage of population over age 25 that obtained at least a bachelor’s degree</p></dd>
+<dt>	per_asian	</dt><dd><p>Percentage of Asian population</p></dd>
+<dt>	per_black	</dt><dd><p>Percentage of black population</p></dd>
+<dt>	per_white	</dt><dd><p>Percentage of white population</p></dd>
+<dt>	ctlabel	</dt><dd><p>Census tract label</p></dd>
+<dt>	borocode	</dt><dd><p>Borough code</p></dd>
+<dt>	boroname	</dt><dd><p>Borough name</p></dd>
+<dt>	boroct2000	</dt><dd><p>Census tract coding</p></dd>
+<dt>	ntacode	</dt><dd><p>Neighborhood tabulation area code</p></dd>
+<dt>	ntaname	</dt><dd><p>Neighborhood tabulation area name</p></dd>
+<dt>	puma	</dt><dd><p>Public use microarea code</p></dd>
+<dt>	shape_leng	</dt><dd><p>Length of polygon border</p></dd>
+<dt>	shape_area	</dt><dd><p>Area of polygon</p></dd>
+<dt>	np_ct	</dt><dd><p>Number of nonprofits</p></dd>
+<dt>	mean_inc	</dt><dd><p>Mean income</p></dd>
+<dt>	pop1619	</dt><dd><p>Population age 16-19</p></dd>
+<dt>	dropout	</dt><dd><p>High school dropouts, age 16-19</p></dd>
+<dt>	enrollhs	</dt><dd><p>Population enrolled in high school, age 16-19</p></dd>
+<dt>	per_prv_sc	</dt><dd><p>Percentage of all students Population enrolled in private school</p></dd>
+<dt>	per_pub_sc	</dt><dd><p>Percentage of all students Population enrolled in public school</p></dd>
+<dt>	over3	</dt><dd><p>Population over 3-year-old</p></dd>
+<dt>	notenroll	</dt><dd><p>Population over 3-year-old, not Population enrolled in school</p></dd>
+<dt>	over3enroll	</dt><dd><p>Population over 3-year-old, Population enrolled in school</p></dd>
+<dt>	pubsch	</dt><dd><p>Population enrolled in public school</p></dd>
+<dt>	pub_pk	</dt><dd><p>Population enrolled in public pre-k</p></dd>
+<dt>	pub_k8	</dt><dd><p>Population enrolled in public k-8</p></dd>
+<dt>	pub_hs	</dt><dd><p>Population enrolled in public high school</p></dd>
+<dt>	pub_col	</dt><dd><p>Population enrolled in public college</p></dd>
+<dt>	privsch	</dt><dd><p>Population enrolled in private school</p></dd>
+<dt>	priv_pk	</dt><dd><p>Population enrolled in private pre-k</p></dd>
+<dt>	priv_k8	</dt><dd><p>Population enrolled in private k-8</p></dd>
+<dt>	priv_hs	</dt><dd><p>Population enrolled in private high school</p></dd>
+<dt>	priv_col	</dt><dd><p>Population enrolled in private college</p></dd>
+<dt>	over25	</dt><dd><p>Population over 25 years</p></dd>
+<dt>	subhs	</dt><dd><p>Population over 25 years with less than high school degree</p></dd>
+<dt>	hs	</dt><dd><p>Population over 25 years with high school degree</p></dd>
+<dt>	somecol	</dt><dd><p>Population over 25 years with some college</p></dd>
+<dt>	college	</dt><dd><p>Population over 25 years with bachelor’s degree</p></dd>
+<dt>	master	</dt><dd><p>Population over 25 years with master’s degree</p></dd>
+<dt>	prof	</dt><dd><p>Population over 25 years with professional degree</p></dd>
+<dt>	phd	</dt><dd><p>Population over 25 years with phd</p></dd>
+<dt>	white	</dt><dd><p>Total white population</p></dd>
+<dt>	black	</dt><dd><p>Total black population</p></dd>
+<dt>	asian	</dt><dd><p>Total Asian population</p></dd>
+<dt>	sub18	</dt><dd><p>Total population under 18 years old</p></dd>
+<dt>	gender_par	</dt><dd><p>Gender parity, 1=parity, higher = more males, lower = more females</p></dd>
+<dt>	male	</dt><dd><p>Male population</p></dd>
+<dt>	female	</dt><dd><p>Female population</p></dd>
+<dt>	school_ct	</dt><dd><p>Number of schools</p></dd>
+<dt>	popdens	</dt><dd><p>Population density (people per square mile)</p></dd>
+<dt>	population	</dt><dd><p>Population count</p></dd>
 
 </dl>
 
@@ -209,7 +209,7 @@
 
       <footer>
       <div class="copyright">
-  <p>Developed by Angela Li.</p>
+  <p>Developed by Angela Li, Karina Acosta.</p>
 </div>
 
 <div class="pkgdown">

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Ozone Data (1997-99) — laozone • geodaData</title>
+<title>Los Angeles Ozone 1996 — laozone • geodaData</title>
 
 
 <!-- jquery -->
@@ -39,8 +39,8 @@
 
 
 
-<meta property="og:title" content="Ozone Data (1997-99) — laozone" />
-<meta property="og:description" content="Monthly ozone measurements for 30 monitoring stations (1997-1999)." />
+<meta property="og:title" content="Los Angeles Ozone 1996 — laozone" />
+<meta property="og:description" content="July 1996 ozone measurements for Los Angeles basin monitoring stations." />
 
 
 
@@ -111,13 +111,13 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Ozone Data (1997-99)</h1>
+    <h1>Los Angeles Ozone 1996</h1>
     <small class="dont-index">Source: <a href='https://github.com/spatialanalysis/geodaData/blob/master/R/laozone.R'><code>R/laozone.R</code></a></small>
     <div class="hidden name"><code>laozone.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Monthly ozone measurements for 30 monitoring stations (1997-1999).</p>
+    <p>July 1996 ozone measurements for Los Angeles basin monitoring stations.</p>
     </div>
 
     <pre class="usage"><span class='no'>laozone</span></pre>
@@ -125,15 +125,15 @@
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>An sf data frame with 32 rows, 9 variables, and a geometry column:</p><dl'>
-<dt>	STATION	</dt><dd><p>Station ID</p></dd>
-<dt>	MONITOR	</dt><dd><p>The monitor to which the data applies</p></dd>
-<dt>	LATITUDE	</dt><dd><p>Latitude of monitoring site (UTM Zone 11)</p></dd>
-<dt>	LONGITUDE	</dt><dd><p>Longitude of monitoring site (UTM Zone 11)</p></dd>
-<dt>	X_COORD	</dt><dd><p>X Coordinates</p></dd>
-<dt>	Y_COORD	</dt><dd><p>Y Coordinates (3 years (1997-99) x 12 months x 2 (max &amp; average))</p></dd>
-<dt>	Mxxy	</dt><dd><p>Daily maximum for year xx and month y</p></dd>
-<dt>	Axxy</dt><dd><p>Average or highest 8 hour period for year xx and month y</p></dd>
+    <p>An sf data frame with 32 rows, 8 variables, and a geometry column:</p><dl'>
+<dt>	STATION	</dt><dd><p>monitoring station identifier</p></dd>
+<dt>	MAXDAY	</dt><dd><p>maximum daily ozone for the month</p></dd>
+<dt>	AV8TOP	</dt><dd><p>monthly average of highest 8 hour daily averages</p></dd>
+<dt>	MONITOR	</dt><dd><p>monitoring station identifier</p></dd>
+<dt>	LAT	</dt><dd><p>latitude</p></dd>
+<dt>	LON	</dt><dd><p>longitude</p></dd>
+<dt>	X_COORD	</dt><dd><p>X-coordinate, projected, UTM</p></dd>
+<dt>	Y_COORD	</dt><dd><p>Y-coordinate, projected, UTM</p></dd>
 
 </dl>
 
@@ -162,7 +162,7 @@
 
       <footer>
       <div class="copyright">
-  <p>Developed by Angela Li.</p>
+  <p>Developed by Angela Li, Karina Acosta.</p>
 </div>
 
 <div class="pkgdown">

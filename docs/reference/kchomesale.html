@@ -40,7 +40,11 @@
 
 
 <meta property="og:title" content="2014-15 Home Sales in King County, WA — kchomesale" />
-<meta property="og:description" content="Home sales prices and charactiersitcs for Seattle and King County, WA (May 2014 - 2015)." />
+<meta property="og:description" content="Home sales prices and characteristics for Seattle and King County, WA (May 2014 - 2015). Use list2env(kchomesale, .GlobalEnv) to unlist in working environment. The data consist of a list of two objects:
+kchomesales_points A spatial points object of class sf Dataframe.
+kc_zones A shapefile object of class sf Dataframe.
+
+" />
 
 
 
@@ -117,7 +121,11 @@
     </div>
 
     <div class="ref-description">
-    <p>Home sales prices and charactiersitcs for Seattle and King County, WA (May 2014 - 2015).</p>
+    <p>Home sales prices and characteristics for Seattle and King County, WA (May 2014 - 2015). Use <code><a href='https://rdrr.io/r/base/list2env.html'>list2env(kchomesale, .GlobalEnv)</a></code> to unlist in working environment. The data consist of a list of two objects:</p><ul>
+<li><p>kchomesales_points A spatial points object of class sf Dataframe.</p></li>
+<li><p>kc_zones A shapefile object of class sf Dataframe.</p></li>
+</ul>
+
     </div>
 
     <pre class="usage"><span class='no'>kchomesale</span></pre>
@@ -125,43 +133,69 @@
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>An sf data frame with 21613 rows, 22 variables, and a geometry column:</p><dl'>
+    <p>kchomesales_points includes homesales points with 21,613 rows, 21 variables, and a geometry column.</p><dl'>
+ <dt>	id	</dt><dd><p>ID code</p></dd>
 <dt>	date	</dt><dd><p>date sold</p></dd>
 <dt>	price	</dt><dd><p>sale price</p></dd>
 <dt>	bedrooms	</dt><dd><p>number of bedrooms</p></dd>
 <dt>	bathrooms	</dt><dd><p>number of bathrooms</p></dd>
-<dt>	sqft__ving	</dt><dd><p>size of living area in square feet</p></dd>
+<dt>	sqft_liv	</dt><dd><p>size of living area in square feet</p></dd>
 <dt>	sqft_lot	</dt><dd><p>size of the lot in square feet</p></dd>
 <dt>	floors	</dt><dd><p>number of floors</p></dd>
-<dt>	waterfront	</dt><dd><p>‘1’ if the property has a waterfront, ‘0’ if not.</p></dd>
-<dt>	view	</dt><dd><p>An index from 0 to 4 of how good the view of the property was (definition:)</p></dd>
+<dt>	waterfront	</dt><dd><p>‘1’ if the property has a waterfront, ‘0’ if not</p></dd>
+<dt>	view	</dt><dd><p>An index from 0 to 4 of how good the view of the property was</p></dd>
 <dt>	condition	</dt><dd><p>condition of the house, ranked from 1 to 5</p></dd>
-<dt>	grade	</dt><dd><p>Classification by construction quality which refers to the types of materials used and the quality of workmanship. Buildings of better quality (higher grade) cost more to build per unit of measure and command higher value. (definition:)</p></dd>
+<dt>	grade	</dt><dd><p>Classification by construction quality which refers to the types of materials used and the quality of workmanship. Buildings of better quality (higher grade) cost more to build per unit of measure and command higher value. Additional details in: <a href='https://info.kingcounty.gov/assessor/esales/Glossary.aspx?type=r'>https://info.kingcounty.gov/assessor/esales/Glossary.aspx?type=r</a></p></dd>
 <dt>	sqft_above	</dt><dd><p>square feet above ground</p></dd>
-<dt>	sqft__ment	</dt><dd><p>square feet below ground</p></dd>
+<dt>	sqft_basmt	</dt><dd><p>square feet below ground</p></dd>
 <dt>	yr_built	</dt><dd><p>year built</p></dd>
-<dt>	yr_re_ated	</dt><dd><p>year renovated. ‘0’ if never renovated</p></dd>
+<dt>	yr_renov	</dt><dd><p>year renovated. ‘0’ if never renovated</p></dd>
 <dt>	zipcode	</dt><dd><p>5 digit zip code</p></dd>
-<dt>	lat, long	</dt><dd><p>latitude and longitude</p></dd>
-<dt>	squft__ng15	</dt><dd><p>average size of closest 15 houses, in square feet</p></dd>
-<dt>	sqft_lot15	</dt><dd><p>average size of the closest 15 houses’ lots, in square feet</p></dd>
+<dt>	lat</dt><dd><p>latitude</p></dd>
+<dt>  long	</dt><dd><p>longitude</p></dd>
+<dt>	squft_liv15	</dt><dd><p>average size of interior housing living space for the closest 15 houses, in square feet</p></dd>
+<dt>	squft_lot15	</dt><dd><p>average size of land lost for the closest 15 houses, in square feet</p></dd>
+<dt>	OBJECTID	</dt><dd><p>Polygon ID</p></dd>
+<dt>	ZIP	</dt><dd><p>ZIP code as int</p></dd>
+<dt>	ZIPCODE	</dt><dd><p>ZIP code as chr</p></dd>
+<dt>	COUNTY	</dt><dd><p>County code</p></dd>
+<dt>	Shape_leng	</dt><dd><p>Polygon length in meters</p></dd>
+<dt>	Shape_Area	</dt><dd><p>Polygon area in meters</p></dd>
+
+</dl>
+
+<p>kc_zones includes polygons of zones for King County with 85 rows, 6 variables and a geometry column).</p><dl'>
+ <dt>	OBJECTID	</dt><dd><p>ID code</p></dd>
+<dt>	ZIP	</dt><dd><p>Zip code</p></dd>
+<dt>	COUNTY	</dt><dd><p>County code</p></dd>
+<dt>	ZIP_TYPE	</dt><dd><p>Zip code type: standard or PO box</p></dd>
+<dt>	Shape_Leng	</dt><dd><p>Polygon length</p></dd>
+<dt>	Shape_Area	</dt><dd><p>Polygon area</p></dd>
 
 </dl>
 
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
-    <p><a href='https://www.kaggle.com/harlfoxem/housesalesprediction/discussion'>https://www.kaggle.com/harlfoxem/housesalesprediction/discussion</a></p>
+    <p>King County Home sales obtained from <a href='https://www.kaggle.com/harlfoxem/housesalesprediction/discussion'>https://www.kaggle.com/harlfoxem/housesalesprediction/discussion</a> and King county polygons are retrieved from <a href='https://gis-kingcounty.opendata.arcgis.com/datasets/zipcodes-for-king-county-and-surrounding-area-shorelines-zipcode-shore-area'>https://gis-kingcounty.opendata.arcgis.com/datasets/zipcodes-for-king-county-and-surrounding-area-shorelines-zipcode-shore-area</a></p>
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>Sf object, undefined Coordinate Reference System.</p>
+    <p>List of two Sf objects, unprojected. EPSG 4326: WGS84.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='kw'>if</span> (<span class='fu'><a href='https://rdrr.io/r/base/ns-load.html'>requireNamespace</a></span>(<span class='st'>"sf"</span>, <span class='kw'>quietly</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)) {
+    <pre class="examples"><div class='input'>
+<span class='co'>## Unlist in Global environment</span>
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>geodaData</span>)
+<span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>kchomesale</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/list2env.html'>list2env</a></span>(<span class='no'>kchomesale</span>, <span class='fu'><a href='https://rdrr.io/r/base/environment.html'>environment</a></span>())</div><div class='output co'>#&gt; &lt;environment: 0x7fe3ec72d358&gt;</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/ls.html'>ls</a></span>()</div><div class='output co'>#&gt; [1] "kc_zones"           "kchomesales_points"</div><div class='input'>
+<span class='co'>## Plot first listed dataset (kchomesales_points):</span>
+<span class='kw'>if</span> (<span class='fu'><a href='https://rdrr.io/r/base/ns-load.html'>requireNamespace</a></span>(<span class='st'>"sf"</span>, <span class='kw'>quietly</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)) {
   <span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>sf</span>)
   <span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>kchomesale</span>)
 
-  <span class='fu'><a href='https://rdrr.io/pkg/sf/man/plot.html'>plot</a></span>(<span class='no'>kchomesale</span>[<span class='st'>"price"</span>])
-}</div><div class='img'><img src='kchomesale-1.png' alt='' width='700' height='433' /></div></pre>
+  <span class='fu'><a href='https://rdrr.io/pkg/sf/man/plot.html'>plot</a></span>(<span class='no'>kchomesale</span><span class='kw'>[[</span><span class='fl'>1</span>]][<span class='st'>"price"</span>])
+}</div><div class='img'><img src='kchomesale-1.png' alt='' width='700' height='433' /></div><div class='input'>
+
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -173,7 +207,7 @@
 
       <footer>
       <div class="copyright">
-  <p>Developed by Angela Li.</p>
+  <p>Developed by Angela Li, Karina Acosta.</p>
 </div>
 
 <div class="pkgdown">

@@ -21,19 +21,18 @@
 #'	\item{	ep_nove	}{	Percentage of households with no vehicle available estimate, 2010-2014 ACS	}
 #'	\item{	rent_1	}{	Percentage of renters estimate, 2010-2014 ACS	}
 #'	\item{	rntov30p_1	}{	Percentage of renters paying over 30 pct of income towards housing estimate, 2010-2014 ACS	}
-#'	\item{	rntov30p_1	}{	Percentage of renters paying over 30 pct of income towards housing estimate, 2010-2014 ACS	}
 #'	\item{	ep_unin	}{	Percentage of uninsured in the total civilian noninstitutionalized population estimate, 2010- 2014 ACS	}
 #'	\item{	ep_minrty	}{	Percentage minority (all persons except white, non-Hispanic) estimate, 2010-2014 ACS	}
 #'	\item{	ep_age65	}{	Percentage of persons aged 65 and older estimate, 2010-2014 ACS	}
 #'	\item{	ep_age17	}{	Percentage of persons aged 17 and younger estimate, 2010-2014 ACS	}
 #'	\item{	ep_disabl	}{	Percentage of civilian noninstitutionalized population with a disability estimate, 2010-2014 ACS	}
-#'	\item{	1_SES	}{	Socioeconomic Advantage Index, raw (see \url{https://sdohatlas.github.io/})	}
-#'	\item{	2_MOB	}{	Limited Mobility Index, raw (see \url{https://sdohatlas.github.io/)}	}
-#'	\item{	3_URB	}{	Urban Core Opportunity Index, raw (see \url{https://sdohatlas.github.io/})	}
-#'	\item{	4_MICA	}{	MICA Index, raw (see \url{https://sdohatlas.github.io/})	}
-#'	\item{	SDOH_CL	}{	1= rural affordable, 2=suburban affluent, 3=suburban affordable, 4=extreme poverty, 5=multilingual working, 6=urban core opportunity, 7=sparse areas (see \url{https://sdohatlas.github.io/})	}
+#'	\item{	X1_SES	}{	Socioeconomic Advantage Index, raw (see \url{https://sdohatlas.github.io/})	}
+#'	\item{	X2_MOB	}{	Limited Mobility Index, raw (see \url{https://sdohatlas.github.io/)}	}
+#'	\item{	X3_URB	}{	Urban Core Opportunity Index, raw (see \url{https://sdohatlas.github.io/})	}
+#'	\item{	X4_MICA	}{	MICA Index, raw (see \url{https://sdohatlas.github.io/})	}
+#'	\item{	SDOH_CL	}{	1:rural affordable, 2:suburban affluent, 3:suburban affordable, 4:extreme poverty, 5:multilingual working, 6:urban core opportunity, 7:sparse areas (see \url{https://sdohatlas.github.io/})	}
 #' }
-#' @source \url{https://sdohatlas.github.io/}
+#' @source The U.S. Social Determinants of Health Atlas. \url{https://sdohatlas.github.io/}
 #' @examples
 #' if (requireNamespace("sf", quietly = TRUE)) {
 #'   library(sf)

@@ -125,7 +125,11 @@
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>An sf data frame with 75 rows, 62 variables, and a geometry column:</p><dl'>
+    <p>An sf data frame with 75 rows, 61 variables, and a geometry column:</p><dl'>
+<dt>	id	</dt><dd><p>Unique ID</p></dd>
+<dt>	region	</dt><dd><p>Nepal region</p></dd>
+<dt>	zone	</dt><dd><p>Nepal zone</p></dd>
+<dt>	district	</dt><dd><p>Nepal district</p></dd>
 <dt>	depecprov	</dt><dd><p>Deprivation in economic provisioning</p></dd>
 <dt>	povindex	</dt><dd><p>Human Poverty Index</p></dd>
 <dt>	pcinc	</dt><dd><p>Per Capita Income</p></dd>
@@ -143,10 +147,10 @@
 <dt>	schlppop	</dt><dd><p>Number of Schools per population (in thousands) (2012-2013)</p></dd>
 <dt>	ad_illit	</dt><dd><p>Adult illiteracy rate (2011)</p></dd>
 <dt>	ad_ilgt50	</dt><dd><p>Dummy variable with value of 1 if adult illiteracy rate &gt;50pct (2011)</p></dd>
-<dt>	votnum	</dt><dd><p>Number of Voters (lunar years 2047-2063, approx. 1991 to 2006)</p></dd>
-<dt>	totecfms	</dt><dd><p>“Total economy including financial intermediation service indirectly measured (total value added)”</p></dd>
-<dt>	xxcamt	</dt><dd><p>Project Sector Committed Amount: XX = sector (see above)</p></dd>
-<dt>	xxdamt	</dt><dd><p>Project Sector Distributed Amount: XX = sector: Agriculture, Business Banking, Communication, Conflict Resolution, Budget Support + Finance, Education, Energy, Environment, Forestry, Gov + Civil Society, Health, Humanitarian Aid, Industry, Multi-Sector, Social Infrastructure, Tourism, Transport + Storage, Water Sanitation, Total</p></dd>
+<dt>	lon	</dt><dd><p>Longitude</p></dd>
+<dt>	lat	</dt><dd><p>Latitude</p></dd>
+<dt>	xxCAMT	</dt><dd><p>Project Sector Committed Amount: xx = sector: Agriculture (AG), Business Banking (BANK), Communication (COMM), Conflict Resolution (CON), Education (EDU), Energy (ENGY), Environment (ENV), Forestry (FOR), Government and Civil Society (GOV), Health (HEALT), Humanitarian Aid (HUM), Industry (IND), Multi-Sector (MUL), Social Infrastructure (SOC), Tourism (TOUR), Transport and Storage (TRAN), Water Sanitation (WAT), Total (TOT)</p></dd>
+<dt>	xxDAMT	</dt><dd><p>Project Sector Distributed Amount by sector xx (see above)</p></dd>
 
 </dl>
 
@@ -175,7 +179,7 @@
 
       <footer>
       <div class="copyright">
-  <p>Developed by Angela Li.</p>
+  <p>Developed by Angela Li, Karina Acosta.</p>
 </div>
 
 <div class="pkgdown">

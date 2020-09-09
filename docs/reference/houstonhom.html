@@ -125,13 +125,15 @@
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>An sf data frame with 52 rows, 24 variables, and a geometry column:</p><dl'>
+    <p>An sf data frame with 52 rows, 23 variables, and a geometry column:</p><dl'>
 <dt>	NAME	</dt><dd><p>county name</p></dd>
 <dt>	STATE_NAME	</dt><dd><p>state name</p></dd>
 <dt>	STATE_FIPS	</dt><dd><p>state FIPS code (character)</p></dd>
 <dt>	CNTY_FIPS	</dt><dd><p>county FIPS code (character)</p></dd>
 <dt>	FIPS	</dt><dd><p>combined state and county FIPS code (character)</p></dd>
-<dt>	FIPSNO	</dt><dd><p>fips code as numeric variable</p></dd>
+<dt>	STFIPS	</dt><dd><p>state FIPS code (number)</p></dd>
+<dt>	COFIPS	</dt><dd><p>county FIPS code (number)</p></dd>
+<dt>	FIPSNO	</dt><dd><p>combined state and county FIPS code (number)</p></dd>
 <dt>	HR8187	</dt><dd><p>homicide rate per 100,000 (1981-87)</p></dd>
 <dt>	HR8791	</dt><dd><p>homicide rate per 100,000 (1987-91)</p></dd>
 <dt>	HR9195	</dt><dd><p>homicide rate per 100,000 (1991-95)</p></dd>
@@ -162,7 +164,7 @@
   <span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>sf</span>)
   <span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>houstonhom</span>)
 
-  <span class='fu'><a href='https://rdrr.io/pkg/sf/man/plot.html'>plot</a></span>(<span class='no'>houstonhom</span>[<span class='st'>"HC9195"</span>])
+  <span class='fu'><a href='https://rdrr.io/pkg/sf/man/plot.html'>plot</a></span>(<span class='no'>houstonhom</span>[<span class='st'>"HR9195"</span>])
 }</div><div class='img'><img src='houstonhom-1.png' alt='' width='700' height='433' /></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
@@ -175,7 +177,7 @@
 
       <footer>
       <div class="copyright">
-  <p>Developed by Angela Li.</p>
+  <p>Developed by Angela Li, Karina Acosta.</p>
 </div>
 
 <div class="pkgdown">

@@ -125,10 +125,16 @@
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>An sf data frame with 3984 rows, 76 variables, and a geometry column:</p><dl'>
+    <p>An sf data frame with 3984 rows, 64 variables, and a geometry column:</p><dl'>
+<dt>	cartodb_id	</dt><dd><p>Carto ID</p></dd>
+<dt>	countyfp	</dt><dd><p>County FIPS ID</p></dd>
+<dt>	statefp	</dt><dd><p>State FIPS code</p></dd>
+<dt>	statename	</dt><dd><p>State name</p></dd>
+<dt>	countyname	</dt><dd><p>County name and State</p></dd>
+<dt>	countyfips	</dt><dd><p>County FIPS code</p></dd>
 <dt>	ratio	</dt><dd><p>The county’s median income divided by the state’s median income</p></dd>
 <dt>	cty_pop200	</dt><dd><p>County’s population in 2000</p></dd>
-<dt>	le_agg_q1_	</dt><dd><p>Female life expectancy, 1st Income Quartile, not adjusted for race.</p></dd>
+<dt>	le_agg_q1	</dt><dd><p>Female life expectancy, 1st Income Quartile, not adjusted for race.</p></dd>
 <dt>	le_raceadj	</dt><dd><p>Female life expectancy, 1st Income Quartile, adjusted for race.</p></dd>
 <dt>	le_agg_q2	</dt><dd><p>Female life expectancy, 2nd Income Quartile, not adjusted for race</p></dd>
 <dt>	le_racea_1	</dt><dd><p>Female life expectancy, 2nd Income Quartile, adjusted for race</p></dd>
@@ -144,7 +150,7 @@
 <dt>	le_racea_6	</dt><dd><p>Male life expectancy, 3rd Income Quartile, adjusted for race</p></dd>
 <dt>	le_agg_q41	</dt><dd><p>Male life expectancy, 4th Income Quartile, not adjusted for race</p></dd>
 <dt>	le_racea_7	</dt><dd><p>Male life expectancy, 4th Income Quartile, adjusted for race</p></dd>
-<dt>	sd_le_agg_	</dt><dd><p>Standard error for female life expectancy, 1st income Quartile, not adjusted for race.</p></dd>
+<dt>	sd_le_agg	</dt><dd><p>Standard error for female life expectancy, 1st income Quartile, not adjusted for race.</p></dd>
 <dt>	sd_le_race	</dt><dd><p>Standard error for female life expectancy, 1st income Quartile, adjusted for race.</p></dd>
 <dt>	sd_le_agg1	</dt><dd><p>Standard error for female life expectancy, 2nd income Quartile, not adjusted for race.</p></dd>
 <dt>	sd_le_ra_1	</dt><dd><p>Standard error for female life expectancy, 2nd income Quartile, adjusted for race.</p></dd>
@@ -168,12 +174,12 @@
 <dt>	count_q2_M	</dt><dd><p>Male count, 2nd income quartile.</p></dd>
 <dt>	count_q3_M	</dt><dd><p>Male count, 3rd income quartile.</p></dd>
 <dt>	count_q4_M	</dt><dd><p>Male count, 4th income quartile.</p></dd>
-<dt>	Diversity-	</dt><dd><p>Diversity Index</p></dd>
-<dt>	Asian alon	</dt><dd><p>Asian alone, percent</p></dd>
-<dt>	Native Haw	</dt><dd><p>Native Hawaiian, percent</p></dd>
-<dt>	Two or Mor	</dt><dd><p>Two or more races, percent</p></dd>
-<dt>	Hispanic o	</dt><dd><p>Hispanic, percent</p></dd>
-<dt>	White alon	</dt><dd><p>White alone, percent</p></dd>
+<dt>	Diversity	</dt><dd><p>Diversity Index</p></dd>
+<dt>	Asianalon	</dt><dd><p>Asian alone, percent</p></dd>
+<dt>	NativeHaw	</dt><dd><p>Native Hawaiian, percent</p></dd>
+<dt>	TwoorMor	</dt><dd><p>Two or more races, percent</p></dd>
+<dt>	Hispanico	</dt><dd><p>Hispanic, percent</p></dd>
+<dt>	Whitealon	</dt><dd><p>White alone, percent</p></dd>
 
 </dl>
 
@@ -189,7 +195,7 @@
   <span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>sf</span>)
   <span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>healthplus</span>)
 
-  <span class='fu'><a href='https://rdrr.io/pkg/sf/man/plot.html'>plot</a></span>(<span class='no'>healthplus</span>[<span class='st'>"le_agg_q1_"</span>])
+  <span class='fu'><a href='https://rdrr.io/pkg/sf/man/plot.html'>plot</a></span>(<span class='no'>healthplus</span>[<span class='st'>"le_agg_q1"</span>])
 }</div><div class='img'><img src='healthplus-1.png' alt='' width='700' height='433' /></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
@@ -202,7 +208,7 @@
 
       <footer>
       <div class="copyright">
-  <p>Developed by Angela Li.</p>
+  <p>Developed by Angela Li, Karina Acosta.</p>
 </div>
 
 <div class="pkgdown">

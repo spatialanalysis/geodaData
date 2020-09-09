@@ -126,31 +126,29 @@
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
     <p>An sf data frame with 85 rows, 23 variables, and a geometry column:</p><dl'>
-  <dt>variable</dt><dd><p>Description</p></dd>
-  <dt>dept, code_de</dt><dd><p>Department ID: Standard numbers for the departments</p></dd>
-  <dt>region</dt><dd><p>Region of France (‘N’=’North’, ‘S’=’South’, ‘E’=’East’, ‘W’=’West’, ‘C’=’Central’).  Corsica is coded as NA.</p></dd>
-  <dt>dprtmnt</dt><dd><p>Department name: Departments are named according to usage in 1830, but without accents. A factor with levels Ain Aisne Allier … Vosges Yonne</p></dd>
-  <dt>crm_prs</dt><dd><p>Population per Crime against persons.</p></dd>
-  <dt>crm_prp</dt><dd><p>Population per Crime against property.</p></dd>
-  <dt>litercy</dt><dd><p>Percent of military conscripts who can read and write.</p></dd>
-  <dt>donatns</dt><dd><p>Donations to the poor.</p></dd>
-  <dt>infants</dt><dd><p>Population per illegitimate birth.</p></dd>
-  <dt>suicids</dt><dd><p>Population per suicide.</p></dd>
-  <dt>maincty</dt><dd><p>Size of principal city (‘1:Sm’, ‘2:Med’, ‘3:Lg’), used as a surrogate for population density. Large refers to the top 10, small to the bottom 10; all the rest are classed Medium.</p></dd>
-  <dt>wealth</dt><dd><p>Per capita tax on personal property. A ranked index based on taxes on personal and movable property per inhabitant.</p></dd>
-  <dt>commerc</dt><dd><p>Commerce and Industry, measured by the rank of the number of patents / population.</p></dd>
-  <dt>clergy</dt><dd><p>Distribution of clergy, measured by the rank of the number of Catholic priests in active service population.</p></dd>
-  <dt>crim_prn</dt><dd><p>Crimes against parents, measured by the rank of the ratio of crimes against parents to all crimes – Average for the years 1825-1830.</p></dd>
-  <dt>infntcd</dt><dd><p>Infanticides per capita. A ranked ratio of number of infanticides to population – Average for the years 1825-1830.</p></dd>
-  <dt>dntn_cl</dt><dd><p>Donations to the clergy. A ranked ratio of the number of bequests and donations inter vivios to population – Average for the years 1815-1824.</p></dd>
-  <dt>lottery</dt><dd><p>Per capita wager on Royal Lottery. Ranked ratio of the proceeds bet on the royal lottery to population — Average for the years 1822-1826.</p></dd>
-  <dt>desertn</dt><dd><p>Military desertion, ratio of number of young soldiers accused of desertion to the force of the military contingent, minus the deficit produced by the insufficiency of available billets – Average of the years 1825-1827.</p></dd>
-  <dt>instrct</dt><dd><p>Instruction. Ranks recorded from Guerry’s map of Instruction. Note: this is inversely related to Literacy.</p></dd>
-  <dt>prsttts</dt><dd><p>Number of prostitutes registered in Paris from 1816 to 1834, classified by the department of their birth</p></dd>
-  <dt>distanc</dt><dd><p>Distance to Paris (km). Distance of each department centroid to the centroid of the Seine (Paris).</p></dd>
-  <dt>area</dt><dd><p>Area (1000 km^2).</p></dd>
-  <dt>pop1831</dt><dd><p>Population in 1831, in 1000s.</p></dd>
-  <dt>geometry</dt><dd><p>MULTIPOLYGON</p></dd>
+<dt>	dept	</dt><dd><p>Department ID: Standard numbers for the departments</p></dd>
+<dt>	Region	</dt><dd><p>Region of France ('N'='North', 'S'='South', 'E'='East', 'W'='West', 'C'='Central').  Corsica is coded as NA.</p></dd>
+<dt>	Dprtmnt	</dt><dd><p>Department name: Departments are named according to usage in 1830, but without accents. A factor with levels *Ain* *Aisne* *Allier* ... *Vosges Yonne*</p></dd>
+<dt>	Crm_prs	</dt><dd><p>Population per Crime against persons.</p></dd>
+<dt>	Crm_prp	</dt><dd><p>Population per Crime against property.</p></dd>
+<dt>	Litercy	</dt><dd><p>Percent of military conscripts who can read and write.</p></dd>
+<dt>	Donatns	</dt><dd><p>Donations to the poor.</p></dd>
+<dt>	Infants	</dt><dd><p>Population per illegitimate birth.</p></dd>
+<dt>	Suicids	</dt><dd><p>Population per suicide.</p></dd>
+<dt>	Maincty	</dt><dd><p>Size of principal city ('1:Sm', '2:Med', '3:Lg'), used as a surrogate for population density. Large refers to the top 10, small to the bottom 10; all the rest are classed Medium.</p></dd>
+<dt>	Wealth	</dt><dd><p>Per capita tax on personal property. A ranked index based on taxes on personal and movable property per inhabitant.</p></dd>
+<dt>	Commerc	</dt><dd><p>Commerce and Industry, measured by the rank of the number of patents / population.</p></dd>
+<dt>	Clergy	</dt><dd><p>Distribution of clergy, measured by the rank of the number of Catholic priests in active service population.</p></dd>
+<dt>	Crim_prn	</dt><dd><p>Crimes against parents, measured by the rank of the ratio of crimes against parents to all crimes – Average for the years 1825-1830.</p></dd>
+<dt>	Infntcd	</dt><dd><p>Infanticides per capita. A ranked ratio of number of infanticides to population – Average for the years 1825-1830.</p></dd>
+<dt>	Dntn_cl	</dt><dd><p>Donations to the clergy. A ranked ratio of the number of bequests and donations inter vivios to population – Average for the years 1815-1824.</p></dd>
+<dt>	Lottery	</dt><dd><p>Per capita wager on Royal Lottery. Ranked ratio of the proceeds bet on the royal lottery to population — Average for the years 1822-1826.</p></dd>
+<dt>	Desertn	</dt><dd><p>Military desertion, ratio of number of young soldiers accused of desertion to the force of the military contingent, minus the deficit produced by the insufficiency of available billets – Average of the years 1825-1827.</p></dd>
+<dt>	Instrct	</dt><dd><p>Instruction. Ranks recorded from Guerry's map of Instruction. Note: this is inversely related to Literacy</p></dd>
+<dt>	Prsttts	</dt><dd><p>Number of prostitutes registered in Paris from 1816 to 1834, classified by the department of their birth</p></dd>
+<dt>	Distanc	</dt><dd><p>Distance to Paris (km). Distance of each department centroid to the centroid of the Seine (Paris)</p></dd>
+<dt>	Area	</dt><dd><p>Area (1000 km^2).</p></dd>
+<dt>	Pop1831	</dt><dd><p>Population in 1831, in 1000s</p></dd>
 
 </dl>
 
@@ -171,7 +169,7 @@
   <span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>sf</span>)
   <span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>guerry</span>)
 
-  <span class='fu'><a href='https://rdrr.io/pkg/sf/man/plot.html'>plot</a></span>(<span class='no'>guerry</span>[<span class='st'>"CODE_DE"</span>])
+  <span class='fu'><a href='https://rdrr.io/pkg/sf/man/plot.html'>plot</a></span>(<span class='no'>guerry</span>[<span class='st'>"Donatns"</span>])
 }</div><div class='img'><img src='guerry-1.png' alt='' width='700' height='433' /></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
@@ -184,7 +182,7 @@
 
       <footer>
       <div class="copyright">
-  <p>Developed by Angela Li.</p>
+  <p>Developed by Angela Li, Karina Acosta.</p>
 </div>
 
 <div class="pkgdown">
