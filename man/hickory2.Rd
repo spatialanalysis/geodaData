@@ -61,7 +61,7 @@ An sf data frame with 29 rows, 55 variables, and a geometry column:
 \item{	PCTIME	}{	Industry mix effect, percent (M)	}
 \item{	PCTCSE	}{	Competitive shift effect, percent (S)	}
 \item{	PCTGRO	}{	Percent growth establishments, 1998-2001 (R)	}
-\item{	ID	}{	Unique ZIP code ID for ID variables in weights matrix creation window	}
+\item{	ID	}{	Unique ZIP code ID for variables in weights matrix creation window	}
 }
 }
 \source{

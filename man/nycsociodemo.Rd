@@ -5,8 +5,9 @@
 \alias{nycsociodemo}
 \title{NYC Education and Sociodemographics}
 \format{
-An sf data frame with 2166 rows, 114 variables, and a geometry column:
+An sf data frame with 2,166 rows, 114 variables, and a geometry column:
 \describe{
+ \item{	carto_id	}{	Carto unique ID	}
 \item{	withssi	}{	Households With Supplemental Security Income	}
 \item{	withpubass	}{	Households With Public Assistance Income	}
 \item{	struggling	}{	Struggling as regards Ratio Of Income In 2012 To Poverty Level (1.00 to 1.99)	}
@@ -97,10 +98,10 @@ An sf data frame with 2166 rows, 114 variables, and a geometry column:
 \item{	medianagem	}{	Total Population Male Median Age	}
 \item{	medianagef	}{	Total Population Female Median Age	}
 \item{	medianage	}{	Total Population Median Age	}
-\item{	HHsiz	}{	Average Household Size	}
 \item{	gini	}{	Gini Index Of Income Inequality	}
-\item{	BoroCode	}{	Number for each of the five New York City boroughs	}
+\item{	borocode	}{	Number for each of the five New York City boroughs	}
 \item{	popdty	}{	Population Density (per sq. mile)	}
+\item{	uemprate	}{	Unemployment rate	}
 }
 }
 \source{

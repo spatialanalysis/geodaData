@@ -60,7 +60,7 @@
 #'	\item{	PCTIME	}{	Industry mix effect, percent (M)	}
 #'	\item{	PCTCSE	}{	Competitive shift effect, percent (S)	}
 #'	\item{	PCTGRO	}{	Percent growth establishments, 1998-2001 (R)	}
-#'	\item{	ID	}{	Unique ZIP code ID for ID variables in weights matrix creation window	}
+#'	\item{	ID	}{	Unique ZIP code ID for variables in weights matrix creation window	}
 #'	}
 #' @source  1998 and 2001 Zip Code Business Patterns, US Census Bureau.
 #'

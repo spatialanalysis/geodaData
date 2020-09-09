@@ -32,6 +32,7 @@
 #'	\item{	SAT2XTz (99)	}{	Interaction Sat squared - topographic zone (z: from 2 to 4)	}
 #'	}
 #'	@details List of two Sf objects, unprojected. The CRS of lasrosas99 is EPSG 4326: WGS84. The data lasrosas99 has an undefined Coordinate Reference System.
+#'
 #' @source Rodolfo Bongiovanni, Instituto Nacional de Tecnologia Agropecuaria (INTA), Manfredi, Cordoba, Argentina, (rodolfo_bongiovanni@yahoo.com)
 #'
 #' @examples
