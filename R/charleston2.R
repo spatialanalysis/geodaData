@@ -8,7 +8,7 @@
 #' \describe{
 #'	\item{	ZIP	}{	ZIP code	}
 #'	\item{	PO_NAME	}{	Name of ZIP code area	}
-#'	\item{	STATE	}{	STATE	}
+#'	\item{	STATE	}{	State abbreviation	}
 #'	\item{	POP2001	}{	Population 2001	}
 #'	\item{	MSA	}{	Metropolitan Statistical Area	}
 #'	\item{	EMP98	}{	Total mid-march employees, 1998	}

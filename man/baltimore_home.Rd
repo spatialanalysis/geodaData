@@ -8,22 +8,22 @@
 An sf data frame with 211 rows, 18 variables, and a geometry column:
 \describe{
 \item{	STATION	}{	ID variable	}
-\item{	PRICE	}{	sales price of house in $1,000 (MLS)	}
-\item{	NROOM	}{	number of rooms	}
+\item{	PRICE	}{	Sales price of house in $1,000 (MLS)	}
+\item{	NROOM	}{	Number of rooms	}
 \item{	DWELL	}{	1 if detached unit, 0 otherwise	}
-\item{	NBATH	}{	number of bathrooms	}
+\item{	NBATH	}{	Number of bathrooms	}
 \item{	PATIO	}{	1 if patio, 0 otherwise	}
 \item{	FIREPL	}{	1 if fireplace, 0 otherwise	}
 \item{	AC	}{	1 if air conditioning, 0 otherwise	}
 \item{	BMENT	}{	1 if basement, 0 otherwise	}
-\item{	NSTOR	}{	number of stories	}
-\item{	GAR	}{	number of car spaces in garage (0 = no garage)	}
-\item{	AGE	}{	age of dwelling in years	}
+\item{	NSTOR	}{	Number of stores	}
+\item{	GAR	}{	Number of car spaces in garage (0 = no garage)	}
+\item{	AGE	}{	Age of dwelling in years	}
 \item{	CITCOU	}{	1 if dwelling is in Baltimore County, 0 otherwise	}
-\item{	LOTSZ	}{	lot size in hundreds of square feet	}
-\item{	SQFT	}{	interior living space in hundreds of square feet	}
-\item{	X	}{	x coordinate on the Maryland grid	}
-\item{	Y	}{	y coordinate on the Maryland grid	}
+\item{	LOTSZ	}{	Lot size in hundreds of square feet	}
+\item{	SQFT	}{	Interior living space in hundreds of square feet	}
+\item{	X	}{	X Coordinate on the Maryland grid	}
+\item{	Y	}{	Y Coordinate on the Maryland grid	}
 }
 }
 \source{

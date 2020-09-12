@@ -12,7 +12,7 @@
 #'	\item{	Status	}{	Status of the store (e.g. open, open at new location, etc.)	}
 #'	\item{	Address	}{	Supermarket address	}
 #'	\item{	Chain	}{	Supermarket chain	}
-#'	\item{	Category	}{	New stores are marked “New,” rest are left blank.	}
+#'	\item{	Category	}{	New stores are marked “New”, the rest are left blank	}
 #'	}
 #' @source Scraped from Google Maps in 2015.
 #'
