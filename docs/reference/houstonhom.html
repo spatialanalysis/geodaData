@@ -120,35 +120,35 @@
     <p>Homicides and selected socio-economic characteristics for counties surrounding Houston, TX. Data aggregated for three time periods: 1979-84 (steady decline in homicides), 1984-88 (stable period), and 1988-93 (steady increase in homicides).</p>
     </div>
 
-    <pre class="usage"><span class='no'>houstonhom</span></pre>
+    <pre class="usage"><span class='va'>houstonhom</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>An sf data frame with 52 rows, 23 variables, and a geometry column:</p><dl'>
-<dt>	NAME	</dt><dd><p>county name</p></dd>
-<dt>	STATE_NAME	</dt><dd><p>state name</p></dd>
-<dt>	STATE_FIPS	</dt><dd><p>state FIPS code (character)</p></dd>
-<dt>	CNTY_FIPS	</dt><dd><p>county FIPS code (character)</p></dd>
-<dt>	FIPS	</dt><dd><p>combined state and county FIPS code (character)</p></dd>
-<dt>	STFIPS	</dt><dd><p>state FIPS code (number)</p></dd>
-<dt>	COFIPS	</dt><dd><p>county FIPS code (number)</p></dd>
-<dt>	FIPSNO	</dt><dd><p>combined state and county FIPS code (number)</p></dd>
-<dt>	HR8187	</dt><dd><p>homicide rate per 100,000 (1981-87)</p></dd>
-<dt>	HR8791	</dt><dd><p>homicide rate per 100,000 (1987-91)</p></dd>
-<dt>	HR9195	</dt><dd><p>homicide rate per 100,000 (1991-95)</p></dd>
-<dt>	HC8187	</dt><dd><p>homicide count (1981-87)</p></dd>
-<dt>	HC8791	</dt><dd><p>homicide count (1987-91)</p></dd>
-<dt>	HC9195	</dt><dd><p>homicide count (1991-95)</p></dd>
-<dt>	PO8187	</dt><dd><p>population total (1981-87)</p></dd>
-<dt>	PO8791	</dt><dd><p>population total (1987-91)</p></dd>
-<dt>	PO9195	</dt><dd><p>population total (1991-95)</p></dd>
-<dt>	PE77	</dt><dd><p>police expenditures per capita, 1977</p></dd>
-<dt>	PE82	</dt><dd><p>police expenditures per capita, 1982</p></dd>
-<dt>	PE87	</dt><dd><p>police expenditures per capita, 1987</p></dd>
-<dt>	RDAC80	</dt><dd><p>resource deprivation/affluence composite variable, 1980</p></dd>
-<dt>	RDAC85	</dt><dd><p>resource deprivation/affluence composite variable, 1985</p></dd>
-<dt>	RDAC90	</dt><dd><p>resource deprivation/affluence composite variable, 1990</p></dd>
+    <p>An sf data frame with 52 rows, 23 variables, and a geometry column:</p><dl>
+<dt>	NAME	</dt><dd><p>County name</p></dd>
+<dt>	STATE_NAME	</dt><dd><p>State name</p></dd>
+<dt>	STATE_FIPS	</dt><dd><p>State FIPS code (character)</p></dd>
+<dt>	CNTY_FIPS	</dt><dd><p>County FIPS code (character)</p></dd>
+<dt>	FIPS	</dt><dd><p>Combined state and county FIPS code (character)</p></dd>
+<dt>	STFIPS	</dt><dd><p>State FIPS code (number)</p></dd>
+<dt>	COFIPS	</dt><dd><p>County FIPS code (number)</p></dd>
+<dt>	FIPSNO	</dt><dd><p>Combined state and county FIPS code (number)</p></dd>
+<dt>	HR8187	</dt><dd><p>Homicide rate per 100,000 (1981-87)</p></dd>
+<dt>	HR8791	</dt><dd><p>Homicide rate per 100,000 (1987-91)</p></dd>
+<dt>	HR9195	</dt><dd><p>Homicide rate per 100,000 (1991-95)</p></dd>
+<dt>	HC8187	</dt><dd><p>Homicide count (1981-87)</p></dd>
+<dt>	HC8791	</dt><dd><p>Homicide count (1987-91)</p></dd>
+<dt>	HC9195	</dt><dd><p>Homicide count (1991-95)</p></dd>
+<dt>	PO8187	</dt><dd><p>Population total (1981-87)</p></dd>
+<dt>	PO8791	</dt><dd><p>Population total (1987-91)</p></dd>
+<dt>	PO9195	</dt><dd><p>Population total (1991-95)</p></dd>
+<dt>	PE77	</dt><dd><p>Police expenditures per capita, 1977</p></dd>
+<dt>	PE82	</dt><dd><p>Police expenditures per capita, 1982</p></dd>
+<dt>	PE87	</dt><dd><p>Police expenditures per capita, 1987</p></dd>
+<dt>	RDAC80	</dt><dd><p>Resource deprivation/affluence composite variable, 1980</p></dd>
+<dt>	RDAC85	</dt><dd><p>Resource deprivation/affluence composite variable, 1985</p></dd>
+<dt>	RDAC90	</dt><dd><p>Resource deprivation/affluence composite variable, 1990</p></dd>
 
 </dl>
 
@@ -160,12 +160,13 @@
     <p>Sf object, unprojected. EPSG 4326: WGS84.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='kw'>if</span> (<span class='fu'><a href='https://rdrr.io/r/base/ns-load.html'>requireNamespace</a></span>(<span class='st'>"sf"</span>, <span class='kw'>quietly</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)) {
-  <span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>sf</span>)
-  <span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>houstonhom</span>)
+    <pre class="examples"><div class='input'><span class='kw'>if</span> <span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/ns-load.html'>requireNamespace</a></span><span class='op'>(</span><span class='st'>"sf"</span>, quietly <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>{</span>
+  <span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://r-spatial.github.io/sf/'>sf</a></span><span class='op'>)</span>
+  <span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span><span class='op'>(</span><span class='va'>houstonhom</span><span class='op'>)</span>
 
-  <span class='fu'><a href='https://rdrr.io/pkg/sf/man/plot.html'>plot</a></span>(<span class='no'>houstonhom</span>[<span class='st'>"HR9195"</span>])
-}</div><div class='img'><img src='houstonhom-1.png' alt='' width='700' height='433' /></div></pre>
+  <span class='fu'><a href='https://r-spatial.github.io/sf/reference/plot.html'>plot</a></span><span class='op'>(</span><span class='va'>houstonhom</span><span class='op'>[</span><span class='st'>"HR9195"</span><span class='op'>]</span><span class='op'>)</span>
+<span class='op'>}</span>
+</div><div class='img'><img src='houstonhom-1.png' alt='' width='700' height='433' /></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -181,7 +182,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

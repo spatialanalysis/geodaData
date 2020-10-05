@@ -120,21 +120,21 @@
     <p>Health indicators for Chicago neighorhoods.</p>
     </div>
 
-    <pre class="usage"><span class='no'>chihealth</span></pre>
+    <pre class="usage"><span class='va'>chihealth</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>An sf data frame with 77 rows, 31 variables, and a geometry column:</p><dl'>
+    <p>An sf data frame with 77 rows, 31 variables, and a geometry column:</p><dl>
 <dt>	area_num	</dt><dd><p>Community area ID</p></dd>
 <dt>	shape_area	</dt><dd><p>Polygon area</p></dd>
 <dt>	shape_len	</dt><dd><p>Shape length</p></dd>
 <dt>	comm_area	</dt><dd><p>Community area name</p></dd>
 <dt>	BirthRate	</dt><dd><p>Births per 1,000 residents</p></dd>
 <dt>	Gener_Rate	</dt><dd><p>General fertility rate per 1,000 females 15-44</p></dd>
-<dt>	LowBi_ight	</dt><dd><p>Percent of live births with low birth weight</p></dd>
-<dt>	Prena_ster	</dt><dd><p>Percent of live births who had prenatal care beginning in first trimester</p></dd>
-<dt>	Prete_rths	</dt><dd><p>Preterm births as percent of live births</p></dd>
+<dt>	LowBi_ight	</dt><dd><p>Percentage of live births with low birth weight</p></dd>
+<dt>	Prena_ster	</dt><dd><p>Percentage of live births who had prenatal care beginning in first trimester</p></dd>
+<dt>	Prete_rths	</dt><dd><p>Preterm births as percentage of live births</p></dd>
 <dt>	TeenB_Rate	</dt><dd><p>Teen birth rate per 1,000 females age 15-19</p></dd>
 <dt>	Assa_cide	</dt><dd><p>Assault(homicide) per 100,000 people, age adjusted.</p></dd>
 <dt>	Breas_ales	</dt><dd><p>Breast cancer deaths per 100,000 females, age adjusted.</p></dd>
@@ -151,12 +151,12 @@
 <dt>	Gonor_ales	</dt><dd><p>Gonorrhea in females, per 100,000 females age 15-44</p></dd>
 <dt>	Gono_ales_1	</dt><dd><p>Gonorrhea in females, per 100,000 females age 15-44</p></dd>
 <dt>	Tuber_osis	</dt><dd><p>Tuberculosis per 100,000 people</p></dd>
-<dt>	Below_evel	</dt><dd><p>Percent of households below poverty level</p></dd>
-<dt>	Crowd_sing	</dt><dd><p>Percent of occupied housing units</p></dd>
-<dt>	Dependency	</dt><dd><p>Percent of persons aged less than 16 or more than 64 years</p></dd>
-<dt>	NoHig_loma	</dt><dd><p>Percent of persons age 25 or higher without high school diploma</p></dd>
+<dt>	Below_evel	</dt><dd><p>Percentage of households below poverty level</p></dd>
+<dt>	Crowd_sing	</dt><dd><p>Percentage of occupied housing units</p></dd>
+<dt>	Dependency	</dt><dd><p>Percentage of persons aged less than 16 or more than 64 years</p></dd>
+<dt>	NoHig_loma	</dt><dd><p>Percentage of persons age 25 or higher without high school diploma</p></dd>
 <dt>	PerCa_come	</dt><dd><p>Percapita income, 2011 adjusted dollars</p></dd>
-<dt>	Unemp_ment	</dt><dd><p>Unemployment as a percent of persons aged 16 or older</p></dd>
+<dt>	Unemp_ment	</dt><dd><p>Unemployment as a percentage of persons aged 16 or older</p></dd>
 
 </dl>
 
@@ -168,12 +168,13 @@
     <p>Sf object, unprojected. EPSG 4326: WGS84.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='kw'>if</span> (<span class='fu'><a href='https://rdrr.io/r/base/ns-load.html'>requireNamespace</a></span>(<span class='st'>"sf"</span>, <span class='kw'>quietly</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)) {
-  <span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>sf</span>)
-  <span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>chihealth</span>)
+    <pre class="examples"><div class='input'><span class='kw'>if</span> <span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/ns-load.html'>requireNamespace</a></span><span class='op'>(</span><span class='st'>"sf"</span>, quietly <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>{</span>
+  <span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://r-spatial.github.io/sf/'>sf</a></span><span class='op'>)</span>
+  <span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span><span class='op'>(</span><span class='va'>chihealth</span><span class='op'>)</span>
 
-  <span class='fu'><a href='https://rdrr.io/pkg/sf/man/plot.html'>plot</a></span>(<span class='no'>chihealth</span>[<span class='st'>"Strok_ease"</span>])
-}</div><div class='img'><img src='chihealth-1.png' alt='' width='700' height='433' /></div></pre>
+  <span class='fu'><a href='https://r-spatial.github.io/sf/reference/plot.html'>plot</a></span><span class='op'>(</span><span class='va'>chihealth</span><span class='op'>[</span><span class='st'>"Strok_ease"</span><span class='op'>]</span><span class='op'>)</span>
+<span class='op'>}</span>
+</div><div class='img'><img src='chihealth-1.png' alt='' width='700' height='433' /></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -189,7 +190,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

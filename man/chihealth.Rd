@@ -13,9 +13,9 @@ An sf data frame with 77 rows, 31 variables, and a geometry column:
 \item{	comm_area	}{	Community area name	}
 \item{	BirthRate	}{	Births per 1,000 residents	}
 \item{	Gener_Rate	}{	General fertility rate per 1,000 females 15-44	}
-\item{	LowBi_ight	}{	Percent of live births with low birth weight	}
-\item{	Prena_ster	}{	Percent of live births who had prenatal care beginning in first trimester	}
-\item{	Prete_rths	}{	Preterm births as percent of live births	}
+\item{	LowBi_ight	}{	Percentage of live births with low birth weight	}
+\item{	Prena_ster	}{	Percentage of live births who had prenatal care beginning in first trimester	}
+\item{	Prete_rths	}{	Preterm births as percentage of live births	}
 \item{	TeenB_Rate	}{	Teen birth rate per 1,000 females age 15-19	}
 \item{	Assa_cide	}{	Assault(homicide) per 100,000 people, age adjusted.	}
 \item{	Breas_ales	}{	Breast cancer deaths per 100,000 females, age adjusted.	}
@@ -32,12 +32,12 @@ An sf data frame with 77 rows, 31 variables, and a geometry column:
 \item{	Gonor_ales	}{	Gonorrhea in females, per 100,000 females age 15-44	}
 \item{	Gono_ales_1	}{	Gonorrhea in females, per 100,000 females age 15-44	}
 \item{	Tuber_osis	}{	Tuberculosis per 100,000 people	}
-\item{	Below_evel	}{	Percent of households below poverty level	}
-\item{	Crowd_sing	}{	Percent of occupied housing units	}
-\item{	Dependency	}{	Percent of persons aged less than 16 or more than 64 years	}
-\item{	NoHig_loma	}{	Percent of persons age 25 or higher without high school diploma	}
+\item{	Below_evel	}{	Percentage of households below poverty level	}
+\item{	Crowd_sing	}{	Percentage of occupied housing units	}
+\item{	Dependency	}{	Percentage of persons aged less than 16 or more than 64 years	}
+\item{	NoHig_loma	}{	Percentage of persons age 25 or higher without high school diploma	}
 \item{	PerCa_come	}{	Percapita income, 2011 adjusted dollars	}
-\item{	Unemp_ment	}{	Unemployment as a percent of persons aged 16 or older	}
+\item{	Unemp_ment	}{	Unemployment as a percentage of persons aged 16 or older	}
 }
 }
 \source{

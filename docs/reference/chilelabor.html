@@ -120,13 +120,23 @@
     <p>A set of recently created labour market areas (LMAs) for Chile, required to analyze spatial labour market activity and provide a framework to guide spatially-explicit employment policy development. The data set includes 62 LMAs, providing full coverage of the Chilean territory, delineated based on optimisation requirements of self-containment, cohesion and homogeneity of a regionalisation algorithm described in Casado-Díaz et al. (2017), using commuting data from the CHilean Migration (CHIM) database (Rowe &amp; Bell, 2013). Data from the 1982, 1992 and 2002 Chilean Housing and Population census were appended to the set of LMAs to produce a geographic information database. The database contains information on the resident population by five-year age groups, sex, labour force status, industry sector and occupation.</p>
     </div>
 
-    <pre class="usage"><span class='no'>chilelabor</span></pre>
+    <pre class="usage"><span class='va'>chilelabor</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    
+    <p>An sf data frame with 62 rows, 138 variables, and a geometry column:</p><dl>
+<dt>	code_flma	</dt><dd><p>Functional Labour Market Area ID code</p></dd>
+<dt>	mun	</dt><dd><p>Functional Labour Market Area name</p></dd>
+<dt>	pop_Y	</dt><dd><p>Census population for years Y: 1982, 1992, 2002</p></dd>
+<dt>	area_km2	</dt><dd><p>Area in square kilometers</p></dd>
+<dt>	ageX_Y	</dt><dd><p>Population per age group X for year Y: 1982, 1992, 2002. Each age group is represented by a code number as follows= 0-4 (code: 1), 5-9 (2), 10-14 (3), 15-19 (4), 20-24 (5), 25-29 (6), 30-34 (7), 35-39 (8), 40-44 (9), 45-49 (10), 50-54 (11), 55-59 (12), 60-64 (13,) 65-69 (14), 70-74 (15), 75-79 (16), 80-84 (17), 85+ (18)</p></dd>
+<dt>	sexZ_Y	</dt><dd><p>Population per gender Z for years Y: 1982, 1992, 2002. Codes= (1: Male), (2: Female)</p></dd>
+<dt>	lfsX_Y	</dt><dd><p>Population per labor force status for years Y: 1982, 1992, 2002. Codes= (1: Employed), (2: Unemployed), (3: Not in the labour force)</p></dd>
+<dt>	isX_r_Y	</dt><dd><p>Population per industry sector for years Y: 1982, 1992, 2002. Codes= (1: Agriculture), (2: Mining), (3: Manufacturing), (4: Utilities), (5: Construction), (6: Trade), (7: Transport and Communication), (8: Finance), (9: Business Services ), (10: Public Administration), (11: Comm &amp; Personal Services)</p></dd>
+<dt>	ocX_r_Y	</dt><dd><p>Population per Occupation for 1982, 1992, 2002. Codes= (0: Armed Forces), (1: Managers), (2: Professionals), (3: Technicians), (4: Clerks), (5: Tradespeople), (6: Agricultural &amp; Fishery Workers), (7: Craft workers), (8: Plant operators), (9: Laborers)</p></dd>
 
+</dl>
 
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
@@ -136,12 +146,13 @@
     <p>Sf object, unprojected. EPSG 4326: WGS84.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='kw'>if</span> (<span class='fu'><a href='https://rdrr.io/r/base/ns-load.html'>requireNamespace</a></span>(<span class='st'>"sf"</span>, <span class='kw'>quietly</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)) {
-  <span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>sf</span>)
-  <span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>chilelabor</span>)
+    <pre class="examples"><div class='input'><span class='kw'>if</span> <span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/ns-load.html'>requireNamespace</a></span><span class='op'>(</span><span class='st'>"sf"</span>, quietly <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>{</span>
+  <span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://r-spatial.github.io/sf/'>sf</a></span><span class='op'>)</span>
+  <span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span><span class='op'>(</span><span class='va'>chilelabor</span><span class='op'>)</span>
 
-  <span class='fu'><a href='https://rdrr.io/pkg/sf/man/plot.html'>plot</a></span>(<span class='no'>chilelabor</span>[<span class='st'>"pop_1982"</span>])
-}</div><div class='img'><img src='chilelabor-1.png' alt='' width='700' height='433' /></div></pre>
+  <span class='fu'><a href='https://r-spatial.github.io/sf/reference/plot.html'>plot</a></span><span class='op'>(</span><span class='va'>chilelabor</span><span class='op'>[</span><span class='st'>"pop_1982"</span><span class='op'>]</span><span class='op'>)</span>
+<span class='op'>}</span>
+</div><div class='img'><img src='chilelabor-1.png' alt='' width='700' height='433' /></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -157,7 +168,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

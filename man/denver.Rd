@@ -18,19 +18,19 @@ An sf data frame with 75 rows, 55 variables, and a geometry column:
 \item{  HAWPACIS_2010 }{ Hawaiian Pacific population in 2010 }
 \item{  OTHER_2010 }{ Other race population in 2010}
 \item{  TWO_OR_MOR	}{	Population two or more races in 2010	}
-\item{	PCT_HISPAN }{ Hispanic as percent of total population }
-\item{  PCT_WHITE }{ White as percent of total population }
-\item{  PCT_BLACK }{ Black as percent of total population }
-\item{  PCT_AMERIN }{ American Indian as percent of total population }
-\item{  PCT_ASIAN }{ Asian as percent of total population }
-\item{  PCT_HAW_PA }{ Hawaiian Pacific as percent of total population }
-\item{  PCT_OTHER }{ Other race as percent of total population }
-\item{  PCT_TWO_OR	}{	Two or more races as percent of total population }
+\item{	PCT_HISPAN }{ Hispanic as percentage of total population }
+\item{  PCT_WHITE }{ White as percentage of total population }
+\item{  PCT_BLACK }{ Black as percentage of total population }
+\item{  PCT_AMERIN }{ American Indian as percentage of total population }
+\item{  PCT_ASIAN }{ Asian as percentage of total population }
+\item{  PCT_HAW_PA }{ Hawaiian Pacific as percentage of total population }
+\item{  PCT_OTHER }{ Other race as percentage of total population }
+\item{  PCT_TWO_OR	}{	Two or more races as percentage of total population }
 \item{	MALE}{	Male Population }
 \item{  FEMALE	}{	Female Population	}
 \item{	AGEX_Y}{	Population by age group. From X to Y	}
-\item{	PCT_LESS_1 }{	Percent of population under 1 year of age	}
-\item{  PCT_65_PLUS	}{	Percent of population over 65 years of age	}
+\item{	PCT_LESS_1 }{	Percentage of population under 1 year of age	}
+\item{  PCT_65_PLUS	}{	Percentage of population over 65 years of age	}
 \item{	NUM_HOUSEH	}{	Number of households	}
 \item{	ONE_PERSON }{	Number of households with one member }
 \item{  TWO_PLUS	}{	Number of households with more than two members	}

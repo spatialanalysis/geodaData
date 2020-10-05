@@ -15,7 +15,7 @@
 #' \item{	lfsX_Y	}{	Population per labor force status for years Y: 1982, 1992, 2002. Codes= (1: Employed), (2: Unemployed), (3: Not in the labour force)	}
 #' \item{	isX_r_Y	}{	Population per industry sector for years Y: 1982, 1992, 2002. Codes= (1: Agriculture), (2: Mining), (3: Manufacturing), (4: Utilities), (5: Construction), (6: Trade), (7: Transport and Communication), (8: Finance), (9: Business Services ), (10: Public Administration), (11: Comm & Personal Services)	}
 #' \item{	ocX_r_Y	}{	Population per Occupation for 1982, 1992, 2002. Codes= (0: Armed Forces), (1: Managers), (2: Professionals), (3: Technicians), (4: Clerks), (5: Tradespeople), (6: Agricultural & Fishery Workers), (7: Craft workers), (8: Plant operators), (9: Laborers)	}
-#'
+#' }
 #' @source MultipleRowe F, & Bell M (2013) Creating an integrated database for the analysis of spatial mobility in Chile (Working Paper 02/2013). Queensland Centre for Population Research, School of Geography, Planning and Environmental Management, The University of Queensland, Brisbane, Australia.
 #'
 #' @examples

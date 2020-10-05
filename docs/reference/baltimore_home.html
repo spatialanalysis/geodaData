@@ -120,29 +120,29 @@
     <p>This database contains house sales price and characteristics for a spatial hedonic regression, Baltimore, MD 1978.</p>
     </div>
 
-    <pre class="usage"><span class='no'>baltimore_home</span></pre>
+    <pre class="usage"><span class='va'>baltimore_home</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>An sf data frame with 211 rows, 18 variables, and a geometry column:</p><dl'>
+    <p>An sf data frame with 211 rows, 18 variables, and a geometry column:</p><dl>
 <dt>	STATION	</dt><dd><p>ID variable</p></dd>
-<dt>	PRICE	</dt><dd><p>sales price of house in $1,000 (MLS)</p></dd>
-<dt>	NROOM	</dt><dd><p>number of rooms</p></dd>
+<dt>	PRICE	</dt><dd><p>Sales price of house in $1,000 (MLS)</p></dd>
+<dt>	NROOM	</dt><dd><p>Number of rooms</p></dd>
 <dt>	DWELL	</dt><dd><p>1 if detached unit, 0 otherwise</p></dd>
-<dt>	NBATH	</dt><dd><p>number of bathrooms</p></dd>
+<dt>	NBATH	</dt><dd><p>Number of bathrooms</p></dd>
 <dt>	PATIO	</dt><dd><p>1 if patio, 0 otherwise</p></dd>
 <dt>	FIREPL	</dt><dd><p>1 if fireplace, 0 otherwise</p></dd>
 <dt>	AC	</dt><dd><p>1 if air conditioning, 0 otherwise</p></dd>
 <dt>	BMENT	</dt><dd><p>1 if basement, 0 otherwise</p></dd>
-<dt>	NSTOR	</dt><dd><p>number of stories</p></dd>
-<dt>	GAR	</dt><dd><p>number of car spaces in garage (0 = no garage)</p></dd>
-<dt>	AGE	</dt><dd><p>age of dwelling in years</p></dd>
+<dt>	NSTOR	</dt><dd><p>Number of stores</p></dd>
+<dt>	GAR	</dt><dd><p>Number of car spaces in garage (0 = no garage)</p></dd>
+<dt>	AGE	</dt><dd><p>Age of dwelling in years</p></dd>
 <dt>	CITCOU	</dt><dd><p>1 if dwelling is in Baltimore County, 0 otherwise</p></dd>
-<dt>	LOTSZ	</dt><dd><p>lot size in hundreds of square feet</p></dd>
-<dt>	SQFT	</dt><dd><p>interior living space in hundreds of square feet</p></dd>
-<dt>	X	</dt><dd><p>x coordinate on the Maryland grid</p></dd>
-<dt>	Y	</dt><dd><p>y coordinate on the Maryland grid</p></dd>
+<dt>	LOTSZ	</dt><dd><p>Lot size in hundreds of square feet</p></dd>
+<dt>	SQFT	</dt><dd><p>Interior living space in hundreds of square feet</p></dd>
+<dt>	X	</dt><dd><p>X Coordinate on the Maryland grid</p></dd>
+<dt>	Y	</dt><dd><p>Y Coordinate on the Maryland grid</p></dd>
 
 </dl>
 
@@ -154,12 +154,13 @@
     <p>Sf object, projected, X,Y on Maryland grid, projection type unknown.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='kw'>if</span> (<span class='fu'><a href='https://rdrr.io/r/base/ns-load.html'>requireNamespace</a></span>(<span class='st'>"sf"</span>, <span class='kw'>quietly</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)) {
-  <span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>sf</span>)
-  <span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>baltimore_home</span>)
+    <pre class="examples"><div class='input'><span class='kw'>if</span> <span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/ns-load.html'>requireNamespace</a></span><span class='op'>(</span><span class='st'>"sf"</span>, quietly <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>{</span>
+  <span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://r-spatial.github.io/sf/'>sf</a></span><span class='op'>)</span>
+  <span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span><span class='op'>(</span><span class='va'>baltimore_home</span><span class='op'>)</span>
 
-  <span class='fu'><a href='https://rdrr.io/pkg/sf/man/plot.html'>plot</a></span>(<span class='no'>baltimore_home</span>[<span class='st'>"AGE"</span>])
-}</div><div class='img'><img src='baltimore_home-1.png' alt='' width='700' height='433' /></div></pre>
+  <span class='fu'><a href='https://r-spatial.github.io/sf/reference/plot.html'>plot</a></span><span class='op'>(</span><span class='va'>baltimore_home</span><span class='op'>[</span><span class='st'>"AGE"</span><span class='op'>]</span><span class='op'>)</span>
+<span class='op'>}</span>
+</div><div class='img'><img src='baltimore_home-1.png' alt='' width='700' height='433' /></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -175,7 +176,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

@@ -7,29 +7,29 @@
 \format{
 An sf data frame with 52 rows, 23 variables, and a geometry column:
 \describe{
-\item{	NAME	}{	county name	}
-\item{	STATE_NAME	}{	state name	}
-\item{	STATE_FIPS	}{	state FIPS code (character)	}
-\item{	CNTY_FIPS	}{	county FIPS code (character)	}
-\item{	FIPS	}{	combined state and county FIPS code (character)	}
-\item{	STFIPS	}{	state FIPS code (number)	}
-\item{	COFIPS	}{	county FIPS code (number)	}
-\item{	FIPSNO	}{	combined state and county FIPS code (number)	}
-\item{	HR8187	}{	homicide rate per 100,000 (1981-87)	}
-\item{	HR8791	}{	homicide rate per 100,000 (1987-91)	}
-\item{	HR9195	}{	homicide rate per 100,000 (1991-95)	}
-\item{	HC8187	}{	homicide count (1981-87)	}
-\item{	HC8791	}{	homicide count (1987-91)	}
-\item{	HC9195	}{	homicide count (1991-95)	}
-\item{	PO8187	}{	population total (1981-87)	}
-\item{	PO8791	}{	population total (1987-91)	}
-\item{	PO9195	}{	population total (1991-95)	}
-\item{	PE77	}{	police expenditures per capita, 1977	}
-\item{	PE82	}{	police expenditures per capita, 1982	}
-\item{	PE87	}{	police expenditures per capita, 1987	}
-\item{	RDAC80	}{	resource deprivation/affluence composite variable, 1980	}
-\item{	RDAC85	}{	resource deprivation/affluence composite variable, 1985	}
-\item{	RDAC90	}{	resource deprivation/affluence composite variable, 1990	}
+\item{	NAME	}{	County name	}
+\item{	STATE_NAME	}{	State name	}
+\item{	STATE_FIPS	}{	State FIPS code (character)	}
+\item{	CNTY_FIPS	}{	County FIPS code (character)	}
+\item{	FIPS	}{	Combined state and county FIPS code (character)	}
+\item{	STFIPS	}{	State FIPS code (number)	}
+\item{	COFIPS	}{	County FIPS code (number)	}
+\item{	FIPSNO	}{	Combined state and county FIPS code (number)	}
+\item{	HR8187	}{	Homicide rate per 100,000 (1981-87)	}
+\item{	HR8791	}{	Homicide rate per 100,000 (1987-91)	}
+\item{	HR9195	}{	Homicide rate per 100,000 (1991-95)	}
+\item{	HC8187	}{	Homicide count (1981-87)	}
+\item{	HC8791	}{	Homicide count (1987-91)	}
+\item{	HC9195	}{	Homicide count (1991-95)	}
+\item{	PO8187	}{	Population total (1981-87)	}
+\item{	PO8791	}{	Population total (1987-91)	}
+\item{	PO9195	}{	Population total (1991-95)	}
+\item{	PE77	}{	Police expenditures per capita, 1977	}
+\item{	PE82	}{	Police expenditures per capita, 1982	}
+\item{	PE87	}{	Police expenditures per capita, 1987	}
+\item{	RDAC80	}{	Resource deprivation/affluence composite variable, 1980	}
+\item{	RDAC85	}{	Resource deprivation/affluence composite variable, 1985	}
+\item{	RDAC90	}{	Resource deprivation/affluence composite variable, 1990	}
 }
 }
 \source{

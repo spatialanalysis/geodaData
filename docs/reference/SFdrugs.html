@@ -120,12 +120,12 @@
     <p>Incidents of drugs/narcotics possession or sale for July 1 to December 31, 2012.</p>
     </div>
 
-    <pre class="usage"><span class='no'>SFdrugs</span></pre>
+    <pre class="usage"><span class='va'>SFdrugs</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>sf data frame with 3897 observations, 14 variables, and a geometry column.</p><dl'>
+    <p>sf data frame with 3897 observations, 14 variables, and a geometry column.</p><dl>
 <dt>	IncidntNum, IncidntN_1	</dt><dd><p>Unique number for each incident report</p></dd>
 <dt>	X_pr, Y_pr	</dt><dd><p>projected coordinates</p></dd>
 <dt>	Category	</dt><dd><p>Vehicle theft</p></dd>
@@ -148,11 +148,12 @@
     <p>Sf object, EPSG 2227: NAD83 / California zone 3 (ftUS).</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='kw'>if</span> (<span class='fu'><a href='https://rdrr.io/r/base/ns-load.html'>requireNamespace</a></span>(<span class='st'>"sf"</span>, <span class='kw'>quietly</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)) {
-  <span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>sf</span>)
-  <span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>SFdrugs</span>)
-  <span class='fu'><a href='https://rdrr.io/pkg/sf/man/plot.html'>plot</a></span>(<span class='no'>SFdrugs</span>[<span class='st'>"IncidntNum"</span>])
-}</div><div class='img'><img src='SFdrugs-1.png' alt='' width='700' height='433' /></div></pre>
+    <pre class="examples"><div class='input'><span class='kw'>if</span> <span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/ns-load.html'>requireNamespace</a></span><span class='op'>(</span><span class='st'>"sf"</span>, quietly <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>{</span>
+  <span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://r-spatial.github.io/sf/'>sf</a></span><span class='op'>)</span>
+  <span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span><span class='op'>(</span><span class='va'>SFdrugs</span><span class='op'>)</span>
+  <span class='fu'><a href='https://r-spatial.github.io/sf/reference/plot.html'>plot</a></span><span class='op'>(</span><span class='va'>SFdrugs</span><span class='op'>[</span><span class='st'>"IncidntNum"</span><span class='op'>]</span><span class='op'>)</span>
+<span class='op'>}</span>
+</div><div class='img'><img src='SFdrugs-1.png' alt='' width='700' height='433' /></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -168,7 +169,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

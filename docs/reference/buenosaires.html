@@ -120,12 +120,12 @@
     <p>Selected Electoral Data for the 1999 National Elections, Argentine Congress (Lower House).</p>
     </div>
 
-    <pre class="usage"><span class='no'>buenosaires</span></pre>
+    <pre class="usage"><span class='va'>buenosaires</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>An sf data frame with 209 rows, 20 variables, and a geometry column:</p><dl'>
+    <p>An sf data frame with 209 rows, 20 variables, and a geometry column:</p><dl>
 <dt>	INDRA	</dt><dd><p>Indra Code ID</p></dd>
 <dt>	PROV	</dt><dd><p>Indec Province Code ID</p></dd>
 <dt>	CIRCUNS	</dt><dd><p>Municipality ID</p></dd>
@@ -137,15 +137,15 @@
 <dt>	TURNT_1	</dt><dd><p>Total Number of Effective Voters</p></dd>
 <dt>	ELEC_1	</dt><dd><p>Total Number of Registered Voters</p></dd>
 <dt>	VOTPOS_1	</dt><dd><p>Total Number of Valid Votes</p></dd>
-<dt>	AL99CIRC	</dt><dd><p>Percent of Alianza Votes over Valid Votes</p></dd>
-<dt>	APR99CIR	</dt><dd><p>Percent of APR Votes over Valid Votes</p></dd>
-<dt>	TURN99CR	</dt><dd><p>Percent of Effective Votes over Valid Votes</p></dd>
+<dt>	AL99CIRC	</dt><dd><p>Percentage of Alianza Votes over Valid Votes</p></dd>
+<dt>	APR99CIR	</dt><dd><p>Percentage of APR Votes over Valid Votes</p></dd>
+<dt>	TURN99CR	</dt><dd><p>Percentage of Effective Votes over Valid Votes</p></dd>
 <dt>	EAST	</dt><dd><p>East Coordinates</p></dd>
 <dt>	NORTH	</dt><dd><p>North Coordinates</p></dd>
-<dt>	NDRANO	</dt><dd><p>Numeric ID (for use in GeoDa)</p></dd>
-<dt>	APR99PC	</dt><dd><p>Percent of APR Votes over Valid Votes</p></dd>
-<dt>	AL99PC	</dt><dd><p>Percent of Alianza Votes over Valid Votes</p></dd>
-<dt>	TURN99PC	</dt><dd><p>Percent of Effective Votes over Valid Votes</p></dd>
+<dt>	NDRANO	</dt><dd><p>Numeric ID</p></dd>
+<dt>	APR99PC	</dt><dd><p>Percentage of APR Votes over Valid Votes</p></dd>
+<dt>	AL99PC	</dt><dd><p>Percentage of Alianza Votes over Valid Votes</p></dd>
+<dt>	TURN99PC	</dt><dd><p>Percentage of Effective Votes over Valid Votes</p></dd>
 
 </dl>
 
@@ -157,12 +157,13 @@
     <p>Sf object, undefined Coordinate Reference System.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='kw'>if</span> (<span class='fu'><a href='https://rdrr.io/r/base/ns-load.html'>requireNamespace</a></span>(<span class='st'>"sf"</span>, <span class='kw'>quietly</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)) {
-  <span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>sf</span>)
-  <span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>buenosaires</span>)
+    <pre class="examples"><div class='input'><span class='kw'>if</span> <span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/ns-load.html'>requireNamespace</a></span><span class='op'>(</span><span class='st'>"sf"</span>, quietly <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>{</span>
+  <span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://r-spatial.github.io/sf/'>sf</a></span><span class='op'>)</span>
+  <span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span><span class='op'>(</span><span class='va'>buenosaires</span><span class='op'>)</span>
 
-  <span class='fu'><a href='https://rdrr.io/pkg/sf/man/plot.html'>plot</a></span>(<span class='no'>buenosaires</span>[<span class='st'>"VOTPOS_1"</span>])
-}</div><div class='img'><img src='buenosaires-1.png' alt='' width='700' height='433' /></div></pre>
+  <span class='fu'><a href='https://r-spatial.github.io/sf/reference/plot.html'>plot</a></span><span class='op'>(</span><span class='va'>buenosaires</span><span class='op'>[</span><span class='st'>"VOTPOS_1"</span><span class='op'>]</span><span class='op'>)</span>
+<span class='op'>}</span>
+</div><div class='img'><img src='buenosaires-1.png' alt='' width='700' height='433' /></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -178,7 +179,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

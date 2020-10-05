@@ -119,6 +119,7 @@ Current datasets included in this package:
 -   `Sfrobbery`: Robbery incidents in San Francisco (points and area) - for CAST (July-Dec 2012).
 -   `Sfvandalism`: Vandalism incidents in San Francisco (points and area) - for CAST (July-Dec 2012).
 -   `SIDS`: North Carolina county SIDS death counts (1970s and 1980s).
+-   `snow`: John Snow & the 19th Century Cholera Epidemic.
 -   `southom`: US Southern county homicides 1960-1990.
 -   `stlouishom`: St Louis region county homicide counts and rates (1980s and 1990s).
 -   `tampa`: 2000 Census Tract Data for Tampa, FL MSA and counties.

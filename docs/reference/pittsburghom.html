@@ -120,12 +120,12 @@
     <p>Location of homicides in Pittsburgh, PA (1993).</p>
     </div>
 
-    <pre class="usage"><span class='no'>pittsburghom</span></pre>
+    <pre class="usage"><span class='va'>pittsburghom</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>An sf data frame with 143 rows, 9 variables, and a geometry column:</p><dl'>
+    <p>An sf data frame with 143 rows, 9 variables, and a geometry column:</p><dl>
 <dt>	CASEID	</dt><dd><p>Identifier for case, as character</p></dd>
 <dt>	NEWID	</dt><dd><p>Identifier for case, as numeric</p></dd>
 <dt>	EVENT_YR	</dt><dd><p>Year of homicide</p></dd>
@@ -145,11 +145,12 @@
     <p>Sf object, unprojected. EPSG 4326: WGS84.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='kw'>if</span> (<span class='fu'><a href='https://rdrr.io/r/base/ns-load.html'>requireNamespace</a></span>(<span class='st'>"sf"</span>, <span class='kw'>quietly</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)) {
-  <span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>sf</span>)
-  <span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>pittsburghom</span>)
-  <span class='fu'><a href='https://rdrr.io/pkg/sf/man/plot.html'>plot</a></span>(<span class='no'>pittsburghom</span>[<span class='st'>"GUN"</span>])
-}</div><div class='output co'>#&gt; <span class='warning'>Warning: bounding box has potentially an invalid value range for longlat data</span></div><div class='output co'>#&gt; <span class='warning'>Warning: bounding box has potentially an invalid value range for longlat data</span></div><div class='img'><img src='pittsburghom-1.png' alt='' width='700' height='433' /></div></pre>
+    <pre class="examples"><div class='input'><span class='kw'>if</span> <span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/ns-load.html'>requireNamespace</a></span><span class='op'>(</span><span class='st'>"sf"</span>, quietly <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>{</span>
+  <span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://r-spatial.github.io/sf/'>sf</a></span><span class='op'>)</span>
+  <span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span><span class='op'>(</span><span class='va'>pittsburghom</span><span class='op'>)</span>
+  <span class='fu'><a href='https://r-spatial.github.io/sf/reference/plot.html'>plot</a></span><span class='op'>(</span><span class='va'>pittsburghom</span><span class='op'>[</span><span class='st'>"GUN"</span><span class='op'>]</span><span class='op'>)</span>
+<span class='op'>}</span>
+</div><div class='output co'>#&gt; <span class='warning'>Warning: bounding box has potentially an invalid value range for longlat data</span></div><div class='output co'>#&gt; <span class='warning'>Warning: bounding box has potentially an invalid value range for longlat data</span></div><div class='img'><img src='pittsburghom-1.png' alt='' width='700' height='433' /></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -165,7 +166,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>
