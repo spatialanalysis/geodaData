@@ -2,7 +2,7 @@
 #'
 #' @description Malaria incidence in 1998, population in Colombia from 1973, 1995, 1993 censuses, and projected population from 1995 to 2005. Use \code{list2env(malariaCol, .GlobalEnv)} to unlist in working environment. The data consist of a list of two objects:
 #' \itemize{
-#' \item malariaDept A shapefile object of class sf Dataframe with individual deaths during the 1854 cholera epidemic that were compiled by Tobler (1994).
+#' \item malariaDept A shapefile object of class sf Dataframe with individual Colombian departments.
 #' \item malariaMunic A shapefile object of class sf Dataframe with Colombian municipalities.
 #' }
 #'
