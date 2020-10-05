@@ -62,16 +62,77 @@ Instructions for adding a new dataset to this package can be found in the [Wiki]
 
 Current datasets included in this package:
 
-- `chicago_comm`:            Chicago Community Areas (2010).
-- `clev_pts`:                Cleveland Home Sales (2015).
-- `commpop`:                 Chicago Population Change (2000-2010).
-- `guerry`:                  Guerry "Moral Statistics" (1830s).
-- `ncovr`:                   Homicides & Socio-Economics (1960-90).
-- `nyc`:                     Rental Housing and Demographics in NYC (2000s),
-                        non-spatial.
-- `nyc_sf`:                  Rental Housing and Demographics in NYC (2000s).
-- `ohio_lung`:               Ohio Lung Cancer Mortality (1960s-80s).
-- `vehicle_pts`:             Abandoned Vehicles (2016).
+-	`abandonedcars`:	Abandoned Vehicles (2016).
+-	`airbnb`:	Airbnb rentals, socioeconomics, and crime in Chicago.
+-	`atlanta_homicide`:	Atlanta, GA region homicide counts and rates.
+-	`baltimore_home`:	Baltimore house sales prices and hedonics.
+-	`bostonhsg`:	Boston housing and neighborhood data.
+-	`buenosaires`:	Electoral Data for 1999 Argentinean Elections.
+-	`charleston1`:	2000 Census Tract Data for Charleston, SC MSA and counties.
+-	`charleston2`:	1998 and 2001 Zip Code Business Patterns (Census Bureau) in Charleston, SC MSA.
+-	`chigroceries`:	Chicago supermarkets (2015).
+-	`chihealth`:	Chicago Health and Socio-Economics (2014).
+-	`chilelabor`:	Labor Markets in Chile (1982-2002).
+-	`chisociohealth`:	Chicago Health Indicators (2005-11).
+-	`cincinnati`:	Cincinnati Crime and Socio-Demographics (2008).
+-	`cleveland`:	Cleveland Home Sales (2015).
+-	`columbus`:	Columbus neighborhood crime (1980).
+-	`commpop`:	Chicago Population Change (2000-2010).
+-	`denver`:	Demographics and housing in Denver neighborhoods (2010).
+-	`elections1216`:	2012 and 2016 Presidential Elections in the United States.
+-	`grid100`:	Grids with simulated variables.
+-	`guerry`:	Guerry "Moral Statistics" (1830s).
+-	`healthplus`:	Health, Income and Diversity for US counties (2000).
+-	`hickory1`:	Census Tract Data for Hickory, NC MSA and counties (2000).
+-	`hickory2`:	Zip Code Business Patterns (Census Bureau) for Hickory, NC MSA (1998 and 2001).
+-	`houstonhom`:	Houston, TX region homicide counts and rates (1980s-90s).
+-	`juvenile`:	Cardiff juvenile delinquent residences.
+-	`kchomesale`:	Home Sales in King County, WA (2014-15).
+-	`lansing1`:	2000 Census Tract Data for Lansing, MI MSA and counties.
+-	`lansing2`:	1998 and 2001 Zip Code Business Patterns (Census Bureau) for Lansing, MI MSA.
+-	`laozone`:	Ozone measures at monitoring stations in Los Angeles basin (1996).
+-	`lasrosas1`:	Corn yield, fertilizer and field data for precision agriculture, Argentina (1999).
+-	`lasrosas2`:	Corn yield, fertilizer and field data for precision agriculture, Argentina (1999).
+-	`liquorstore`:	Chicago Liquor Stores (2015).
+-	`malaria_col_dept`:	Malaria incidence and population (1973, 95, 93 censuses and projections until 2005).
+-	`malaria_col_munic`:	Malaria incidence and population (1973, 95, 93 censuses and projections until 2005).
+-	`milwaukee1`:	2000 Census Tract Data for Milwaukee, WI MSA..
+-	`milwaukee2`:	1998 and 2001 Zip Code Business Patterns (Census Bureau) for Milwaukee, WI MSA.
+-	`mspolice`:	Police expenditures Mississippi counties.
+-	`ncovr`:	Homicides & Socio-Economics (1960-90).
+-	`ndvi`:	Normalized Difference Vegetation Index grid.
+-	`nepal`:	Health, poverty and education indicators for Nepal districts (2007-14).
+-	`nyc`:	Rental Housing and Demographics in NYC (2000s), non-spatial.
+-	`nyc_sf`:	Rental Housing and Demographics in NYC (2000s).
+-	`nycearnings`:	Block-level Earnings in NYC (2002-14).
+-	`nyceducation`:	NYC Education (2000).
+-	`nycneighborhood`:	Demographics for New York City neighborhoods (2000s).
+-	`nycsociodemo`:	NYC Education and Socio-Demographics (2000s).
+-	`ohio_lung`:	Ohio Lung Cancer Mortality (1960s-80s).
+-	`orlando1`:	2000 Census Tract Data for Orlando, FL MSA and counties.
+-	`orlando2`:	1998 and 2001 Zip Code Business Patterns (Census Bureau) for Orlando, FL MSA.
+-	`ozone9799`:	Monthly ozone data, 1997-99.
+-	`phoenixACS`:	Phoenix American Community Survey Data (2010, 5-year averages).
+-	`pittsburghom`:	Pittsburgh homicide locations (1993).
+-	`sacramento1`:	2000 Census Tract Data for Sacramento MSA.
+-	`sacramento2`:	1998 and 2001 Zip Code Business Patterns (Census Bureau) for Sacramento MSA.
+-	`savannah1`:	2000 Census Tract Data for Savannah, GA MSA and counties.
+-	`savannah2`:	1998 and 2001 Zip Code Business Patterns (Census Bureau) for Savannah, GA MSA.
+-	`scotlip`:	Male lip cancer in Scotland, 1975-80.
+-	`seattle1`:	2000 Census Tract Data for Seattle, WA MSA and counties.
+-	`seattle2`:	1998 and 2001 Zip Code Business Patterns (Census Bureau) for Seattle, WA MSA.
+-	`Sfcartheft`:	Car theft incidents in San Francisco (points and area) - for CAST (July-Dec 2012).
+-	`Sfcrime`:	Crime incidents in San Francisco (points and area) - for CAST (July-Dec 2012).
+-	`Sfdrugs`:	Drug incidents in San Francisco (points and area) - for CAST (July-Dec 2012).
+-	`Sfrobbery`:	Robbery incidents in San Francisco (points and area) - for CAST (July-Dec 2012).
+-	`Sfvandalism`:	Vandalism incidents in San Francisco (points and area) - for CAST (July-Dec 2012).
+-	`SIDS`:	North Carolina county SIDS death counts (1970s and 1980s).
+- `snow`: John Snow & the 19th Century Cholera Epidemic.
+-	`southom`:	US Southern county homicides 1960-1990.
+-	`stlouishom`:	St Louis region county homicide counts and rates (1980s and 1990s).
+-	`tampa`:	2000 Census Tract Data for Tampa, FL MSA and counties.
+-	`us_sdoh`:	US Social Determinants of Health Data (2014).
+- `vehicle_pts`: Point locations of abandoned vehicles in Chicago in September 2016.
 
 ## Similar Packages
 

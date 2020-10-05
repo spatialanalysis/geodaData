@@ -5,33 +5,32 @@
 \alias{ncovr}
 \title{Homicides & Socio-Economics (1960-90)}
 \format{
-An sf data frame with 3085 rows, 69 variables, and a geometry column:
+An sf data frame with 3,085 rows, 69 variables, and a geometry column:
 \describe{
-  \item{name}{county name}
-  \item{state_name}{state name}
-  \item{state_fips}{state fips code (character)}
-  \item{cnty_fips}{county fips code (character)}
-  \item{fips}{combined state and county fips code (character)}
-  \item{stfips}{state fips code (numeric)}
-  \item{cofips}{county fips code (numeric)}
-  \item{fipsno}{fips code as numeric variable}
-  \item{south}{dummy variable for Southern counties  (South = 1)}
-  \item{hr}{homicide rate per 100,000 (1960, 1970, 1980, 1990)}
-  \item{hc}{homicide count, three year average centered on 1960, 1970, 1980, 1990}
-  \item{po}{county population, 1960, 1970, 1980, 1990}
-  \item{rd}{resource deprivation 1960, 1970, 1980, 1990 (principal component, see  Codebook for details)}
-  \item{ps}{population structure 1960, 1970, 1980, 1990 (principal component, see Codebook for details)}
-  \item{ue}{unemployment rate 1960, 1970, 1980, 1990}
-  \item{dv}{divorce rate 1960, 1970, 1980, 1990  (percent males over 14 divorced)}
-  \item{ma}{median age 1960, 1970, 1980, 1990}
-  \item{pol}{log of population 1960, 1970, 1980, 1990}
-  \item{dnl}{log of population density 1960, 1970, 1980, 1990}
-  \item{mfil}{log of median family income 1960, 1970, 1980, 1990}
-  \item{fp}{percent families below poverty 1960, 1970, 1980, 1990 (see Codebook for details)}
-  \item{blk}{percent black 1960, 1970, 1980, 1990}
-  \item{gi}{Gini index of family income inequality 1960, 1970, 1980, 1990}
-  \item{fh}{percent female headed households 1960, 1970, 1980, 1990}
-  \item{geometry}{MULTIPOLYGON}
+  \item{	NAME	}{	County name	}
+  \item{	STATE_NAME	}{	State name	}
+  \item{	STATE_FIPS	}{	State fips code (character)	}
+  \item{	CNTY_FIPS	}{	County fips code (character)	}
+  \item{	FIPS	}{	Combined state and county fips code (character)	}
+  \item{	STFIPS	}{	State fips code (numeric)	}
+  \item{	COFIPS	}{	County fips code (numeric)	}
+  \item{	FIPSNO	}{	Fips code as numeric variable	}
+  \item{	SOUTH	}{	Dummy variable for Southern counties  (South = 1)	}
+  \item{	HRyy	}{	Homicide rate per 100,000 for the years yy: 1960, 1970, 1980 and 1990.	}
+  \item{	HCyy	}{	Homicide count, three year average centered on yy: 1960, 1970, 1980, 1990	}
+  \item{	POyy	}{	County population for the years yy: 1960, 1970, 1980, 1990	}
+  \item{	RDyy	}{	Resource deprivation for the years yy: 1960, 1970, 1980, 1990 (principal component)	}
+  \item{	PSyy	}{	Population structure for the years yy: 1960, 1970, 1980, 1990 (principal component)	}
+  \item{	UEyy	}{	Unemployment rate for the years yy: 1960, 1970, 1980, 1990	}
+  \item{	DVyy	}{	Divorce rate for the years yy: 1960, 1970, 1980, 1990  (percentage of males over 14 divorced)	}
+  \item{	MAyy	}{	Median age for the years yy: 1960, 1970, 1980, 1990	}
+  \item{	POLyy	}{	Log of population for the years yy: 1960, 1970, 1980, 1990	}
+  \item{	DNLyy	}{	Log of population density for the years yy: 1960, 1970, 1980, 1990	}
+  \item{	MFILyy	}{	Log of median family income for the years yy: 1960, 1970, 1980, 1990	}
+  \item{	FPyy	}{	Percentage of families below poverty for the years yy: 1960, 1970, 1980, 1990 	}
+  \item{	BLKyy	}{	Percentage of black for the years yy: 1960, 1970, 1980, 1990	}
+  \item{	GIyy	}{	Gini index of family income inequality for the years yy: 1960, 1970, 1980, 1990	}
+  \item{	FHyy	}{	Percentage of female headed households for the years yy: 1960, 1970, 1980, 1990	}
 }
 }
 \source{
@@ -51,7 +50,7 @@ if (requireNamespace("sf", quietly = TRUE)) {
   library(sf)
   data(ncovr)
 
-  plot(ncovr["NAME"])
+  plot(ncovr["PO60"])
 }
 }
 \keyword{datasets}

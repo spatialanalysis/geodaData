@@ -1,0 +1,42 @@
+#' Malaria in Colombia (1998)
+#'
+#' @description Malaria incidence in 1998, population in Colombia from 1973, 1995, 1993 censuses, and projected population from 1995 to 2005. Use \code{list2env(malariaCol, .GlobalEnv)} to unlist in working environment. The data consist of a list of two objects:
+#' \itemize{
+#' \item malariaDept A shapefile object of class sf Dataframe with individual Colombian departments.
+#' \item malariaMunic A shapefile object of class sf Dataframe with Colombian municipalities.
+#' }
+#'
+#'
+#' @format malariaMunic includes 1,068 rows, 50 variables, and a geometry column. malariaDept includes 33 rows, 46 variables, and a geometry column:
+#' \describe{
+#' 	 \item{ID}{Sequencial ID}
+#' 	 \item{ADM0}{Country name}
+#'	 \item{ADM1}{Departmentos=States (Administrative level 1)}
+#'	 \item{ADM2}{Municipioss=Counties (Administrative level 2)}
+#'	 \item{IDDANE}{DANE (Colombian National Bureau of Statistics) code for counties in numeric format}
+#'	 \item{DANECODE}{DANE (Colombian National Bureau of Statistics) code for counties in character format}
+#'	 \item{CODDEPT}{DANE (Colombian National Bureau of Statistics) code for states }
+#'	 \item{TPyyyy}{Total population from census in year 'yyyy' (1973, 1985, and 1993 have census population, the remaning years have projected population)}
+#'	 \item{UPyyyy}{Urban population from census in year 'yyyy' (1973, 1985, and 1993 have census population, the remaning years have projected population)}
+#'	 \item{RPyyyy}{Rural population from census in year 'yyyy' (1973, 1985, and 1993 have census population, the remaning years have projected population)}
+#'	 \item{MALARI98}{Malaria incidence in 1998}
+#' }
+#' @details List of two Sf objects, unprojected. EPSG 4326: WGS84.
+#' @source SIVIGILA. Ministerio de Salud, Colombia. There are 3 files for each year from 1995-2005. Projections from Departamento Administrativo Nacional de Estadistica DANE, Colombia \url{https://www.minsalud.gov.co} and \url{https://www.dane.gov.co/index.php/estadisticas-por-tema/demografia-y-poblacion/proyecciones-de-poblacion}
+#' @examples
+#'
+#' ## Unlist in Global environment
+#' library(geodaData)
+#' data(malariaCol)
+#' list2env(malariaCol, environment())
+#' ls()
+#'
+#'
+#' ## if (requireNamespace("sf", quietly = TRUE)) {
+#'   library(sf)
+#'   data(malariaCol)
+#'
+#'   plot(malariaCol[[2]]["MALARI98"])
+#' }
+#'
+"malariaCol"

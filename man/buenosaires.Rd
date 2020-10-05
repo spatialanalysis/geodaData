@@ -5,12 +5,11 @@
 \alias{buenosaires}
 \title{Buenos Aires 1999 Elections}
 \format{
-An sf data frame with 209 rows, 22 variables, and a geometry column:
+An sf data frame with 209 rows, 20 variables, and a geometry column:
 \describe{
 \item{	INDRA	}{	Indra Code ID	}
 \item{	PROV	}{	Indec Province Code ID	}
 \item{	CIRCUNS	}{	Municipality ID	}
-\item{	CIRC	}{	undefined	}
 \item{	PROVINCIA	}{	Province Name	}
 \item{	CIRCUNSCRI	}{	Municipality Name	}
 \item{	CIRCUITO	}{	Precinct ID	}
@@ -19,15 +18,15 @@ An sf data frame with 209 rows, 22 variables, and a geometry column:
 \item{	TURNT_1	}{	Total Number of Effective Voters	}
 \item{	ELEC_1	}{	Total Number of Registered Voters	}
 \item{	VOTPOS_1	}{	Total Number of Valid Votes	}
-\item{	AL99CIRC	}{	Percent of Alianza Votes over Valid Votes	}
-\item{	APR99CIR	}{	Percent of APR Votes over Valid Votes	}
-\item{	TURN99CR	}{	Percent of Effective Votes over Valid Votes	}
+\item{	AL99CIRC	}{	Percentage of Alianza Votes over Valid Votes	}
+\item{	APR99CIR	}{	Percentage of APR Votes over Valid Votes	}
+\item{	TURN99CR	}{	Percentage of Effective Votes over Valid Votes	}
 \item{	EAST	}{	East Coordinates	}
 \item{	NORTH	}{	North Coordinates	}
-\item{	NDRANO	}{	Numeric ID (for use in GeoDa)	}
-\item{	APR99PC	}{	Percent of APR Votes over Valid Votes	}
-\item{	AL99PC	}{	Percent of Alianza Votes over Valid Votes 	}
-\item{	TURN99PC	}{	Percent of Effective Votes over Valid Votes}
+\item{	NDRANO	}{	Numeric ID }
+\item{	APR99PC	}{	Percentage of APR Votes over Valid Votes	}
+\item{	AL99PC	}{	Percentage of Alianza Votes over Valid Votes 	}
+\item{	TURN99PC	}{ Percentage of Effective Votes over Valid Votes}
 }
 }
 \source{

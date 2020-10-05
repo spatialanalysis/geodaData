@@ -5,8 +5,12 @@
 \alias{nepal}
 \title{International Aid to Nepal (2007-14)}
 \format{
-An sf data frame with 75 rows, 62 variables, and a geometry column:
+An sf data frame with 75 rows, 61 variables, and a geometry column:
 \describe{
+\item{	id	}{	Unique ID	}
+\item{	region	}{	Nepal region	}
+\item{	zone	}{	Nepal zone	}
+\item{	district	}{	Nepal district	}
 \item{	depecprov	}{	Deprivation in economic provisioning	}
 \item{	povindex	}{	Human Poverty Index	}
 \item{	pcinc	}{	Per Capita Income	}
@@ -24,10 +28,10 @@ An sf data frame with 75 rows, 62 variables, and a geometry column:
 \item{	schlppop	}{	Number of Schools per population (in thousands) (2012-2013)	}
 \item{	ad_illit	}{	Adult illiteracy rate (2011)	}
 \item{	ad_ilgt50	}{	Dummy variable with value of 1 if adult illiteracy rate >50pct (2011)	}
-\item{	votnum	}{	Number of Voters (lunar years 2047-2063, approx. 1991 to 2006)	}
-\item{	totecfms	}{	“Total economy including financial intermediation service indirectly measured (total value added)”	}
-\item{	xxcamt	}{	Project Sector Committed Amount: XX = sector (see above)	}
-\item{	xxdamt	}{	Project Sector Distributed Amount: XX = sector: Agriculture, Business Banking, Communication, Conflict Resolution, Budget Support + Finance, Education, Energy, Environment, Forestry, Gov + Civil Society, Health, Humanitarian Aid, Industry, Multi-Sector, Social Infrastructure, Tourism, Transport + Storage, Water Sanitation, Total	}
+\item{	lon	}{	Longitude }
+\item{	lat	}{	Latitude }
+\item{	xxCAMT	}{	Project Sector Committed Amount: xx = sector: Agriculture (AG), Business Banking (BANK), Communication (COMM), Conflict Resolution (CON), Education (EDU), Energy (ENGY), Environment (ENV), Forestry (FOR), Government and Civil Society (GOV), Health (HEALT), Humanitarian Aid (HUM), Industry (IND), Multi-Sector (MUL), Social Infrastructure (SOC), Tourism (TOUR), Transport and Storage (TRAN), Water Sanitation (WAT), Total (TOT)}
+\item{	xxDAMT	}{	Project Sector Distributed Amount by sector xx (see above)}
 }
 }
 \source{

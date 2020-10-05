@@ -5,17 +5,20 @@
 \alias{scotlip}
 \title{Lip Cancer in Scotland (1970s)}
 \format{
-An sf data frame with 24 rows, 60 variables, and a geometry column:
+An sf data frame with 56 rows, 11 variables, and a geometry column:
 \describe{
 \item{	CODENO	}{	Code converted to numeric (drop w prefix)	}
+\item{	AREA	}{	Polygon area	}
+\item{	PERIMETER	}{	Polygon perimeter	}
 \item{	RECORD_ID	}{	Unique ID	}
 \item{	DISTRICT	}{	District number 1-56	}
-\item{	NAME }{	Name of districts from Cressie	}
+\item{	NAME }{	Name of districts from Cressie (1993)	}
 \item{	CODE	}{	District code from WinBugs	}
-\item{	CANCER	}{	Lip cancer cases from Cressie	}
-\item{	POP	}{	Population years at risk from Cressie	}
-\item{	CEXP	}{	Expected cases from Lawson et al.	}
-\item{	AFF	}{	Outdoor industry from Lawson et al.	}
+\item{	CANCER	}{	Lip cancer cases from Cressie (1993)	}
+\item{	POP	}{	Population years at risk from Cressie (1993)	}
+\item{	CEXP	}{	Expected cases from Lawson et al. (1999)	}
+\item{	AFF	}{	Outdoor industry from Lawson et al. (1999)	}
+\item{	geometry	}{	POLYGON	}
 }
 }
 \source{

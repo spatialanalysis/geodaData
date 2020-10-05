@@ -4,7 +4,7 @@
 #'
 #' Sf object, undefined Coordinate Reference System.
 #'
-#' @format An sf data frame with 168 rows, 4 variables, and a geometry column:
+#' @format An sf data frame with 168 rows, 3 variables, and a geometry column:
 #' \describe{
 #'	\item{	ID	}{	location identifier	}
 #'	\item{	X	}{	X-coordinate	}

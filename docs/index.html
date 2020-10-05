@@ -82,22 +82,27 @@
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
 <p>You can install geodaData from CRAN with:</p>
-<div class="sourceCode"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"geodaData"</span>)</pre></div>
+<div class="sourceCode" id="cb1"><pre class="downlit">
+<span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"geodaData"</span><span class="op">)</span></pre></div>
 <p>You can install the development version of geodaData from <a href="https://github.com/">GitHub</a> with:</p>
-<div class="sourceCode"><pre class="r"><span class="co"># install.packages("remotes")</span>
-<span class="kw pkg">remotes</span><span class="kw ns">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"spatialanalysis/geodaData"</span>)</pre></div>
+<div class="sourceCode" id="cb2"><pre class="downlit">
+<span class="co"># install.packages("remotes")</span>
+<span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span><span class="op">(</span><span class="st">"spatialanalysis/geodaData"</span><span class="op">)</span></pre></div>
 </div>
 <div id="usage" class="section level2">
 <h2 class="hasAnchor">
 <a href="#usage" class="anchor"></a>Usage</h2>
 <p>To use geodaData in a workshop, first load <code>sf</code>, then load the package:</p>
-<div class="sourceCode"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">sf</span>) <span class="co"># can use without sf, but datasets will print weirdly in console</span>
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">geodaData</span>)</pre></div>
+<div class="sourceCode" id="cb3"><pre class="downlit">
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://r-spatial.github.io/sf/">sf</a></span><span class="op">)</span> <span class="co"># can use without sf, but datasets will print weirdly in console</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/spatialanalysis/geodaData">geodaData</a></span><span class="op">)</span></pre></div>
 <p>Find a list of all datasets in geodaData with:</p>
-<div class="sourceCode"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/utils/data.html">data</a></span>(<span class="kw">package</span> <span class="kw">=</span> <span class="st">"geodaData"</span>)</pre></div>
+<div class="sourceCode" id="cb4"><pre class="downlit">
+<span class="fu"><a href="https://rdrr.io/r/utils/data.html">data</a></span><span class="op">(</span>package <span class="op">=</span> <span class="st">"geodaData"</span><span class="op">)</span></pre></div>
 <p>You can load a specific dataset into your R environment and show the metadata for it:</p>
-<div class="sourceCode"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span>(<span class="no">nyc</span>)
-?<span class="no">nyc</span></pre></div>
+<div class="sourceCode" id="cb5"><pre class="downlit">
+<span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">nyc</span><span class="op">)</span>
+<span class="op">?</span><span class="va">nyc</span></pre></div>
 <p>Instructions for adding a new dataset to this package can be found in the <a href="https://github.com/spatialanalysis/geodaData/wiki/How-to-add-a-dataset-to-this-package">Wiki</a> of this repository.</p>
 </div>
 <div id="datasets" class="section level2">
@@ -106,23 +111,149 @@
 <p>Current datasets included in this package:</p>
 <ul>
 <li>
-<code>chicago_comm</code>: Chicago Community Areas (2010).</li>
+<code>abandonedcars</code>: Abandoned Vehicles (2016).</li>
 <li>
-<code>clev_pts</code>: Cleveland Home Sales (2015).</li>
+<code>airbnb</code>: Airbnb rentals, socioeconomics, and crime in Chicago.</li>
+<li>
+<code>atlanta_homicide</code>: Atlanta, GA region homicide counts and rates.</li>
+<li>
+<code>baltimore_home</code>: Baltimore house sales prices and hedonics.</li>
+<li>
+<code>bostonhsg</code>: Boston housing and neighborhood data.</li>
+<li>
+<code>buenosaires</code>: Electoral Data for 1999 Argentinean Elections.</li>
+<li>
+<code>charleston1</code>: 2000 Census Tract Data for Charleston, SC MSA and counties.</li>
+<li>
+<code>charleston2</code>: 1998 and 2001 Zip Code Business Patterns (Census Bureau) in Charleston, SC MSA.</li>
+<li>
+<code>chigroceries</code>: Chicago supermarkets (2015).</li>
+<li>
+<code>chihealth</code>: Chicago Health and Socio-Economics (2014).</li>
+<li>
+<code>chilelabor</code>: Labor Markets in Chile (1982-2002).</li>
+<li>
+<code>chisociohealth</code>: Chicago Health Indicators (2005-11).</li>
+<li>
+<code>cincinnati</code>: Cincinnati Crime and Socio-Demographics (2008).</li>
+<li>
+<code>cleveland</code>: Cleveland Home Sales (2015).</li>
+<li>
+<code>columbus</code>: Columbus neighborhood crime (1980).</li>
 <li>
 <code>commpop</code>: Chicago Population Change (2000-2010).</li>
 <li>
+<code>community_pop</code>: Chicago Community Area Population for 2010 (non-spatial, csv).</li>
+<li>
+<code>denver</code>: Demographics and housing in Denver neighborhoods (2010).</li>
+<li>
+<code>elections1216</code>: 2012 and 2016 Presidential Elections in the United States.</li>
+<li>
+<code>grid100</code>: Grids with simulated variables.</li>
+<li>
 <code>guerry</code>: Guerry “Moral Statistics” (1830s).</li>
 <li>
+<code>healthplus</code>: Health, Income and Diversity for US counties (2000).</li>
+<li>
+<code>hickory1</code>: Census Tract Data for Hickory, NC MSA and counties (2000).</li>
+<li>
+<code>hickory2</code>: Zip Code Business Patterns (Census Bureau) for Hickory, NC MSA (1998 and 2001).</li>
+<li>
+<code>houstonhom</code>: Houston, TX region homicide counts and rates (1980s-90s).</li>
+<li>
+<code>juvenile</code>: Cardiff juvenile delinquent residences.</li>
+<li>
+<code>kchomesale</code>: Home Sales in King County, WA (2014-15).</li>
+<li>
+<code>lansing1</code>: 2000 Census Tract Data for Lansing, MI MSA and counties.</li>
+<li>
+<code>lansing2</code>: 1998 and 2001 Zip Code Business Patterns (Census Bureau) for Lansing, MI MSA.</li>
+<li>
+<code>laozone</code>: Ozone measures at monitoring stations in Los Angeles basin (1996).</li>
+<li>
+<code>lasrosas1</code>: Corn yield, fertilizer and field data for precision agriculture, Argentina (1999).</li>
+<li>
+<code>lasrosas2</code>: Corn yield, fertilizer and field data for precision agriculture, Argentina (1999).</li>
+<li>
+<code>liquorstore</code>: Chicago Liquor Stores (2015).</li>
+<li>
+<code>malaria_col_dept</code>: Malaria incidence and population (1973, 95, 93 censuses and projections until 2005).</li>
+<li>
+<code>malaria_col_munic</code>: Malaria incidence and population (1973, 95, 93 censuses and projections until 2005).</li>
+<li>
+<code>milwaukee1</code>: 2000 Census Tract Data for Milwaukee, WI MSA..</li>
+<li>
+<code>milwaukee2</code>: 1998 and 2001 Zip Code Business Patterns (Census Bureau) for Milwaukee, WI MSA.</li>
+<li>
+<code>mspolice</code>: Police expenditures Mississippi counties.</li>
+<li>
 <code>ncovr</code>: Homicides &amp; Socio-Economics (1960-90).</li>
+<li>
+<code>ndvi</code>: Normalized Difference Vegetation Index grid.</li>
+<li>
+<code>nepal</code>: Health, poverty and education indicators for Nepal districts (2007-14).</li>
 <li>
 <code>nyc</code>: Rental Housing and Demographics in NYC (2000s), non-spatial.</li>
 <li>
 <code>nyc_sf</code>: Rental Housing and Demographics in NYC (2000s).</li>
 <li>
+<code>nycearnings</code>: Block-level Earnings in NYC (2002-14).</li>
+<li>
+<code>nyceducation</code>: NYC Education (2000).</li>
+<li>
+<code>nycneighborhood</code>: Demographics for New York City neighborhoods (2000s).</li>
+<li>
+<code>nycsociodemo</code>: NYC Education and Socio-Demographics (2000s).</li>
+<li>
 <code>ohio_lung</code>: Ohio Lung Cancer Mortality (1960s-80s).</li>
 <li>
-<code>vehicle_pts</code>: Abandoned Vehicles (2016).</li>
+<code>orlando1</code>: 2000 Census Tract Data for Orlando, FL MSA and counties.</li>
+<li>
+<code>orlando2</code>: 1998 and 2001 Zip Code Business Patterns (Census Bureau) for Orlando, FL MSA.</li>
+<li>
+<code>ozone9799</code>: Monthly ozone data, 1997-99.</li>
+<li>
+<code>phoenixACS</code>: Phoenix American Community Survey Data (2010, 5-year averages).</li>
+<li>
+<code>pittsburghom</code>: Pittsburgh homicide locations (1993).</li>
+<li>
+<code>sacramento1</code>: 2000 Census Tract Data for Sacramento MSA.</li>
+<li>
+<code>sacramento2</code>: 1998 and 2001 Zip Code Business Patterns (Census Bureau) for Sacramento MSA.</li>
+<li>
+<code>savannah1</code>: 2000 Census Tract Data for Savannah, GA MSA and counties.</li>
+<li>
+<code>savannah2</code>: 1998 and 2001 Zip Code Business Patterns (Census Bureau) for Savannah, GA MSA.</li>
+<li>
+<code>scotlip</code>: Male lip cancer in Scotland, 1975-80.</li>
+<li>
+<code>seattle1</code>: 2000 Census Tract Data for Seattle, WA MSA and counties.</li>
+<li>
+<code>seattle2</code>: 1998 and 2001 Zip Code Business Patterns (Census Bureau) for Seattle, WA MSA.</li>
+<li>
+<code>Sfcartheft</code>: Car theft incidents in San Francisco (points and area) - for CAST (July-Dec 2012).</li>
+<li>
+<code>Sfcrime</code>: Crime incidents in San Francisco (points and area) - for CAST (July-Dec 2012).</li>
+<li>
+<code>Sfdrugs</code>: Drug incidents in San Francisco (points and area) - for CAST (July-Dec 2012).</li>
+<li>
+<code>Sfrobbery</code>: Robbery incidents in San Francisco (points and area) - for CAST (July-Dec 2012).</li>
+<li>
+<code>Sfvandalism</code>: Vandalism incidents in San Francisco (points and area) - for CAST (July-Dec 2012).</li>
+<li>
+<code>SIDS</code>: North Carolina county SIDS death counts (1970s and 1980s).</li>
+<li>
+<code>snow</code>: John Snow &amp; the 19th Century Cholera Epidemic.</li>
+<li>
+<code>southom</code>: US Southern county homicides 1960-1990.</li>
+<li>
+<code>stlouishom</code>: St Louis region county homicide counts and rates (1980s and 1990s).</li>
+<li>
+<code>tampa</code>: 2000 Census Tract Data for Tampa, FL MSA and counties.</li>
+<li>
+<code>us_sdoh</code>: US Social Determinants of Health Data (2014).</li>
+<li>
+<code>vehicle_pts</code>: Point locations of abandoned vehicles in Chicago in September 2016.</li>
 </ul>
 </div>
 <div id="similar-packages" class="section level2">
@@ -161,6 +292,7 @@
 <h2>Developers</h2>
 <ul class="list-unstyled">
 <li>Angela Li <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0002-8956-419X" target="orcid.widget" aria-label="ORCID"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li>Karina Acosta <br><small class="roles"> Author, contributor </small> <a href="https://orcid.org/0000-0001-5103-1147X" target="orcid.widget" aria-label="ORCID"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
 <li><a href="authors.html">All authors...</a></li>
 </ul>
 </div>
@@ -170,11 +302,11 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by Angela Li.</p>
+  <p>Developed by Angela Li, Karina Acosta.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

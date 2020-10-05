@@ -1,38 +1,69 @@
 #' 2014-15 Home Sales in King County, WA
 #'
-#' Home sales prices and charactiersitcs for Seattle and King County, WA (May 2014 - 2015).
-#'
-#' Sf object, undefined Coordinate Reference System.
-#'
-#' @format An sf data frame with 21613 rows, 22 variables, and a geometry column:
+#' @description Home sales prices and characteristics for Seattle and King County, WA (May 2014 - 2015). Use \code{list2env(kchomesale, .GlobalEnv)} to unlist in working environment. The data consist of a list of two objects:
+#' \itemize{
+#' \item kchomesales_points A spatial points object of class sf Dataframe.
+#' \item kc_zones A shapefile object of class sf Dataframe.
+#' }
+#' @format kchomesales_points includes homesales points with 21,613 rows, 21 variables, and a geometry column.
 #' \describe{
+#'  \item{	id	}{	ID code	}
 #'	\item{	date	}{	date sold	}
 #'	\item{	price	}{	sale price	}
 #'	\item{	bedrooms	}{	number of bedrooms	}
 #'	\item{	bathrooms	}{	number of bathrooms	}
-#'	\item{	sqft__ving	}{	size of living area in square feet	}
+#'	\item{	sqft_liv	}{	size of living area in square feet	}
 #'	\item{	sqft_lot	}{	size of the lot in square feet	}
 #'	\item{	floors	}{	number of floors	}
-#'	\item{	waterfront	}{	‘1’ if the property has a waterfront, ‘0’ if not.	}
-#'	\item{	view	}{	An index from 0 to 4 of how good the view of the property was (definition:)	}
+#'	\item{	waterfront	}{	‘1’ if the property has a waterfront, ‘0’ if not	}
+#'	\item{	view	}{	An index from 0 to 4 of how good the view of the property was	}
 #'	\item{	condition	}{	condition of the house, ranked from 1 to 5	}
-#'	\item{	grade	}{	Classification by construction quality which refers to the types of materials used and the quality of workmanship. Buildings of better quality (higher grade) cost more to build per unit of measure and command higher value. (definition:)	}
+#'	\item{	grade	}{	Classification by construction quality which refers to the types of materials used and the quality of workmanship. Buildings of better quality (higher grade) cost more to build per unit of measure and command higher value. Additional details in: \url{https://info.kingcounty.gov/assessor/esales/Glossary.aspx?type=r}}
 #'	\item{	sqft_above	}{	square feet above ground	}
-#'	\item{	sqft__ment	}{	square feet below ground	}
+#'	\item{	sqft_basmt	}{	square feet below ground	}
 #'	\item{	yr_built	}{	year built	}
-#'	\item{	yr_re_ated	}{	year renovated. ‘0’ if never renovated	}
+#'	\item{	yr_renov	}{	year renovated. ‘0’ if never renovated	}
 #'	\item{	zipcode	}{	5 digit zip code	}
-#'	\item{	lat, long	}{	latitude and longitude	}
-#'	\item{	squft__ng15	}{	average size of closest 15 houses, in square feet	}
-#'	\item{	sqft_lot15	}{	average size of the closest 15 houses’ lots, in square feet	}
+#'	\item{	lat}{	latitude	}
+#'	\item{  long	}{ longitude	}
+#'	\item{	squft_liv15	}{	average size of interior housing living space for the closest 15 houses, in square feet	}
+#'	\item{	squft_lot15	}{	average size of land lost for the closest 15 houses, in square feet	}
+#'	\item{	OBJECTID	}{	Polygon ID	}
+#'	\item{	ZIP	}{	ZIP code as int }
+#'	\item{	ZIPCODE	}{	ZIP code as chr }
+#'	\item{	COUNTY	}{	County code }
+#'	\item{	Shape_leng	}{	Polygon length in meters  }
+#'	\item{	Shape_Area	}{	Polygon area in meters }
 #'	}
-#' @source  \url{https://www.kaggle.com/harlfoxem/housesalesprediction/discussion}
+#'
+#' @format kc_zones includes polygons of zones for King County with 85 rows, 6 variables and a geometry column).
+#' \describe{
+#'  \item{	OBJECTID	}{	ID code	}
+#'	\item{	ZIP	}{	Zip code	}
+#'	\item{	COUNTY	}{	County code	}
+#'	\item{	ZIP_TYPE	}{	Zip code type: standard or PO box	}
+#'	\item{	Shape_Leng	}{	Polygon length	}
+#'	\item{	Shape_Area	}{	Polygon area	}
+#'	}
+#'
+#' @details List of two Sf objects, unprojected. EPSG 4326: WGS84.
+#' @source  King County Home sales obtained from \url{https://www.kaggle.com/harlfoxem/housesalesprediction/discussion} and King county polygons are retrieved from \url{https://gis-kingcounty.opendata.arcgis.com/datasets/zipcodes-for-king-county-and-surrounding-area-shorelines-zipcode-shore-area}
 #'
 #' @examples
+#'
+#' ## Unlist in Global environment
+#' library(geodaData)
+#' data(kchomesale)
+#' list2env(kchomesale, environment())
+#' ls()
+#'
+#' ## Plot first listed dataset (kchomesales_points):
 #' if (requireNamespace("sf", quietly = TRUE)) {
 #'   library(sf)
 #'   data(kchomesale)
 #'
-#'   plot(kchomesale["price"])
+#'   plot(kchomesale[[1]]["price"])
 #' }
+#'
+#'
 "kchomesale"

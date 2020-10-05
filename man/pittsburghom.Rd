@@ -7,12 +7,12 @@
 \format{
 An sf data frame with 143 rows, 9 variables, and a geometry column:
 \describe{
-\item{	CASEID	}{	identifier for case, as character	}
-\item{	NEWID	}{	identifier for case, as numeric	}
-\item{	EVENT_YR	}{	year of homicide	}
-\item{	GUN	}{	indicator variable, 1 = gun used	}
-\item{	GANG	}{	indicator variable, 1 = gang-related	}
-\item{	DRUG	}{	indicator variable, 1 = drug-related	}
+\item{	CASEID	}{	Identifier for case, as character	}
+\item{	NEWID	}{	Identifier for case, as numeric	}
+\item{	EVENT_YR	}{	Year of homicide	}
+\item{	GUN	}{	Indicator variable, 1 = gun used	}
+\item{	GANG	}{	Indicator variable, 1 = gang-related	}
+\item{	DRUG	}{	Indicator variable, 1 = drug-related	}
 \item{	X_COORD	}{	X-coordinate	}
 \item{	Y_COORD	}{	Y-coordinate	}
 }

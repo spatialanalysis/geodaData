@@ -5,17 +5,17 @@
 \alias{milwaukee1}
 \title{Milwaukee Employment 2000}
 \format{
-An sf data frame with 571 rows, 3 variables, and a geometry column:
+An sf data frame with 417 rows, 31 variables, and a geometry column:
 \describe{
 \item{	FIPS	}{	FIPS Code	}
 \item{	MSA	}{	MSA Name	}
 \item{	TOT_POP	}{	Total population: Total	}
 \item{	POP_16	}{	Total population: Under 16	}
 \item{	POP_65	}{	Total population: 65+	}
-\item{	WHITE#	}{	Total population: Not Hispanic or Latino; White alone	}
-\item{	BLACK#	}{	Total population: Not Hispanic or Latino; Black or African American alone	}
-\item{	ASIAN#	}{	Total population: Not Hispanic or Latino; Asian alone	}
-\item{	HISP#	}{	Total population: Hispanic or Latino	}
+\item{	WHITE	}{	Total population: Not Hispanic or Latino; White alone	}
+\item{	BLACK	}{	Total population: Not Hispanic or Latino; Black or African American alone	}
+\item{	ASIAN	}{	Total population: Not Hispanic or Latino; Asian alone	}
+\item{	HISP	}{	Total population: Hispanic or Latino	}
 \item{	MULTI_RA	}{	Total population: Hispanic or Latino	}
 \item{	MALES	}{	Total population: Male	}
 \item{	FEMALES	}{	Total population: Female	}
@@ -33,9 +33,10 @@ An sf data frame with 571 rows, 3 variables, and a geometry column:
 \item{	OCC_OFF1	}{	Employed civilian population 16 years and over: Office (001-219 except 020, 021)	}
 \item{	OCC_INFO	}{	Employed civilian population 16 years and over: Computer and mathematical occupations	}
 \item{	HH_INC	}{	Households: Median household income in 1999	}
-\item{	POV_POP*	}{	Population for whom poverty status is determined: Total Population	}
-\item{	POV_TOT*	}{	Population for whom poverty status is determined: Income in 1999 below poverty level	}
+\item{	POV_POP	}{	Population for whom poverty status is determined: Total Population	}
+\item{	POV_TOT	}{	Population for whom poverty status is determined: Income in 1999 below poverty level	}
 \item{	HSG_VAL	}{	Owner-occupied housing units: Median value	}
+\item{	PCTBLCK	}{	Percentage of black population	}
 \item{	POLYID	}{	Unique ID	}
 }
 }

@@ -6,30 +6,30 @@
 #'
 #' @format An sf data frame with 1412 rows, 70 variables, and a geometry column:
 #' \describe{
-#'	\item{	NAME	}{	county name	}
-#'	\item{	STATE_NAME	}{	state name	}
-#'	\item{	STATE_FIPS	}{	state fips code (character)	}
-#'	\item{	CNTY_FIPS	}{	county fips code (character)	}
-#'	\item{	FIPS	}{	combined state and county fips code (character)	}
-#'	\item{	STFIPS	}{	state fips code (numeric)	}
-#'	\item{	COFIPS	}{	county fips code (numeric)	}
-#'	\item{	FIPSNO	}{	fips code as numeric variable	}
-#'	\item{	SOUTH	}{	dummy variable for Southern counties (South = 1)	}
-#'	\item{	HR**	}{	homicide rate per 100,000 (1960, 1970, 1980, 1990)	}
-#'	\item{	HC**	}{	homicide count, three year average centered on 1960, 1970, 1980, 1990	}
-#'	\item{	PO**	}{	county population, 1960, 1970, 1980, 1990	}
-#'	\item{	RD**	}{	resource deprivation 1960, 1970, 1980, 1990 (principal component, see Codebook for details)	}
-#'	\item{	PS**	}{	population structure 1960, 1970, 1980, 1990 (principal component, see Codebook for details)	}
-#'	\item{	UE**	}{	unemployment rate 1960, 1970, 1980, 1990	}
-#'	\item{	DV**	}{	divorce rate 1960, 1970, 1980, 1990 (pct of males over 14 divorced)	}
-#'	\item{	MA**	}{	median age 1960, 1970, 1980, 1990	}
-#'	\item{	POL**	}{	log of population 1960, 1970, 1980, 1990	}
-#'	\item{	DNL**	}{	log of population density 1960, 1970, 1980, 1990	}
-#'	\item{	MFIL**	}{	log of median family income 1960, 1970, 1980, 1990	}
-#'	\item{	FP**	}{	pct families below poverty 1960, 1970, 1980, 1990 (see Codebook for details)	}
-#'	\item{	BLK**	}{	pct black 1960, 1970, 1980, 1990	}
-#'	\item{	GI**	}{	Gini index of family income inequality 1960, 1970, 1980, 1990	}
-#'	\item{	FH**	}{	pct female headed households 1960, 1970, 1980, 1990	}
+#'	\item{	NAME	}{	County name	}
+#'	\item{	STATE_NAME	}{	State name	}
+#'	\item{	STATE_FIPS	}{	State fips code (character)	}
+#'	\item{	CNTY_FIPS	}{	County fips code (character)	}
+#'	\item{	FIPS	}{	Combined state and county FIPS code (character)	}
+#'	\item{	STFIPS	}{	State fips code (numeric)	}
+#'	\item{	COFIPS	}{	County fips code (numeric)	}
+#'	\item{	FIPSNO	}{	FIPS code as numeric variable	}
+#'	\item{	SOUTH	}{	Dummy variable for Southern counties (South = 1)	}
+#'	\item{	HR**	}{	Homicide rate per 100,000 population (1960, 1970, 1980, and 1990)	}
+#'	\item{	HC**	}{	Homicide count, three year average centered on 1960, 1970, 1980, and 1990	}
+#'	\item{	PO**	}{	County population in 1960, 1970, 1980, and 1990	}
+#'	\item{	RD**	}{	Resource deprivation in 1960, 1970, 1980, and 1990 (principal component)}
+#'	\item{	PS**	}{	Population structure in 1960, 1970, 1980, and 1990 (principal component)}
+#'	\item{	UE**	}{	Unemployment rate in 1960, 1970, 1980, and 1990	}
+#'	\item{	DV**	}{	Divorce rate in 1960, 1970, 1980, and 1990 (percentage= of males over 14 divorced)	}
+#'	\item{	MA**	}{	Median age in 1960, 1970, 1980, and 1990	}
+#'	\item{	POL**	}{	Log of population in 1960, 1970, 1980, and 1990	}
+#'	\item{	DNL**	}{	Log of population density in 1960, 1970, 1980, and 1990	}
+#'	\item{	MFIL**	}{	Log of median family income in 1960, 1970, 1980, and 1990	}
+#'	\item{	FP**	}{	Percentage of families below poverty in 1960, 1970, 1980, and 1990	}
+#'	\item{	BLK**	}{	Percentage of black in 1960, 1970, 1980, and 1990	}
+#'	\item{	GI**	}{	Gini index of family income inequality in 1960, 1970, 1980, and 1990	}
+#'	\item{	FH**	}{	Percentage of female headed households in 1960, 1970, 1980, and 1990	}
 #'	}
 #' @source S. Messner, L. Anselin, D. Hawkins, G. Deane, S. Tolnay, R. Baller (2000). An Atlas of the Spatial Patterning of County-Level Homicide, 1960-1990. Pittsburgh, PA, National Consortium on Violence Research (NCOVR) (\url{www.ncovr.heinz.cmu.edu}).
 #'

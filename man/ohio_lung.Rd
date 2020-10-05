@@ -7,13 +7,16 @@
 \format{
 An sf data frame with 88 rows, 42 variables, and a geometry column:
 \describe{
-  \item{county_id}{Sequential county ID (alphabetic     order)}
-  \item{name}{County name}
-  \item{fipsno}{Fips code as numeric}
-  \item{lg_ryy}{Lung cancer cases for gender G (M or F) and race R (W or B) in year yy (1968, 1978, 1988)}
-  \item{popg_ryy}{Population at risk for gender G (M or F) and race R (W or B) in year yy (1968, 1978, 1988)}
-  \item{l_gyy}{Total male and female lung cancer cases for each year}
-  \item{pop_gyy}{Total population at risk by gender}
+  \item{FIPSNO}{County FIPS code}
+  \item{AREA}{Area of polygon}
+  \item{PERIMETER}{Perimeter of polygon}
+  \item{RECORD_ID}{Unique ID}
+  \item{COUNTYID}{County ID}
+  \item{NAME}{County name}
+  \item{LGRyy}{Lung cancer cases for gender G (male: M or female: F) and race R (white:W or black:B) in year yy (1968, 1978, 1988)}
+  \item{POPGRyy}{Population at risk for gender G (male: M or female: F) and race R (W or B) in year yy (1968, 1978, 1988)}
+  \item{LGyy}{Total lung cancer cases for gender G (male: M or female: F) and each year (1968, 1978, 1988)}
+  \item{POPGyy}{Total population at risk by gender G (male: M or female: F) and year yy (1968, 1978, 1988)}
   \item{geometry}{POLYGON}
 }
 }
@@ -34,7 +37,7 @@ if (requireNamespace("sf", quietly = TRUE)) {
   library(sf)
   data(ohio_lung)
 
-  plot(ohio_lung["FIPSNO"])
+  plot(ohio_lung["POPM88"])
 }
 }
 \keyword{datasets}

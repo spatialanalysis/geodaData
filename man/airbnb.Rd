@@ -5,11 +5,11 @@
 \alias{airbnb}
 \title{AirBnB Chicago 2015}
 \format{
-An sf data frame with 77 rows, 21 variables, and a geometry column:
+An sf data frame with 77 rows, 20 variables, and a geometry column:
 \describe{
 \item{community}{name of community area}
 \item{shape_area}{polygon area}
-\item{shape_len}{polygon length}
+\item{shape_len}{polygon perimeter}
 \item{AREAID}{ID number associated with the community area}
 \item{response_r}{response rate of airbnb host}
 \item{accept_r}{acceptance rate of airbnb host}

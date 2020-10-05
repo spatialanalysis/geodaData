@@ -22,6 +22,11 @@ Useful links:
 \author{
 \strong{Maintainer}: Angela Li \email{ali6@uchicago.edu} (\href{https://orcid.org/0000-0002-8956-419X}{ORCID})
 
+Authors:
+\itemize{
+  \item Karina Acosta \email{acostak@uchicago.edu} (\href{https://orcid.org/0000-0001-5103-1147X}{ORCID}) [contributor]
+}
+
 Other contributors:
 \itemize{
   \item Luc Anselin (Creator of original spatial datasets) [contributor]

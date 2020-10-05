@@ -4,13 +4,21 @@
 #'
 #' Sf object, unprojected. EPSG 4326: WGS84.
 #'
-#' @format An sf data frame with 42 rows, 60 variables, and a geometry column:
+#' @format An sf data frame with 42 rows, 59 variables, and a geometry column:
 #' \describe{
 #'	\item{	ZIP	}{	ZIP code	}
 #'	\item{	PO_NAME	}{	Name of ZIP code area	}
-#'	\item{	STATE	}{	STATE	}
-#'	\item{	MSA	}{	MSA	}
-#'	\item{	CBSA_CODE	}{	CBSA code	}
+#'	\item{	STATE	}{	State abbreviation	}
+#'	\item{	POP2001	}{	Population 2001	}
+#'	\item{	MSA	}{	Metropolitan Statistical Area	}
+#'	\item{	EMP98	}{	Total mid-march employees, 1998	}
+#'	\item{	EST98	}{	Total establishments in ZIP code, 1998	}
+#'	\item{  EFLAG98}{ A if PAY98 missing}
+#'  \item{  PAY98}{Total annual payroll ($1,000), 1998}
+#'  \item{	EST01	}{	Total establishments in ZIP code, 2001	}
+#'  \item{  EMP01}{Total mid-march employees, 2001}
+#'  \item{  EFLAG01}{ A if PAY01 missing}
+#'	\item{	CBSA_CODE	}{	Core-based statistical area code	}
 #'	\item{	MAN98	}{	1998 total manufacturing establishments (MSA)	}
 #'	\item{	MAN98_12	}{	1998 total manufacturing establishments, 1-9 employees (MSA)	}
 #'	\item{	MAN98_39	}{	1998 total manufacturing establishments 10+ employees (MSA)	}
@@ -49,8 +57,6 @@
 #'	\item{	INFO01US_3	}{	2001 total information establishments, 10+ employees (US)	}
 #'	\item{	INDEX	}{	Index	}
 #'	\item{	NUMSEC	}{	Number of sectors represented in ZIP code	}
-#'	\item{	EST98	}{	Total establishments in ZIP code, 1998	}
-#'	\item{	EST01	}{	Total establishments in ZIP code, 2001	}
 #'	\item{	PCTNGE	}{	National growth effect, percent (N)	}
 #'	\item{	PCTIME	}{	Industry mix effect, percent (M)	}
 #'	\item{	PCTCSE	}{	Competitive shift effect, percent (S)	}

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Ohio Lung Cancer Mortality (1960s-80s). — ohio_lung • geodaData</title>
+<title>Ohio Lung Cancer Mortality (1960s-80s) — ohio_lung • geodaData</title>
 
 
 <!-- jquery -->
@@ -39,7 +39,7 @@
 
 
 
-<meta property="og:title" content="Ohio Lung Cancer Mortality (1960s-80s). — ohio_lung" />
+<meta property="og:title" content="Ohio Lung Cancer Mortality (1960s-80s) — ohio_lung" />
 <meta property="og:description" content="Ohio lung cancer data for 1968, 1978 and 1988." />
 
 
@@ -111,7 +111,7 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Ohio Lung Cancer Mortality (1960s-80s).</h1>
+    <h1>Ohio Lung Cancer Mortality (1960s-80s)</h1>
     <small class="dont-index">Source: <a href='https://github.com/spatialanalysis/geodaData/blob/master/R/ohio.R'><code>R/ohio.R</code></a></small>
     <div class="hidden name"><code>ohio_lung.Rd</code></div>
     </div>
@@ -120,19 +120,22 @@
     <p>Ohio lung cancer data for 1968, 1978 and 1988.</p>
     </div>
 
-    <pre class="usage"><span class='no'>ohio_lung</span></pre>
+    <pre class="usage"><span class='va'>ohio_lung</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>An sf data frame with 88 rows, 42 variables, and a geometry column:</p><dl'>
-  <dt>county_id</dt><dd><p>Sequential county ID (alphabetic     order)</p></dd>
-  <dt>name</dt><dd><p>County name</p></dd>
-  <dt>fipsno</dt><dd><p>Fips code as numeric</p></dd>
-  <dt>lg_ryy</dt><dd><p>Lung cancer cases for gender G (M or F) and race R (W or B) in year yy (1968, 1978, 1988)</p></dd>
-  <dt>popg_ryy</dt><dd><p>Population at risk for gender G (M or F) and race R (W or B) in year yy (1968, 1978, 1988)</p></dd>
-  <dt>l_gyy</dt><dd><p>Total male and female lung cancer cases for each year</p></dd>
-  <dt>pop_gyy</dt><dd><p>Total population at risk by gender</p></dd>
+    <p>An sf data frame with 88 rows, 42 variables, and a geometry column:</p><dl>
+  <dt>FIPSNO</dt><dd><p>County FIPS code</p></dd>
+  <dt>AREA</dt><dd><p>Area of polygon</p></dd>
+  <dt>PERIMETER</dt><dd><p>Perimeter of polygon</p></dd>
+  <dt>RECORD_ID</dt><dd><p>Unique ID</p></dd>
+  <dt>COUNTYID</dt><dd><p>County ID</p></dd>
+  <dt>NAME</dt><dd><p>County name</p></dd>
+  <dt>LGRyy</dt><dd><p>Lung cancer cases for gender G (male: M or female: F) and race R (white:W or black:B) in year yy (1968, 1978, 1988)</p></dd>
+  <dt>POPGRyy</dt><dd><p>Population at risk for gender G (male: M or female: F) and race R (W or B) in year yy (1968, 1978, 1988)</p></dd>
+  <dt>LGyy</dt><dd><p>Total lung cancer cases for gender G (male: M or female: F) and each year (1968, 1978, 1988)</p></dd>
+  <dt>POPGyy</dt><dd><p>Total population at risk by gender G (male: M or female: F) and year yy (1968, 1978, 1988)</p></dd>
   <dt>geometry</dt><dd><p>POLYGON</p></dd>
 
 </dl>
@@ -145,12 +148,13 @@
     <p>Sf object, units in m. EPSG 32617: WGS 84 / UTM Zone 17N.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='kw'>if</span> (<span class='fu'><a href='https://rdrr.io/r/base/ns-load.html'>requireNamespace</a></span>(<span class='st'>"sf"</span>, <span class='kw'>quietly</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)) {
-  <span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>sf</span>)
-  <span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>ohio_lung</span>)
+    <pre class="examples"><div class='input'><span class='kw'>if</span> <span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/ns-load.html'>requireNamespace</a></span><span class='op'>(</span><span class='st'>"sf"</span>, quietly <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>{</span>
+  <span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://r-spatial.github.io/sf/'>sf</a></span><span class='op'>)</span>
+  <span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span><span class='op'>(</span><span class='va'>ohio_lung</span><span class='op'>)</span>
 
-  <span class='fu'><a href='https://rdrr.io/pkg/sf/man/plot.html'>plot</a></span>(<span class='no'>ohio_lung</span>[<span class='st'>"FIPSNO"</span>])
-}</div><div class='img'><img src='ohio_lung-1.png' alt='' width='700' height='433' /></div></pre>
+  <span class='fu'><a href='https://r-spatial.github.io/sf/reference/plot.html'>plot</a></span><span class='op'>(</span><span class='va'>ohio_lung</span><span class='op'>[</span><span class='st'>"POPM88"</span><span class='op'>]</span><span class='op'>)</span>
+<span class='op'>}</span>
+</div><div class='img'><img src='ohio_lung-1.png' alt='' width='700' height='433' /></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -162,11 +166,11 @@
 
       <footer>
       <div class="copyright">
-  <p>Developed by Angela Li.</p>
+  <p>Developed by Angela Li, Karina Acosta.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

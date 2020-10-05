@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Rental Housing and Demographics in NYC (2000s). — nyc_sf • geodaData</title>
+<title>Rental Housing and Demographics in NYC (2000s) — nyc_sf • geodaData</title>
 
 
 <!-- jquery -->
@@ -39,7 +39,7 @@
 
 
 
-<meta property="og:title" content="Rental Housing and Demographics in NYC (2000s). — nyc_sf" />
+<meta property="og:title" content="Rental Housing and Demographics in NYC (2000s) — nyc_sf" />
 <meta property="og:description" content="Demographic and housing data for New York City’s 55 sub-boroughs (2000s)." />
 
 
@@ -111,7 +111,7 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Rental Housing and Demographics in NYC (2000s).</h1>
+    <h1>Rental Housing and Demographics in NYC (2000s)</h1>
     <small class="dont-index">Source: <a href='https://github.com/spatialanalysis/geodaData/blob/master/R/nyc.R'><code>R/nyc.R</code></a></small>
     <div class="hidden name"><code>nyc_sf.Rd</code></div>
     </div>
@@ -120,22 +120,24 @@
     <p>Demographic and housing data for New York City’s 55 sub-boroughs (2000s).</p>
     </div>
 
-    <pre class="usage"><span class='no'>nyc_sf</span></pre>
+    <pre class="usage"><span class='va'>nyc_sf</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>An sf data frame with 55 rows, 34 variables, and a geometry column:</p><dl'>
-  <dt>forhis06-09</dt><dd><p>percentage of hispanic population, not born in US</p></dd>
-  <dt>forwh06-09</dt><dd><p>percentage of white population, not born in US</p></dd>
-  <dt>hhsiz1990</dt><dd><p>average number of people per household</p></dd>
-  <dt>hhsiz00</dt><dd><p>average number of people per household</p></dd>
-  <dt>hhsiz02-05-08</dt><dd><p>average number of people per household</p></dd>
-  <dt>kids2000, kids2005-2009</dt><dd><p>percentage households w kids under 18</p></dd>
-  <dt>rent2002,2005,2008</dt><dd><p>median monthly contract rent</p></dd>
-  <dt>rentpct02,05,08</dt><dd><p>percentage of housing stock that is market rate rental units</p></dd>
-  <dt>pubast90,00</dt><dd><p>percentage of households receiving public assistance</p></dd>
-  <dt>yrhom02,05,08</dt><dd><p>average number of years living in current residence</p></dd>
+    <p>An sf data frame with 55 rows, 32 variables, and a geometry column:</p><dl>
+  <dt>code</dt><dd><p>NYC Sub-Borough Neighborhood unique ID</p></dd>
+  <dt>subborough</dt><dd><p>NYC Sub-Borough Neighborhood name</p></dd>
+  <dt>forhis06-09</dt><dd><p>Percentage of hispanic population, not born in US</p></dd>
+  <dt>forwh06-09</dt><dd><p>Percentage of white population, not born in US</p></dd>
+  <dt>hhsiz1990</dt><dd><p>Average number of people per household</p></dd>
+  <dt>hhsiz00</dt><dd><p>Average number of people per household</p></dd>
+  <dt>hhsiz02-05-08</dt><dd><p>Average number of people per household</p></dd>
+  <dt>kids2000, kids2005-2009</dt><dd><p>Percentage households w kids under 18</p></dd>
+  <dt>rent2002,2005,2008</dt><dd><p>Median monthly contract rent</p></dd>
+  <dt>rentpct02,05,08</dt><dd><p>Percentage of housing stock that is market rate rental units</p></dd>
+  <dt>pubast90,00</dt><dd><p>Percentage of households receiving public assistance</p></dd>
+  <dt>yrhom02,05,08</dt><dd><p>Average number of years living in current residence</p></dd>
   <dt>geometry</dt><dd><p>MULTIPOLYGON</p></dd>
 
 </dl>
@@ -148,12 +150,13 @@
     <p>Sf object, units in ft. EPSG 2263: NAD83 / New York Long Island (ftUS).</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='kw'>if</span> (<span class='fu'><a href='https://rdrr.io/r/base/ns-load.html'>requireNamespace</a></span>(<span class='st'>"sf"</span>, <span class='kw'>quietly</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)) {
-  <span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>sf</span>)
-  <span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>nyc_sf</span>)
+    <pre class="examples"><div class='input'><span class='kw'>if</span> <span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/ns-load.html'>requireNamespace</a></span><span class='op'>(</span><span class='st'>"sf"</span>, quietly <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>{</span>
+  <span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://r-spatial.github.io/sf/'>sf</a></span><span class='op'>)</span>
+  <span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span><span class='op'>(</span><span class='va'>nyc_sf</span><span class='op'>)</span>
 
-  <span class='fu'><a href='https://rdrr.io/pkg/sf/man/plot.html'>plot</a></span>(<span class='no'>nyc_sf</span>[<span class='st'>"bor_subb"</span>])
-}</div><div class='img'><img src='nyc_sf-1.png' alt='' width='700' height='433' /></div></pre>
+  <span class='fu'><a href='https://r-spatial.github.io/sf/reference/plot.html'>plot</a></span><span class='op'>(</span><span class='va'>nyc_sf</span><span class='op'>[</span><span class='st'>"forhis09"</span><span class='op'>]</span><span class='op'>)</span>
+<span class='op'>}</span>
+</div><div class='img'><img src='nyc_sf-1.png' alt='' width='700' height='433' /></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -165,11 +168,11 @@
 
       <footer>
       <div class="copyright">
-  <p>Developed by Angela Li.</p>
+  <p>Developed by Angela Li, Karina Acosta.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

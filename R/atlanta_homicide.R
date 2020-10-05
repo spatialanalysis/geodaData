@@ -4,7 +4,7 @@
 #'
 #' Sf object, unprojected. EPSG 4326: WGS84.
 #'
-#' @format An sf data frame with 90 rows, 24 variables, and a geometry column:
+#' @format An sf data frame with 90 rows, 23 variables, and a geometry column:
 #' \describe{
 #'	\item{	NAME	}{	county name	}
 #'	\item{	STATE_NAME	}{	state name	}

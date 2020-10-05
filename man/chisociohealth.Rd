@@ -3,12 +3,18 @@
 \docType{data}
 \name{chisociohealth}
 \alias{chisociohealth}
-\title{Denver 2010 Demographics & Housing}
+\title{Chicago Health and Socio-Economics}
 \format{
-An sf data frame with 75 rows, 56 variables, and a geometry column:
+An sf data frame with 77 rows, 86 variables, and a geometry column:
 \describe{
+\item{ComAreaID}{Community Area ID}
+\item{community}{Community Area Name}
+\item{TRACTnt}{Tract}
+\item{shape_area}{polygon area}
+\item{shape_len}{polygon perimeter}
 \item{Pop2012}{Population in 2012}
 \item{Pop2014}{Population in 2014}
+\item{PopChng}{Population change}
 \item{PopM}{Male Population in 2014}
 \item{PopF}{Female population in 2014}
 \item{Under5}{Population age 0-5 in 2014}
@@ -22,7 +28,20 @@ An sf data frame with 75 rows, 56 variables, and a geometry column:
 \item{NHP14}{Native Hawaiian population in 2014}
 \item{Oth14}{Population of other races in 2014}
 \item{Hisp14}{Hispanic population in 2014}
-\item{PopMP, PopFP, Under5P, Under18P, Over18P, Over21P, Over65P, Wht14P, Blk14P, AI14P, AS14P, NHP14P, Oth14P, Hisp14P}{Proportion of each corresponding group in the overall population 2014}
+\item{PopMP}{	Proportion of male in the overall population in 2014	}
+ \item{PopFP}{	Proportion of female in the overall population in 2014	}
+ \item{Under5P}{	Proportion of under 5 in the overall population in 2014	}
+ \item{Under18P}{	Proportion of under 18 in the overall population in 2014	}
+ \item{Over18P}{	Proportion of over 18 in the overall population in 2014	}
+ \item{Over21P}{	Proportion of over 21 in the overall population in 2014	}
+ \item{Over65P}{	Proportion of over 65 in the overall population in 2014	}
+ \item{Wht14P}{	Proportion of white population in 2014	}
+ \item{Blk14P}{	Proportion of black population in 2014	}
+ \item{AI14P}{	Proportion of American Indian population in 2014	}
+ \item{AS14P}{	Proportion of asian population in 2014	}
+ \item{NHP14P}{	Proportion of native hawaiian population  in 2014	}
+ \item{Oth14P}{	Proportion of other races population  in 2014	}
+ \item{Hisp14P}{	Proportion of hispanic population  in 2014	}
 \item{Property_C}{Number of property crimes}
 \item{PropCrRt}{Property crime rate in 2014}
 \item{Violent_C}{Number of violent crimes}
@@ -38,11 +57,15 @@ An sf data frame with 75 rows, 56 variables, and a geometry column:
 \item{LaborFrc}{Number of people in the labor force in 2014}
 \item{Unemp14}{Number of people unemployed in 2014}
 \item{Pov50}{Number of people with income below 50pct of the poverty line}
+\item{Pov50P}{Proportion of people with income below 50pct of the poverty line}
 \item{Pov125}{Number of people with income below 125pct of the poverty line}
+\item{Pov125P}{Proportion of people with income below 125pct of the poverty line}
 \item{Pov150}{Number of people with income below 150pct of the poverty line}
+\item{Pov150P}{Proportion of people with income below 150pct of the poverty line}
 \item{Pov185}{Number of people with income below 185pct of the poverty line}
+\item{Pov185P}{Proportion of people with income below 185pct of the poverty line}
 \item{Pov200}{Number of people with income below 200pct of the poverty line}
-\item{Pov50P-Pov200P}{Proportion of each group in overall population (different poverty rates, 2014)}
+\item{Pov200P}{Number of people with income below 200pct of the poverty line}
 \item{SESave}{Average SES}
 \item{COIave}{Average Childhood Opportunity Index}
 \item{HISave}{Average Economic Hardship Index	}
@@ -77,7 +100,7 @@ Economic Hardship Index method based on the Intercity Hardship Index, by Richard
 chisociohealth
 }
 \description{
-Demographics and housing characteristics of Denver neighborhoods (2010).
+Public health and socio-economic indicators for the 77 community areas of Chicago, IL, 2014.
 }
 \details{
 Sf object, unprojected. EPSG 4326: WGS84.

@@ -16,7 +16,7 @@ An sf data frame with 205 rows, 9 variables, and a geometry column:
 \item{quarter}{quarter of sale (4th for all)}
 \item{year1}{year of sale (2015 for all)}
 \item{yrquarter}{year and quarter of sale (4th quarter of 2015 for all)}
-  \item{geometry}{POINT}
+\item{geometry}{POINT}
 }
 }
 \source{

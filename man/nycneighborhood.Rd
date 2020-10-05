@@ -5,9 +5,10 @@
 \alias{nycneighborhood}
 \title{NYC Neighborhood (2008-12)}
 \format{
-An sf data frame with 195 rows, 99 variables, and a geometry column:
+An sf data frame with 195 rows, 97 variables, and a geometry column:
 \describe{
-\item{	BoroCode	}{	Number for each of the five New York City boroughs	}
+\item{	carto_id	}{	Carto unique ID	}
+\item{	borocode	}{	Number for each of the five New York City boroughs	}
 \item{	withssi	}{	Households With Supplemental Security Income	}
 \item{	withsocial	}{	Households With Social Security Income	}
 \item{	withpubass	}{	Households With Public Assistance Income	}
@@ -92,16 +93,17 @@ An sf data frame with 195 rows, 99 variables, and a geometry column:
 \item{	africanune	}{	African American unemployed population	}
 \item{	africaninl	}{	African Americans in labour force	}
 \item{	african	}{	Total Population African American	}
-\item{	ntaname	}{	New York City NTA (Neighborhood Tabulation Area) name	}
+\item{	ntaname	}{	New York City Neighborhood Tabulation Area (NTA) name	}
 \item{	boroname	}{	name of the NYC borough	}
 \item{	popdty	}{	Population Density (per sq. mile)	}
-\item{	ntacode	}{	code associatd with the NTA	}
+\item{	ntacode	}{	code associatd with the Neighborhood Tabulation Area (NTA)	}
 \item{	medianinco	}{	Median household income (In 2012 Inflation Adjusted Dollars)	}
 \item{	medianagem	}{	Total Population Male Median Age	}
 \item{	medianagef	}{	Total Population Female Median Age	}
 \item{	medianage	}{	Total Population Median Age	}
 \item{	HHsize	}{	Average Household Size	}
 \item{	gini	}{	Gini Index Of Income Inequality	}
+\item{	uemprate	}{	Unemployment rate	}
 }
 }
 \source{
